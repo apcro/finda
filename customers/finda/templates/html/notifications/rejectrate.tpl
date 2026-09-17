@@ -1,0 +1,1 @@
+<b>{$company_name}</b> has rejected your counter-offer rate for {$job.name} on {$job.startdate|date_format:"%d %B %Y"}. Please try another rate or accept the current offer.

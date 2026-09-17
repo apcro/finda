@@ -1,0 +1,282 @@
+@import "../partials/_colours.scss";
+
+body {
+	overflow: auto;
+	background-color: $colour-white;
+	
+}
+.page {
+//	height: 1000px;
+	position: relative;
+//	border: 2px solid pink;
+}
+
+.page_break { page-break-before: always; }
+
+.column.narrow, .columns.narrow {
+	max-width: 28%;
+}
+
+.page2 {
+	
+	color: $colour-black;
+	font-size: 1em;
+	
+	img.instagramlogo {
+		width: 16px;
+		
+	}
+
+	hr.yellow-line {
+		background-color: $colour-black;
+	}
+	
+	.modeldetails {
+		.row {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.narrow {
+	width: 155px;
+	float: right;
+}
+
+.pages.view {
+	.comcard {
+		&.page1, &.page2 {
+			border: 1px dotted $colour-grey;
+		}
+	}
+}
+.comcard {
+	
+	&.page1, &.page2 {
+		margin-left: auto;
+		margin-right: auto;
+		
+		display: block;
+	}
+	
+	&.page1 {
+		
+		.page1_details {
+			display: block;
+			position: relative;
+			margin: 1em;
+			
+			.nameholder {
+				max-width: 50%;
+				width: 50%;
+				margin: 0;
+				padding: 1em 1em 1em 0;
+				position: relative;
+				display: inline-block;
+				float: left;
+								
+				.fname {
+					font-size: 1.5em;
+					font-weight: $font-bold;
+					color: $colour-black;
+				}
+				.lname {
+					font-size: 1em;
+					font-weight: $font-medium;
+					color: $colour-black;
+				}
+			}
+
+			.nameholder-2 {
+				margin: 0;
+				padding: 1em 0 1em 1em;
+				position: relative;
+				display: inline-block;
+				float: right;
+				line-height: 2.5em;
+				
+				.fname {
+					font-size: 1.5em;
+					font-weight: $font-bold;
+					color: $colour-black;
+				}
+				.lname {
+					font-size: 1em;
+					font-weight: $font-medium;
+					color: $colour-black;
+				}
+			}
+
+			.instaholder {
+				max-width: 50%;
+				width: 50%;
+				margin: 0;
+				padding: 1em;
+				position: relative;
+				display: inline-block;
+				
+				.instafollowers {
+					border-bottom: 1px solid $colour-black;
+					padding-bottom: 0.5em;
+					text-align: center;
+					font-size: 2em;
+					font-weight: $font-bold;
+					color: $colour-black;
+				}
+				.instagramhandle {
+					text-align: center;
+					font-size: 1.5em;
+					font-weight: $font-medium;
+					color: $colour-black;
+				}
+			
+			}
+		}
+	}
+	
+}
+.portfolio_frame {
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 585px;
+	height: 750px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	
+//	border: 1px solid green;
+	
+	img {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 585px;
+		max-height: 750px;
+	}
+}
+.tabs {
+	display: inline-block;
+	
+	.tab-portfolio,
+	.tab-polaroids {
+		float: left;
+		margin: 0 0.25em;
+		color: $colour-black;
+		border-bottom: 2px solid transparent;
+		&.active {
+			color: $colour-purple;
+			border-bottom: 2px solid $colour-purple;
+		}
+		&:hover {
+			color: $colour-cyan;
+			border-bottom: 2px solid $colour-cyan;
+			cursor: pointer;
+		}
+	}
+}
+
+.tab-polaroids-images {
+	display: none;
+}
+
+.imagecol {
+	width: 100%;
+	.image_container {
+		margin: 0.25em auto;
+	}
+	.imageload {
+		width: 80px;
+		height: 80px;
+		border: 1px dashed $colour-cyan;
+		border-radius: 15px; 	
+		background-size: cover;
+		background-position: center;
+		margin: 0 auto;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.page2 {
+	.nameleader {
+		text-align: center;
+		font-weight: $font-black;
+		font-size: 3em;
+		text-transform: uppercase;
+		margin: 1em 0;
+	}
+	.measurements {
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 0.5em 0;
+	}
+	.comcard_images {
+		border: 10px solid $colour-purple;
+		width: 670px;
+		margin: 0.5em auto;
+		clear: both;
+		
+		.droppable {
+			width: 315px;
+			border: 6px dashed $colour-purple;
+			height: 420px;
+			position: relative;
+			display: inline-block;
+			
+			&.ui-droppable-active {
+				background-color: transparentize($colour-green, 0.9);
+			}
+			&.ui-droppable-hover {
+				border: 6px dashed $colour-green;
+			}
+			&.polaroid {
+				margin-bottom: 10px;
+			}
+			&.portfolio {
+				margin-top: 10px;
+			}
+			&.polaroid1, &.portfolio1 {
+				float: left;
+			}
+			&.polaroid2, &.portfolio2 {
+				float: right;
+			}
+			p {
+				text-align: center;
+				margin-top: 1em;
+				padding: 4em;
+				font-size: 1.25em;
+			}
+			.cross {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				&:before {
+					font-family: "Font Awesome 5 Free";
+					font-weight: 900; 
+					content: "\f067";
+					color: $colour-purple;
+					font-size: 5em;
+				}
+			}
+		}
+		
+		&:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+	}
+	
+	
+}

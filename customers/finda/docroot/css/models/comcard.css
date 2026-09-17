@@ -1,0 +1,296 @@
+.text-thin {
+  font-weight: 300; }
+
+.text-light {
+  font-weight: 400; }
+
+.text-normal {
+  font-weight: 500; }
+
+.text-medium {
+  font-weight: 600; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-ultra {
+  font-weight: 900; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-black {
+  color: #080808; }
+
+.text-blackcolour {
+  color: #080808; }
+
+.text-cyan {
+  color: #13AFC0; }
+
+.text-yellow {
+  color: #ffba1c; }
+
+.text-purple {
+  color: #C353E3; }
+
+.text-findared {
+  color: #C93B3B; }
+
+.text-red {
+  color: #C93B3B; }
+
+.text-grey {
+  color: #99A3A3; }
+
+.text-lightgreen {
+  color: #d5e1df; }
+
+.text-darkgreen {
+  color: #a7bab8; }
+
+.text-pink {
+  color: #D300BE; }
+
+.text-green {
+  color: #00DD00; }
+
+.text-darkgrey {
+  color: #565c66; }
+
+.text-lightgrey {
+  color: #E3E3E3; }
+
+.text-burgundy {
+  color: #FF4040; }
+
+.bg-black {
+  background-color: #080808; }
+
+.bg-grey {
+  background-color: #99A3A3; }
+
+.bg-bordergrey {
+  background-color: #99A3A3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.bg-purple {
+  background-color: #C353E3; }
+
+.bg-yellow {
+  background-color: #ffba1c; }
+
+.bg-red {
+  background-color: #C93B3B; }
+
+.bg-pink {
+  background-color: #D300BE; }
+
+.bg-burgundy {
+  background-color: #FF4040; }
+
+body {
+  overflow: auto;
+  background-color: #FFFFFF; }
+
+.page {
+  position: relative; }
+
+.page_break {
+  page-break-before: always; }
+
+.column.narrow, .columns.narrow {
+  max-width: 28%; }
+
+.page2 {
+  color: #080808;
+  font-size: 1em; }
+  .page2 img.instagramlogo {
+    width: 16px; }
+  .page2 hr.yellow-line {
+    background-color: #080808; }
+  .page2 .modeldetails .row {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+
+.narrow {
+  width: 155px;
+  float: right; }
+
+.pages.view .comcard.page1, .pages.view .comcard.page2 {
+  border: 1px dotted #99A3A3; }
+
+.comcard.page1, .comcard.page2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+.comcard.page1 .page1_details {
+  display: block;
+  position: relative;
+  margin: 1em; }
+  .comcard.page1 .page1_details .nameholder {
+    max-width: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 1em 1em 1em 0;
+    position: relative;
+    display: inline-block;
+    float: left; }
+    .comcard.page1 .page1_details .nameholder .fname {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #080808; }
+    .comcard.page1 .page1_details .nameholder .lname {
+      font-size: 1em;
+      font-weight: 600;
+      color: #080808; }
+  .comcard.page1 .page1_details .nameholder-2 {
+    margin: 0;
+    padding: 1em 0 1em 1em;
+    position: relative;
+    display: inline-block;
+    float: right;
+    line-height: 2.5em; }
+    .comcard.page1 .page1_details .nameholder-2 .fname {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #080808; }
+    .comcard.page1 .page1_details .nameholder-2 .lname {
+      font-size: 1em;
+      font-weight: 600;
+      color: #080808; }
+  .comcard.page1 .page1_details .instaholder {
+    max-width: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    display: inline-block; }
+    .comcard.page1 .page1_details .instaholder .instafollowers {
+      border-bottom: 1px solid #080808;
+      padding-bottom: 0.5em;
+      text-align: center;
+      font-size: 2em;
+      font-weight: 700;
+      color: #080808; }
+    .comcard.page1 .page1_details .instaholder .instagramhandle {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #080808; }
+
+.portfolio_frame {
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 585px;
+  height: 750px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+  .portfolio_frame img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 585px;
+    max-height: 750px; }
+
+.tabs {
+  display: inline-block; }
+  .tabs .tab-portfolio,
+  .tabs .tab-polaroids {
+    float: left;
+    margin: 0 0.25em;
+    color: #080808;
+    border-bottom: 2px solid transparent; }
+    .tabs .tab-portfolio.active,
+    .tabs .tab-polaroids.active {
+      color: #C353E3;
+      border-bottom: 2px solid #C353E3; }
+    .tabs .tab-portfolio:hover,
+    .tabs .tab-polaroids:hover {
+      color: #13AFC0;
+      border-bottom: 2px solid #13AFC0;
+      cursor: pointer; }
+
+.tab-polaroids-images {
+  display: none; }
+
+.imagecol {
+  width: 100%; }
+  .imagecol .image_container {
+    margin: 0.25em auto; }
+  .imagecol .imageload {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed #13AFC0;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto; }
+    .imagecol .imageload:hover {
+      cursor: pointer; }
+
+.page2 .nameleader {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 1em 0; }
+.page2 .measurements {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0.5em 0; }
+.page2 .comcard_images {
+  border: 10px solid #C353E3;
+  width: 670px;
+  margin: 0.5em auto;
+  clear: both; }
+  .page2 .comcard_images .droppable {
+    width: 315px;
+    border: 6px dashed #C353E3;
+    height: 420px;
+    position: relative;
+    display: inline-block; }
+    .page2 .comcard_images .droppable.ui-droppable-active {
+      background-color: rgba(0, 221, 0, 0.1); }
+    .page2 .comcard_images .droppable.ui-droppable-hover {
+      border: 6px dashed #00DD00; }
+    .page2 .comcard_images .droppable.polaroid {
+      margin-bottom: 10px; }
+    .page2 .comcard_images .droppable.portfolio {
+      margin-top: 10px; }
+    .page2 .comcard_images .droppable.polaroid1, .page2 .comcard_images .droppable.portfolio1 {
+      float: left; }
+    .page2 .comcard_images .droppable.polaroid2, .page2 .comcard_images .droppable.portfolio2 {
+      float: right; }
+    .page2 .comcard_images .droppable p {
+      text-align: center;
+      margin-top: 1em;
+      padding: 4em;
+      font-size: 1.25em; }
+    .page2 .comcard_images .droppable .cross {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+      .page2 .comcard_images .droppable .cross:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f067";
+        color: #C353E3;
+        font-size: 5em; }
+  .page2 .comcard_images:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+/*# sourceMappingURL=comcard.css.map */

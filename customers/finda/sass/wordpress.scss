@@ -1,0 +1,83 @@
+@import "partials/_colours.scss";
+
+.grid.grid-faq {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+
+	.column > * {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	background-color: #fff;
+	
+	h1 {
+		font-size: 200%;
+		color: $colour-cyan;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	h2 {
+		color: $colour-cyan;
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+	
+	h3, h4 {
+		border-bottom: 1px dashed $colour-cyan;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding-bottom: 0.5em;
+	}
+	
+	p {
+		line-height: 150%;
+		
+		&:last-child {
+			padding-bottom: 4em;
+		}
+	}
+	
+	li {
+		margin: 0.5em 0;
+	}
+	
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	img {
+		margin: 0.5em;
+	}
+	
+	img.alignleft {
+		float: left;
+		margin: 0 1.5em 0 0;
+	}
+}
+
+.row-heading {
+	width: 100%;
+}
+@media screen and (min-width: 768px) {
+	.grid.grid-faq {
+		width: 55rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.row {
+		padding: 0;
+	}
+}
+
+.missing_width {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}

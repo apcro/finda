@@ -1,0 +1,1 @@
+<a href="/view/{$modelid}">{$firstname} {$lastname}</a> has accepted your offer for <a href="/projects/view/{$job.id}">{$job.name}</a> on {$job.startdate|date_format:"%d %B %Y"}.

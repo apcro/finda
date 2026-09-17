@@ -1,0 +1,36 @@
+@import "partials/_colours.scss";
+
+section#landing .tagline {
+	top: 55%;
+}
+
+.column.registererror {
+	border: 1px solid red !important;
+	
+}
+.registererror {
+	border-color: red !important;
+}
+
+.Zebra_DatePicker {
+	z-index: 10005 !important;
+}
+
+@media only screen and (min-device-width : 375px) and (max-width: 667px) {
+	
+	h2 {
+		transform-origin: center center;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+	.top-bar {
+		height: auto;
+	}
+	.topbar-responsive-logo {
+		padding-bottom: 1em;
+		img {
+			filter: invert(1);
+		}
+	}
+}

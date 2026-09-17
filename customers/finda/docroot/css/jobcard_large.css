@@ -1,0 +1,632 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.jobcards {
+  margin: 0 auto;
+}
+
+#negotiateJob {
+  padding: 2em 4em;
+  color: #080808;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+}
+
+#negotiateJob h2 {
+  font-weight: 700;
+  font-size: 1.375em;
+  border-bottom: 1px solid #080808;
+  padding-bottom: 0.5em;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#negotiateJob label {
+  text-align: left;
+  font-weight: 800;
+}
+
+#negotiateJob input {
+  color: #080808;
+  font-size: 32pt;
+  width: 4em;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+#negotiateJob .button.success {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 120%;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+#negotiateJob input[type=email],
+#negotiateJob input[type=password],
+#negotiateJob input[type=text],
+#negotiateJob textarea,
+#negotiateJob select {
+  color: #080808;
+  font-weight: 800;
+  border-bottom: 1px solid #080808;
+}
+
+.grid-left a {
+  border-bottom: none;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+.worko-tabs.viewjob {
+  border-radius: 0 2px 2px 0;
+}
+.worko-tabs.viewjob .row {
+  max-width: 100%;
+  width: 100%;
+}
+.worko-tabs.viewjob .panel {
+  border-radius: 0 2px 2px 2px;
+  background-color: #E3E3E3;
+  min-height: 450px;
+}
+.worko-tabs.viewjob .panel .card_type_topper {
+  font-weight: 700;
+}
+.worko-tabs.viewjob .panel .card_type_topper.pending {
+  color: #C353E3;
+  color: #FF4040;
+}
+.worko-tabs.viewjob .panel .card_type_topper.confirmable {
+  color: #00DD00;
+  color: #FF4040;
+}
+.worko-tabs.viewjob .panel .card_type_topper.confirmed, .worko-tabs.viewjob .panel .card_type_topper.closed {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper.offered, .worko-tabs.viewjob .panel .card_type_topper.new {
+  color: #ffba1c;
+  color: #FF4040;
+}
+.worko-tabs.viewjob .panel .card_type_topper.completed {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper.past {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper.expired {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper.finished {
+  color: #FF4040;
+}
+.worko-tabs.viewjob .panel .card_type_topper.unfinalised {
+  color: #C93B3B;
+}
+.worko-tabs.viewjob .panel .card_type_topper.accepted {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper.overdue {
+  color: #C93B3B;
+}
+.worko-tabs.viewjob .panel .card_type_topper.due {
+  color: #C93B3B;
+}
+.worko-tabs.viewjob .panel .card_type_topper .deleted {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .card_type_topper .rejected {
+  color: #080808;
+}
+.worko-tabs.viewjob .panel .invoicewrapper {
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 2em;
+  padding: 1em;
+}
+.worko-tabs.viewjob .panel .invoicewrapper p.jobname {
+  font-size: 1.5em;
+  color: #080808;
+  font-weight: 700;
+}
+.worko-tabs.viewjob .tab {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  color: rgba(86, 92, 102, 0.5);
+  padding: 10px 0;
+}
+.worko-tabs.viewjob .tabs .tab-holder {
+  background-color: #FFFFFF;
+  display: inherit;
+  width: 100%;
+  border-radius: 0 2px 0 0;
+}
+.worko-tabs.viewjob .tabs .tab-holder .half-tab {
+  width: 30%;
+  border-radius: 0 2px 0 0;
+  background-color: #E3E3E3;
+  z-index: 2;
+}
+.worko-tabs.viewjob .tabs .tab-holder .half-tab label {
+  width: 100%;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 0 2px 0 0;
+}
+.worko-tabs.viewjob .tabs .tab-holder .half-tab.second {
+  width: 30%;
+  margin-left: -20px;
+  z-index: 1;
+}
+.worko-tabs #tab-project:checked ~ .tabs #tab-project-label,
+.worko-tabs #tab-invoice:checked ~ .tabs #tab-invoice-label {
+  cursor: default;
+  color: #080808;
+  background-color: #E3E3E3;
+  border-radius: 0 2px 0 0;
+}
+.worko-tabs #tab-project:checked ~ .tabs #tab-project-panel,
+.worko-tabs #tab-invoice:checked ~ .tabs #tab-invoice-panel {
+  display: block;
+}
+.worko-tabs #tab-project:checked ~ .tabs #tab-project-panel h2,
+.worko-tabs #tab-invoice:checked ~ .tabs #tab-invoice-panel h2 {
+  transform-origin: left top;
+}
+
+.job_card {
+  z-index: 1;
+  padding: 1em;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+}
+.job_card.large {
+  width: auto;
+  display: block;
+}
+.job_card .discount_banner {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.job_card .discount_banner i {
+  color: #080808;
+  font-size: 150px;
+  width: 100%;
+}
+.job_card .discount_banner p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 6;
+  color: #FFFFFF;
+  font-size: 0.75em;
+  margin: 30px 25px;
+}
+.job_card .card_button {
+  padding: 1em 1.5em;
+  border-radius: 2em;
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0.25em 0.5em;
+  display: inline-block;
+  text-align: center;
+  min-width: 40%;
+}
+.job_card .card_button.card_buttonsmall {
+  border: 1px solid #99A3A3;
+  padding: 0.5em;
+  font-size: 11px;
+  width: 25%;
+  margin: 0;
+}
+.job_card .card_button.card_right {
+  right: 0;
+}
+.job_card .card_button span {
+  display: inline-block;
+}
+.job_card .card_right {
+  float: right;
+  display: inline-block;
+}
+.job_card .card_button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.job_card .card_row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+.job_card .card_row .card_type {
+  font-size: 1em;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.job_card .card_row .card_type.pending {
+  border-bottom: 4px solid #00DD00;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.pending::after {
+  content: "PENDING";
+}
+.job_card .card_row .card_type.offered, .job_card .card_row .card_type.new {
+  border-bottom: 4px solid #ffba1c;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.offered::after, .job_card .card_row .card_type.new::after {
+  content: "NEW JOB OFFERS";
+}
+.job_card .card_row .card_type.optioned {
+  border-bottom: 4px solid #ffba1c;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.optioned::after {
+  content: "OPTION";
+}
+.job_card .card_row .card_type.waiting {
+  border-bottom: 4px solid #C353E3;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.waiting::after {
+  content: "COMPLETED";
+}
+.job_card .card_row .card_type.complete {
+  border-bottom: 4px solid #C353E3;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.complete::after {
+  content: "COMPLETE";
+}
+.job_card .card_row .card_type.completed {
+  border-bottom: 4px solid #080808;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.completed::after {
+  content: "COMPLETED";
+}
+.job_card .card_row .card_type.past {
+  border-bottom: 4px solid #080808;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.past::after {
+  content: "PAST";
+}
+.job_card .card_row .card_type.expired {
+  border-bottom: 4px solid #080808;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.expired::after {
+  content: "EXPIRED";
+}
+.job_card .card_row .card_type.finished {
+  border-bottom: 4px solid #080808;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.finished::after {
+  content: "FINISHED";
+}
+.job_card .card_row .card_type.unfinalised {
+  border-bottom: 4px solid #C353E3;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.unfinalised::after {
+  content: "UNFINALISED";
+}
+.job_card .card_row .card_type.accepted {
+  border-bottom: 4px solid #080808;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.accepted::after {
+  content: "UPCOMING JOBS";
+}
+.job_card .card_row .card_type.overdue {
+  border-bottom: 4px solid #C93B3B;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.overdue::after {
+  content: "OVERDUE";
+}
+.job_card .card_row .card_type.deleted {
+  border-bottom: 4px solid #C93B3B;
+  border-radius: 2px;
+}
+.job_card .card_row .card_type.deleted::after {
+  content: "DELETED";
+}
+.job_card .card_row .card_jobname {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #080808;
+}
+.job_card .card_row .card_jobname a {
+  color: #080808;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.job_card .card_row .card_jobname a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #C353E3;
+}
+.job_card .card_row .card_clientname a {
+  text-transform: uppercase;
+  color: #99A3A3;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.job_card .card_row .card_clientname a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #99A3A3;
+}
+.job_card .card_row .card_actions {
+  margin-top: 2em;
+  text-align: center;
+}
+.job_card .card_row .card_actions .card_button {
+  text-transform: uppercase;
+}
+.job_card .card_row .job_callsheet {
+  position: relative;
+  display: block;
+}
+.job_card .card_row .job_callsheet .action_holder {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.job_card .card_row .job_callsheet .action_holder a.card_button.card_buttonsmall {
+  width: auto;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+}
+.job_card .card_row .working_with .row {
+  padding-left: 0;
+  padding-right: 0;
+  flex-wrap: wrap;
+}
+.job_card .card_row .working_with .row .column {
+  padding: 0.5rem;
+  max-width: 25%;
+  min-width: 25%;
+}
+.job_card .card_row .working_with .card_models {
+  width: 100%;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  border-bottom: 1px dashed #99A3A3;
+}
+.job_card .card_row .working_with .modelView .image {
+  position: relative;
+  height: inherit;
+}
+.job_card .card_row .working_with .modelView .model_name {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #080808;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+.job_card .card_row .working_with .modelView.clientview {
+  box-shadow: 0 0 5px transparent;
+  background: #fdfdfd;
+}
+.job_card .card_row .working_with .modelView.clientview:hover {
+  box-shadow: 0 0 5px #080808;
+}
+.job_card .card_row .working_with .modelView .textblock {
+  padding: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .job_card {
+    padding: 1em;
+    margin: 0.5em;
+    width: 20em;
+    display: inline-block;
+  }
+  .job_card .card_row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  .job_card .card_row .card_type {
+    font-size: 0.75em;
+  }
+  .job_card .card_row .card_jobdetails {
+    margin-top: 1em;
+  }
+  .job_card .card_row .card_jobdetails p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .job_card .card_row .card_jobdetails i.fas {
+    width: 20px;
+  }
+  .job_card .card_row .card_rate {
+    margin: 1em 0;
+    font-size: 1em;
+    position: relative;
+  }
+  .job_card .card_row .card_jobdescription {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 1em 0;
+  }
+  .job_card .card_row .card_jobtype {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 768px) {
+  .job_card {
+    border: 1px solid #99A3A3;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 150px;
+  }
+  .job_card .card_jobdetails {
+    margin-top: 1em;
+  }
+  .job_card .card_jobdetails p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  .job_card .card_rate {
+    font-weight: 700;
+    font-size: 13px;
+    margin: 1em 0;
+  }
+  .job_card .card_jobdescription {
+    font-size: 9px;
+    margin: 1em 0;
+  }
+  .job_card .card_actions {
+    margin-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=jobcard_large.css.map */

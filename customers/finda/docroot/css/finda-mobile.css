@@ -1,0 +1,736 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.center-all {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#register-form-model.callout.model input[type=email],
+#register-form-model.callout.model input[type=password],
+#register-form-model.callout.model input[type=text],
+#register-form-model.callout.model textarea,
+#register-form-model.callout.model select {
+  border-color: #080808;
+  border-radius: 0;
+}
+
+#register-form-brand.callout.brand input[type=email],
+#register-form-brand.callout.brand input[type=password],
+#register-form-brand.callout.brand input[type=text],
+#register-form-brand.callout.brand textarea,
+#register-form-brand.callout.brand select {
+  border-color: #080808;
+  border-radius: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+
+  body {
+    display: block;
+  }
+
+  header {
+    background-color: #FFFFFF;
+  }
+
+  #debugoutput {
+    left: auto !important;
+    right: 0;
+  }
+
+  .site_uparrow {
+    display: none;
+  }
+
+  #landing .downarrow {
+    display: none !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  section#landing a.welcome-button {
+    width: 12em;
+  }
+  section#landing h1 {
+    min-width: 80%;
+    font-size: 2.75em;
+    top: 60%;
+    padding: 0.25em 0;
+    left: 0;
+  }
+  section#landing .signin {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+  }
+  section#landing .joinbutton {
+    text-align: center;
+  }
+  section#landing .ituneslogo {
+    margin-top: 0em !important;
+  }
+  section#landing .welcome-button {
+    margin-bottom: 0.5em;
+  }
+
+  .prod {
+    margin-top: 60px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  section#landing-about .about-finda-scroll .about-finda h2 span {
+    top: 12px !important;
+  }
+
+  .grid-faq h1.section-heading {
+    text-align: center;
+    max-width: 80%;
+  }
+  .grid-faq h3 {
+    max-width: 80%;
+  }
+
+  .grid {
+    grid-gap: 0;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .row.welcomebg {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+  }
+  .row.welcomebg h1 {
+    max-width: 80%;
+    margin-top: 4em;
+    transform-origin: left top;
+    margin-bottom: 1em;
+  }
+
+  .row.column .grid {
+    display: block;
+    width: 100%;
+  }
+
+  .column, .columns {
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+  }
+
+  .grid-main {
+    min-height: 90%;
+    grid-column-start: 1;
+    margin-top: 4em;
+  }
+  .grid-main .row {
+    padding: 1em 0;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .grid-main .column.column.row {
+    display: block;
+  }
+  .grid-main .column .notice {
+    max-width: 100%;
+  }
+  .grid-main .column.narrow,
+.grid-main .column.narrow10 {
+    max-width: 100%;
+  }
+  .grid-main .column.alertcolumn {
+    position: absolute;
+    right: 2em;
+  }
+  .grid-main .notes div.column:nth-of-type(2) {
+    position: relative;
+    left: 0;
+  }
+  .grid-main .mobile-flow div.column {
+    width: 100%;
+  }
+  .grid-main .mobile-flow div.column p {
+    margin: 0;
+  }
+
+  .notice {
+    margin: 0 0.25em;
+    padding: 0.5em;
+  }
+
+  .slideout-menu {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 184px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+    padding-bottom: 200px;
+  }
+
+  .slideout-menu-left {
+    left: 0;
+  }
+
+  .slideout-menu-right {
+    right: 0;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    min-height: 100vh;
+    background-color: inherit;
+  }
+
+  .slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+
+  .panel-toggle-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .top-bar {
+    position: relative;
+    z-index: 10;
+    height: 60px;
+  }
+  .top-bar .top-bar-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #mobilemenu ul {
+    list-style-type: none;
+    margin-left: 0.5em;
+    padding: 0;
+  }
+  #mobilemenu ul li a {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 5px 10px 0;
+    margin: 10px 5px 10px 0;
+    display: block;
+    padding-left: 20px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 20px;
+  }
+  #mobilemenu ul li a img {
+    position: absolute;
+    top: 13px;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px 0 0;
+  }
+  #mobilemenu ul li a i.fas {
+    margin: 0 10px 0 0;
+  }
+  #mobilemenu .avatar_holder {
+    width: 100%;
+    text-align: center;
+  }
+  #mobilemenu .avatar_holder .avatar {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 100px;
+  }
+  #mobilemenu .avatar_holder .avatar img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+
+  .badge[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 0.7em;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+  }
+
+  .worko-tabs.profile .flex-tabs {
+    margin-left: 0;
+  }
+  .worko-tabs.profile .flex-tabs .tab-scroll {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .worko-tabs.profile .flex-tabs .tab-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .worko-tabs.profile .flex-tabs .tab {
+    margin-right: 0;
+  }
+  .worko-tabs.profile .flex-tabs .panel.profile {
+    padding: 10px;
+  }
+  .worko-tabs.profile .tab {
+    padding: 5px;
+    margin-left: 5px;
+    flex: 0 0 auto;
+  }
+
+  .select-wrap:after {
+    top: 0.5em !important;
+  }
+
+  input[type=email]:not(.tui-timepicker-select),
+input[type=password]:not(.tui-timepicker-select),
+input[type=text]:not(.tui-timepicker-select),
+textarea:not(.tui-timepicker-select),
+select:not(.tui-timepicker-select) {
+    padding-top: 0.75em;
+    margin-bottom: 1em;
+  }
+
+  .button.m-small {
+    min-width: 10em;
+  }
+
+  .button.m-delete {
+    margin-top: 6em;
+  }
+
+  .row.modelImages {
+    justify-content: center;
+  }
+
+  input[type=email]:not(.tui-timepicker-select):focus,
+input[type=password]:not(.tui-timepicker-select):focus,
+input[type=text]:not(.tui-timepicker-select):focus,
+textarea:not(.tui-timepicker-select):focus,
+select:not(.tui-timepicker-select):focus {
+    border-bottom: 1px solid #FF4040;
+  }
+
+  .job_card {
+    min-width: 80vw;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  #mobile-login {
+    margin: 4em 0.5em 0.5em 0.5em;
+    padding: 0.5em;
+    width: 100%;
+  }
+  #mobile-login div.row {
+    margin-top: 2em;
+  }
+  #mobile-login .submit.login {
+    margin-top: 2em;
+  }
+
+  .buttonrow .column a {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .mobile-center {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .modelcards {
+    text-align: center;
+  }
+
+  .modelcards .modelView .details_overlay {
+    top: 65% !important;
+  }
+  .modelcards .modelView .details_overlay .images-link {
+    text-align: center;
+  }
+  .modelcards .modelView .details_overlay .images-link span {
+    position: relative !important;
+    top: -4px !important;
+  }
+  .modelcards .modelView .details_overlay .instagram-details {
+    display: none !important;
+  }
+
+  #modelSearch {
+    border: 0 !important;
+  }
+
+  .croissant-block.croissant-modal a.croissant-close {
+    z-index: 20;
+  }
+
+  img.float-center {
+    max-width: 100vw;
+    max-height: 90vh;
+    height: auto;
+  }
+
+  .row.offerrow > .row {
+    padding: 1em;
+  }
+
+  .offerrow .row .column {
+    width: 100%;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+  }
+  .offerrow .row .column span.right {
+    float: right;
+  }
+
+  .wizard-step .row {
+    flex-flow: column;
+  }
+
+  .polaroids .column.imagecol,
+.portfolio .column.imagecol {
+    max-width: 100% !important;
+    position: relative;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .top-bar {
+    background-color: #080808;
+  }
+
+  .prod {
+    margin-bottom: 0;
+  }
+
+  .mobile {
+    width: 100%;
+    display: block !important;
+    padding: 0em;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+  }
+  .mobile h4 {
+    margin-top: 6em;
+  }
+  .mobile p {
+    margin-top: 1em;
+  }
+
+  section#landing {
+    background-position: 75%;
+  }
+  section#landing .logo {
+    margin-top: 30vh;
+    width: 100%;
+  }
+  section#landing .logo h1 {
+    width: 100%;
+    font-size: 3em;
+  }
+  section#landing .signin {
+    bottom: 25%;
+  }
+  section#landing h1 {
+    top: 40%;
+  }
+  section#landing .leadimage .joinbutton {
+    top: 80%;
+  }
+
+  h2 {
+    margin: 2em 0;
+  }
+
+  .welcome-button {
+    margin: 3em 0 1em 0;
+  }
+
+  .welcomebg {
+    background-image: url("/images/holding_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: block !important;
+    padding: 2em;
+  }
+  .welcomebg h2 {
+    font-size: 250%;
+  }
+  .welcomebg p {
+    font-size: 120%;
+  }
+}
+@media screen and (min-width: 1367px) {
+  section#landing .logo h1 {
+    width: 72%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  section#landing .logo {
+    margin-top: 30vh;
+  }
+  section#landing .logo h1 {
+    font-size: 3em;
+    width: 85%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section#landing .logo {
+    margin-top: 30vh;
+  }
+  section#landing .logo h1 {
+    font-size: 3em;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) and (max-width: 768px) {
+  section#landing .logo {
+    margin-top: 30vh;
+  }
+}
+.mobileregister {
+  height: 20vh;
+  width: 100vw;
+  display: inline-block;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.mobileregister a.jointext {
+  border-bottom: none;
+}
+.mobileregister .jointext {
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+.mobileregister .jointext:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#register-form-brand h2,
+#register-form-model h2 {
+  margin: 2em 0;
+  transform-origin: left top;
+}
+
+.mobilefooter {
+  background: #fff;
+  padding: 2em;
+  text-align: center;
+}
+.mobilefooter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.mobilefooter ul li {
+  display: block;
+  margin: 0 1em;
+  padding: 0;
+  text-align: center;
+}
+.mobilefooter ul li.footer-header {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.mobilefooter ul li a {
+  color: #080808;
+}
+
+.grid.passwd {
+  width: inherit;
+}
+
+.row.passwd {
+  margin-top: 10em;
+}
+.row.passwd form {
+  padding-top: 1.5em;
+}
+.row.passwd form label {
+  font-size: 1.5em;
+}
+
+/*# sourceMappingURL=finda-mobile.css.map */

@@ -1,0 +1,19 @@
+@import "partials/_colours.scss";
+
+.sendmessagemodal {
+	min-width: 45em;
+	
+	h2 {
+		margin-bottom: 1em;
+	}
+	textarea.sendmessage {
+		border: 1px solid $colour-lightgrey;
+		border-radius: 2px;
+		padding: 0.25em;
+		&:focus,
+		&:hover {
+			background: transparentize($colour-lightgrey, .8);
+		}
+	}
+	
+}

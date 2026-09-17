@@ -1,0 +1,1 @@
+Your job for {$job.name} for {$company_name} on {$job.startdate|date_format:"%d/%m/%Y"} has now been marked as completed. Please make sure you have completed the job too.

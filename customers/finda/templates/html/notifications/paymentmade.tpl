@@ -1,0 +1,1 @@
+<b>{$job.company_name}</b> has made a payment of £{$invoice.value|number_format:0:".":","} for your job {$invoice.jobname}. The payment will be in your bank account shortly.

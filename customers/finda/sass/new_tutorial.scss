@@ -1,0 +1,42 @@
+@import "partials/_colours.scss";
+
+
+@media only screen and (min-width: 768px) {
+	section#landing-tutorial-new {
+	
+		background-color: $colour-white;
+		
+		text-align: center;
+		
+		h1 {
+			text-transform: uppercase;
+		}
+		
+		p {
+			text-align: center;
+			width: 100%;
+			position: relative;
+			line-height: 56px; 
+			padding: 0 48px;
+			
+			img {
+				position: relative;
+				top: 16px;
+				margin: 0 16px;
+				width: 40px;
+			}
+		}
+		
+		.circle-lead {
+			width: 1.5em;
+			height: 1.5em;
+			border: 1px solid $colour-black;
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			line-height: 1.5em;
+			font-weight: $font-bold;
+			font-size: 2em;
+		}
+	}
+}

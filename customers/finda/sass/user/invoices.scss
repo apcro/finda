@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import "../partials/_colours.scss";
+
+// general styling
+h2 {
+	transform-origin: left top;
+	margin-bottom: 1em;
+	margin-top: 2em;
+	color: $colour-burgundy;
+}
+h4 {
+	font-size: 18px;
+}
+
+.jobname {
+	font-weight: $font-bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	p {
+		margin: 0;
+	}
+}
+
+.grid-main {
+	.row {
+		&.sub-heading {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	}
+	.row.offerrow {
+		margin: 1em 0;
+		border-radius: 2px;
+		background-color: $colour-lightgrey;
+		transition: box-shadow 0.2s ease-in-out;
+		border: 1px solid $colour-lightgrey;
+		&:hover {
+			box-shadow: 0px 12px 24px 0px rgba(0,0,0,0.07);
+			border: 1px solid $colour-black;
+		}
+	}
+}
+.offerrow > .column {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.grid-main .row.offerrow.overdue {
+	background-color: transparentize($colour-red, 0.95);
+	border: 1px solid transparent;
+	&:hover {
+		background-color: transparentize($colour-red, 0.95);
+		border: 1px solid $colour-red;
+	}
+}
+
+.invoicerow {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.invoicerow.highlight {
+	background-color: $colour-lightgreen;
+}
+
+.column {
+	&.narrow {
+		max-width: 15%;
+		min-width: 15%;
+		padding: 0;
+	}
+}
+
+.rounded-row {
+	margin: 1em 0;
+	padding: 2em 0;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	background: transparentize($colour-lightgrey, 0.8);
+	&:hover {
+		border: 1px solid $colour-black;
+		
+	}
+	.column {
+		margin: 0;
+		padding: 0;
+		.row {
+			margin: 0;
+			padding: 0;
+			.column {
+				&:first-child {
+					max-width: 15%;
+				}
+				&:nth-child(2) {
+					max-width: 50%;
+				}
+			}
+		}
+	}
+}
+
+// Stripe style overrides as I'm lazy and don't want to do a full custom implementation
+.avatar a,
+a.stripebutton {
+	border-bottom: none;
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+.Header-logoImage {
+	background-size: contain !important;
+}
+
+.Checkout.is-desktop .Button,
+.Button-animationWrapper-child--primary.Button {
+	background-color: $colour-burgundy !important;
+	outline: none !important;
+	box-shadow: none !important;
+	background-image: none !important;
+	border-radius: 2px !important;
+}
+
+.invoicebutton,
+.stripe-button-el {
+	padding: 0.5em 3em;
+	line-height: 2em;
+	min-height: 3em;
+	border-radius: 2px !important;
+	cursor: pointer;
+	border: 1px solid $colour-burgundy !important;
+	display: inline-block;
+	font-weight: $font-bold;
+	text-align: center;
+	min-width: 15em;
+	outline: none !important;
+	box-shadow: none !important;
+	background-image: none !important;
+	background-color: $colour-burgundy; /* Old browsers */
+	
+	span {
+		background: $colour-burgundy !important;
+		background-image: none !important;
+		font-size: inherit !important;
+		color: $colour-white !important;
+		font-weight: 800 !important;
+		font-family: "Montserrat", sans-serif !important;
+		text-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		-ms-box-shadow: none !important;
+		-o-box-shadow: none !important;
+		box-shadow: none !important;
+		-webkit-border-radius: 2px !important;
+		-moz-border-radius: 2px !important;
+		-ms-border-radius: 2px !important;
+		-o-border-radius: 2px !important;
+		border-radius: 2px !important;
+	
+	}
+}
+
+.stripe-button-el span {
+	background: none !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+	&:hover {
+		color: $colour-burgundy !important;
+	}
+}
+
+.stripe-button-el:hover {
+	background: $colour-white !important; /* Old browsers */
+	border: 1px solid $colour-burgundy !important;
+}
+
+.invoicebutton {
+	
+}

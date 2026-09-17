@@ -1,0 +1,1 @@
+<b>{$job.company_name}</b> has cancelled the job <strong>{$job.name}</strong> due to start on {$job.startdate|date_format:"%d %B %Y"}.

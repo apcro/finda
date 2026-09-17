@@ -1,0 +1,335 @@
+@import "partials/_colours.scss";
+
+header {
+	margin-bottom: 0;
+	
+	background-color: transparent;
+	color: $colour-white;
+	
+}
+hr {
+	width: 100%;
+	background: transparentize($colour-lightgrey, 0.4);
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+p {
+	line-height: 1.375em;
+}
+
+.top-bar-title.desktop {
+	z-index: 1;
+}
+
+#main {
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: inherit !important;
+	background-color: transparent;
+}
+.panel-toggle-button {
+	z-index: 10;
+	
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background-color: $colour-white;
+	}
+	.is-active {
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: $colour-black;
+		}
+	}
+}
+
+#mobilemenu {
+	background-color: $colour-white;
+	ul {
+		list-style-type: none;
+		margin-left: 10px;
+		li {
+			a {
+				text-decoration: none;
+				border-bottom: none !important;
+				border-radius: 0 !important;
+			}
+		}
+	}
+}
+
+body {
+	background-image: url('/images/flaunter-2KbjY_7c7to-unsplash.jpg');
+	background-size: cover;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: $colour-black;
+	
+}
+
+section#section1 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: -6em;
+	color: $colour-black;
+	.leadimage {
+		height: 54em; 
+		display: flex; 
+		align-items: center;
+		
+		.leader-text {
+			text-align: left;
+			color: $colour-white;
+			max-width: 65%;
+			margin: 0 auto;
+		}
+	}
+}
+
+h1 {
+	
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+section#section2 {
+	background-color: $colour-black;
+	color: $colour-white;
+	position: relative;
+	font-size: 18px;
+	
+	h3 {
+		margin-top: 0;
+	}
+	.verticalbar {
+		position: absolute;
+		left: 50vw;
+		z-index: 1;
+		top: 205px;
+		transform: translateX(-4px);
+		.thebar {
+			border-left: 1px solid rgba(66, 66, 66, 1);
+			height: 339px;
+		}
+	}
+	
+	.row {
+		max-width: 70rem;
+		justify-content: center;
+		
+		&.dots {
+			height: 113px;
+		}
+		
+		.column {
+			&.redball {
+				width: 32px;
+				max-width: 32px;
+				margin-bottom: 2em;
+				z-index: 2;
+				.ball {
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					background-color: red;
+					margin: 0 auto;
+				}
+			}
+			&.half {
+				min-width: 40%;
+				max-width: 40%;
+			}
+			
+			&.minhalf {
+				margin-left: 40px; 
+				max-width: 40%;
+			}
+			
+			
+		}
+	
+	}
+}
+
+section#section3 {
+	padding: 2em 0 3em 0;
+	background-color: $colour-white;
+	.row {
+		max-width: 65%;
+		.column.minhalf {
+			width: 40%;
+			min-width: 40%;
+			margin-left: 40px;
+		}
+	}
+	p {
+		padding-left: 0;
+		font-size: 18px;
+	}
+	
+	ul {
+		padding-left: 20px;
+		li {
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 44px;
+		}
+	}
+}
+
+section#section4 {
+	padding: 2em 0 4em 0;
+	background-color: $colour-black;
+	color: $colour-white;
+	
+	.row {
+		.column {
+			&.left140 {
+				margin-left: 140px;
+			}
+			li.principles {
+				width: 550px;
+			}
+			
+			.ctabox {
+				margin: 0 auto; 
+				width: 413px; 
+				height: 239px; 
+				background-color: #fff; 
+				color: #000; 
+				display: flex; 
+				align-items: center; 
+				justify-content: center; 
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+section#footer {
+	background-color: $colour-white;
+}
+@media screen and (min-width: 667px) {
+	.row {
+		p {
+			line-height: 1.75em;
+			padding: .5em 0.375em;
+			&:last-child {
+				padding-bottom: 2em;
+			}
+			a.button {
+				margin-top: 1em;
+				margin-right: 0.5em;
+			}
+			b {
+				color: $colour-black;
+			}
+		}
+
+		h2 {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			&.upper {
+				text-transform: uppercase;
+			}
+		}
+		
+		h3 {
+			transform-origin: left top;
+		}
+	}
+	
+}
+
+@media only screen and (orientation: portrait) and (max-width: 768px) {
+	
+	section#section1 {
+		.button {
+			padding-left: 0.5em !important;
+			padding-right: 0.5em !important;
+		}
+		
+		.leadimage {
+			height: 80vh;
+			.leader-text {
+				text-align: left;
+				max-width: 90%;
+				margin: 35% auto 0 auto;
+				h1 {
+					text-align: left;
+					margin-bottom: 0.5em;
+					margin-top: 1.5em;
+					font-size: 24px;
+					font-weight: bold;
+					margin-bottom: 30px;
+				}
+				h2 {
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+	
+	section#section2 {
+		.verticalbar {
+			transform: translateX(4px) !important;
+			top: 310px !important;
+			.thebar {
+				height: 500px
+			}
+		}
+	}
+	
+	.row {
+		max-width: 90% !important;
+		display: flex;
+		align-content: center;
+		margin: 0 auto 0 auto;
+		padding-bottom: 2em;
+		height: inherit !important;
+		.column.half {
+			width: 100%;
+			min-width: 100%;
+			p {
+				line-height: 1.5em;
+				padding-bottom: 0.5em;
+			}
+		}
+		.column.minhalf {
+			width: 100%;
+			min-width: 100%;
+		}
+
+		.finda_team .column .rounded.profile {
+			img {
+				margin: 0;
+			}
+			h4 {
+				margin-bottom: 2em;
+			}
+		}
+		
+		.column {
+			&.left140 {
+				margin-left: 0px !important;
+			}
+			ul.principles {
+				li {
+					width: 55% !important;
+					height: inherit !important;
+				}
+			}
+			.ctabox {
+				margin: 0 auto !important; 
+				width: 100% !important; 
+				height: inherit !important; 
+				padding: 1em !important;
+			}
+		}
+	}
+}

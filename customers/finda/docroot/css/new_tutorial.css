@@ -1,0 +1,159 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+@media only screen and (min-width: 768px) {
+  section#landing-tutorial-new {
+    background-color: #FFFFFF;
+    text-align: center;
+  }
+  section#landing-tutorial-new h1 {
+    text-transform: uppercase;
+  }
+  section#landing-tutorial-new p {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    line-height: 56px;
+    padding: 0 48px;
+  }
+  section#landing-tutorial-new p img {
+    position: relative;
+    top: 16px;
+    margin: 0 16px;
+    width: 40px;
+  }
+  section#landing-tutorial-new .circle-lead {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid #080808;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5em;
+    font-weight: 700;
+    font-size: 2em;
+  }
+}
+
+/*# sourceMappingURL=new_tutorial.css.map */

@@ -1,0 +1,21 @@
+@import "partials/_colours.scss";
+
+h1, h2, h3 {
+	transform-origin: left top;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 3em;
+	
+}
+
+span.button {
+	margin: 1em;
+	&.active {
+		background-color: $colour-burgundy;
+		color: $colour-white;
+		border: 1px solid $colour-burgundy;
+	}
+	
+}

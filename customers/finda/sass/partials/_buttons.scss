@@ -1,0 +1,270 @@
+button, input, optgroup, select, textarea {
+	line-height: 1.15;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+	font-size: inherit;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+	-webkit-appearance: button;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+	
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+.button.search:hover {
+	width: 100%;
+	background-color: #fff;
+	color: #fcea02;
+	font-weight: $font-bold;
+	margin: 0;
+}
+
+.button.search {
+	width: 100%;
+	background-color: $colour-yellow;
+	color: #000;
+	font-weight: $font-bold;
+	margin: 0;
+}
+
+.details_overlay .button.small {
+	font-size: 70%;
+	padding: 0.5em;
+	width: 40%;
+	display: inline-block;
+	text-align: center;
+	background: transparent;
+	color: $colour-yellow;
+	border: 2px solid $colour-yellow;
+}
+
+.details_overlay .button.small:hover {
+	background-color: $colour-yellow;
+	color: #000;
+	text-decoration: none;
+}
+
+
+.button {
+	padding: 0.5em 3em;
+	line-height: 2em;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: $font-normal;
+	text-transform: none;
+	text-align: center;
+	min-width: 15em;
+	color: $colour-black;
+	background: $colour-white;
+	border: 1px solid $colour-black;
+	transition: background-color 0.2s;
+	transition: color 0.2s;
+
+	&:hover {
+		background: $colour-black;
+		color: $colour-white;
+		transition: background-color 0.2s;
+		transition: color 0.2s;
+	}
+	
+	&.burgundy {
+		background-color: $colour-burgundy;
+		color: $colour-white;
+		border: 1px solid $colour-burgundy;
+		&:hover {
+			background-color: $colour-white;
+			color: $colour-burgundy;
+		}
+	}
+	&.cancelbutton,
+	&.cancel {
+		background: $colour-darkgrey;
+		color: $colour-white;
+		border: 1px solid $colour-darkgrey;
+		&:hover {
+			background: $colour-black;
+		}
+	}
+	
+	&.errorbutton {
+		background: $colour-red;
+		border-color: $colour-darkred;
+		color: $colour-white;
+		&:hover {
+			background: $colour-darkred;
+			cursor: not-allowed;
+		}
+	}
+	
+	&.inverted {
+		background-color: $colour-black;
+		color: $colour-white;
+		&:hover {
+			background: $colour-white;
+			color: $colour-black;
+			transition: background-color 0.3s;
+			transition: color 0.3s;
+		}
+	}
+}
+
+.button.small {
+	font-size: 70%;
+	padding: 0.5em;
+}
+
+.button.fullwidth {
+	width: 100%;
+}
+
+.button.shrink {
+	min-width: 0;
+}
+
+// text colours
+.button.white {
+	color: #fff;
+}
+.button.black {
+	color: #000;
+}
+.button.yellow {
+	color: $colour-yellow;
+}
+.button.red {
+	color: $colour-red;
+}
+a.button {
+	text-decoration: none;
+}
+a.button:hover {
+	text-decoration: none;
+}
+
+i.fa.icon {
+	border: 1px solid $colour-iconborder;
+	background-color: $colour-iconbackground;
+	border-radius: 26px;
+	width: 26px;
+	height: 26px;
+	padding: 6px 4px;
+	font-size: 12px;
+	&:hover {
+		color: $colour-white;
+		background: $colour-purple;
+	}
+}
+
+a.info {
+	position: relative;
+	top: -8px;
+	display: inline-block;
+	
+	
+}
+
+.row.buttonrow {
+	margin-top: 2em;
+}
+
+.tgl {
+	display: none;
+
+	&,
+	&:after,
+	&:before,
+	& *,
+	& *:after,
+	& *:before,
+	& + .tgl-btn {
+		box-sizing: border-box;
+		&::selection {
+			background: none;
+		}
+	}
+
+	+ .tgl-btn {
+		outline: 0;
+		display: inline-flex;
+		width: 4em;
+		height: 2em;
+		position: relative;
+		cursor: pointer;
+		user-select: none;
+		
+		&:after,
+		&:before {
+			position: relative;
+			display: block;
+			content: "";
+			width: 50%;
+			height: 100%;
+		}
+
+		&:after {
+			left: 0;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+  
+	&:checked + .tgl-btn:after {
+		left: 50%;
+	}
+}
+
+.tgl-slider {
+	+ .tgl-btn {
+		background: $colour-grey;
+		border-radius: 1em;
+		padding: 2px;
+		transition: all .4s ease;
+		border: 1px solid $colour-grey;
+		&:after {
+			border-radius: 2em;
+			background: $colour-white;
+			transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275), padding .3s ease, margin .3s ease;
+		}
+
+		&:hover:after {
+			will-change: padding;
+		}
+
+		&:active {
+			&:after {
+				padding-right: .8em;
+			}
+		}
+	}
+
+	&:checked + .tgl-btn {
+		background: $colour-darkgrey;
+		&:active {
+			box-shadow: none;
+			&:after {
+				margin-left: -.8em;
+			}
+		}
+	}
+}

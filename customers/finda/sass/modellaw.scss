@@ -1,0 +1,64 @@
+@import "partials/_colours.scss";
+
+header {
+	margin-bottom: 0;
+	
+	background-color: transparent;
+	color: $colour-white;
+	
+	.menu.simple a {
+//		filter: invert(1);
+		color: #000;
+	}
+	
+	.topbar-responsive-logo {
+		img {
+			filter: invert(1);
+		}
+	}
+}
+hr {
+	width: 100%;
+	background: transparentize($colour-lightgrey, 0.4);
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+p {
+	line-height: 1.75em;
+}
+
+.container {
+	height: 90vh; 
+	display: flex; 
+	align-items: center; 
+	flex-flow: column; 
+	justify-content: center;
+	position: relative;
+	
+	.modellawlogo {
+		display: flex; 
+		align-items: center; 
+		justify-content: flex-end;
+	}
+	
+	.findalogo {
+		display: flex; 
+		align-items: center; 
+		justify-content: flex-start;
+	
+	}
+}
+
+@media only screen and (orientation: portrait) and (max-width: 768px) {
+	.container {
+		height: 100vh;
+		.findalogo,
+		.modellawlogo {
+			justify-content: center;
+		}
+	}
+	.top-bar {
+		display: none;
+	}
+}

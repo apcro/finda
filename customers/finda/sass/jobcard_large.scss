@@ -1,0 +1,589 @@
+@import "partials/_colours.scss";
+
+.jobcards {
+	margin: 0 auto;
+}
+
+#negotiateJob {
+	padding: 2em 4em;
+	color: $colour-black;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+}
+
+#negotiateJob h2 {
+	font-weight: $font-bold;
+	font-size: 1.375em;
+	border-bottom: 1px solid $colour-black;
+	padding-bottom: 0.5em;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#negotiateJob label {
+	text-align: left;
+	font-weight: $font-black;
+}
+
+#negotiateJob input {
+	color: $colour-black;
+	font-size: 32pt;
+	width: 4em;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+
+#negotiateJob .button.success {
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 120%;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+}
+
+#negotiateJob input[type="email"], 
+#negotiateJob input[type="password"], 
+#negotiateJob input[type="text"], 
+#negotiateJob textarea, 
+#negotiateJob select {
+	color: $colour-black;
+	font-weight: $font-black;
+	border-bottom: 1px solid $colour-black;
+}
+
+.grid-left {
+	a {
+		border-bottom: none;
+	}
+	
+}
+
+h3 {
+	font-size: 1.25em;
+	
+}
+.worko-tabs {
+	&.viewjob {
+		
+		.row {
+			max-width: 100%;
+			width: 100%;
+		}
+		
+		.panel {
+			border-radius: 0 2px 2px 2px;
+			background-color: $colour-lightgrey;
+			min-height: 450px;
+			
+			.card_type_topper {
+				font-weight: $font-bold;
+				&.pending {
+					color: $colour-purple;
+					color: $colour-burgundy;
+				}
+				
+				&.confirmable {
+					color: $colour-green;
+					color: $colour-burgundy;
+				}
+				&.confirmed,
+				&.closed {
+					color: $colour-black;
+				}
+				&.offered,
+				&.new {
+					color: $colour-yellow;
+					color: $colour-burgundy;
+				}
+				&.optioned {
+				}
+				&.waiting {
+				}
+				&.complete {
+				}
+				&.completed {
+					color: $colour-black;
+				}
+				&.past {
+					color: $colour-black;
+				}
+				&.expired {
+					color: $colour-black;
+				}
+				&.finished {
+					color: $colour-burgundy;
+				}
+				&.unfinalised {
+					color: $colour-red;
+				}
+				&.accepted {
+					color: $colour-black;
+				}
+				&.overdue {
+					color: $colour-red;
+				}
+				&.due {
+					color: $colour-red;
+				}
+				.deleted {
+					color: $colour-black;
+				}
+				.rejected {
+					color: $colour-black;
+				}
+			}
+			
+			.invoicewrapper {
+				background: $colour-white;
+				border-radius: 20px;
+				margin: 2em;
+				padding: 1em;
+				
+				p.jobname {
+					font-size: 1.5em;
+					color: $colour-black;
+					font-weight: $font-bold;
+				}
+			}
+			
+		}
+		border-radius: 0 2px 2px 0;
+		.tab {
+			display: inline-block;
+			vertical-align: top;
+			cursor: pointer;
+			color: transparentize($colour-darkgrey, 0.5);
+			padding: 10px 0;
+		}
+		.tabs {
+			.tab-holder {
+				background-color: $colour-white;
+				display: inherit;
+				width: 100%;
+				border-radius: 0 2px 0 0;
+				
+				.half-tab {
+					width: 30%;
+					border-radius: 0 2px 0 0;
+					background-color: $colour-lightgrey;
+					label {
+						width: 100%;
+						text-align: center;
+						background-color: lighten($colour-lightgrey, 5%);
+						border-radius: 0 2px 0 0;
+					}
+					z-index: 2;
+					&.second {
+						width: 30%;
+						margin-left: -20px;
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+	
+	#tab-project:checked ~ .tabs #tab-project-label, 
+	#tab-invoice:checked ~ .tabs #tab-invoice-label {
+		cursor: default;
+		color: $colour-black; 
+		background-color: $colour-lightgrey;
+		border-radius: 0 2px 0 0;
+	}
+	
+	#tab-project:checked ~ .tabs #tab-project-panel, 
+	#tab-invoice:checked ~ .tabs #tab-invoice-panel {
+		display: block;
+		h2 {
+			transform-origin: left top;
+		}
+	}
+
+}
+
+.job_card {
+	z-index: 1;
+	
+	
+	&.large {
+		width: auto;
+		display: block;
+	}
+			
+	padding: 1em;
+	margin: 0 auto;
+	
+	display: inline-block;
+	
+	position: relative;
+	
+	.discount_banner {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		i {
+			color: $colour-black;
+			font-size: 150px;
+			width: 100%;
+		}
+		
+		p {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			z-index: 6;
+			color: $colour-white;
+			font-size: 0.75em;
+			margin: 30px 25px;
+		}
+	}
+	
+	
+	.card_button {
+		padding: 1em 1.5em;
+		border-radius: 2em;
+		font-size: 1em;
+		font-weight: $font-bold;
+		margin: 0.25em 0.5em;
+		display: inline-block;
+		text-align: center;
+		min-width: 40%;
+		
+		&.card_buttonsmall {
+			border: 1px solid $colour-grey;
+			padding: 0.5em;
+			font-size: 11px;
+			width: 25%;
+			margin: 0;
+		}
+		
+		&.card_right {
+			right: 0;
+		}
+		span {
+			display: inline-block;
+		}
+
+	}
+	.card_right {
+		float: right;
+		display: inline-block;
+	}
+	.card_button:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	
+	
+	.card_row {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		
+		.card_type {
+			font-size: 1em;
+			color: #000;
+			display: inline-block;
+			margin-bottom: 1em;
+			
+			&.pending{
+				border-bottom: 4px solid $colour-green;
+				border-radius: 2px;
+				&::after {
+					content: "PENDING"
+				}
+			}
+			&.offered,
+			&.new {
+				border-bottom: 4px solid $colour-yellow;
+				border-radius: 2px;
+				&::after {
+					content: "NEW JOB OFFERS"
+				}
+			}
+			&.optioned {
+				border-bottom: 4px solid $colour-yellow;
+				border-radius: 2px;
+				&::after {
+					content: "OPTION"
+				}
+			}
+			&.waiting {
+				border-bottom: 4px solid $colour-purple;
+				border-radius: 2px;
+				&::after {
+					content: "COMPLETED"
+				}
+			}
+			&.complete {
+				border-bottom: 4px solid $colour-purple;
+				border-radius: 2px;
+				&::after {
+					content: "COMPLETE"
+				}
+			}
+			&.completed {
+				border-bottom: 4px solid $colour-black;
+				border-radius: 2px;
+				&::after {
+					content: "COMPLETED"
+				}
+			}
+			&.past {
+				border-bottom: 4px solid $colour-black;
+				border-radius: 2px;
+				&::after {
+					content: "PAST"
+				}
+			}
+			&.expired {
+				border-bottom: 4px solid $colour-black;
+				border-radius: 2px;
+				&::after {
+					content: "EXPIRED"
+				}
+			}
+			&.finished {
+				border-bottom: 4px solid $colour-black;
+				border-radius: 2px;
+				&::after {
+					content: "FINISHED"
+				}
+			}
+			&.unfinalised {
+				border-bottom: 4px solid $colour-purple;
+				border-radius: 2px;
+				&::after {
+					content: "UNFINALISED"
+				}
+			}
+			&.accepted {
+				border-bottom: 4px solid $colour-black;
+				border-radius: 2px;
+				&::after {
+					content: "UPCOMING JOBS"
+				}
+			}
+			&.overdue {
+				border-bottom: 4px solid $colour-red;
+				border-radius: 2px;
+				&::after {
+					content: "OVERDUE"
+				}
+			}
+			&.deleted {
+				border-bottom: 4px solid $colour-red;
+				border-radius: 2px;
+				&::after {
+					content: "DELETED"
+				}
+			}
+			
+		}
+		
+		.card_jobname {
+			font-size: 1.25em;
+			text-transform: uppercase;
+			color: $colour-black;
+			
+			a {
+				color: $colour-black;
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				&:hover {
+					text-decoration: none;
+					border-bottom: 1px solid $colour-purple;
+				}
+			}
+		}
+		
+		.card_clientname {
+			a {
+				text-transform: uppercase;
+				color: $colour-grey;
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				
+				&:hover {
+					text-decoration: none;
+					border-bottom: 2px solid $colour-grey;
+				}
+			}
+		}
+					
+		.card_actions {
+			margin-top: 2em;
+			text-align: center;
+			
+			.card_button {
+				text-transform: uppercase;
+			}
+		}
+		
+		.job_callsheet {
+			position: relative;
+			display: block;
+			.action_holder {
+				position: relative;
+				display: inline-block;
+				width: 100%;
+				
+				a.card_button.card_buttonsmall {
+					width: auto;
+					margin-right: 0.25em;
+					margin-left: 0.25em;
+				}
+			}
+		}
+		
+		.working_with {
+			.row {
+				padding-left: 0;
+				padding-right: 0;
+				flex-wrap: wrap;
+				.column {
+					padding: 0.5rem;
+					max-width: 25%;
+					min-width: 25%;
+				}
+			}
+			.card_models {
+				width: 100%;
+				font-size: 1.25em;
+				text-transform: uppercase;
+				margin-top: 1.5em;
+				border-bottom: 1px dashed $colour-grey;
+			}
+			.modelView {
+				
+				.image {
+					position: relative;
+					height: inherit;
+				}
+				.model_name {
+					position: absolute;
+					bottom: 0;
+					text-align: center;
+					background-color: transparentize($colour-white, 0.5);
+					color: $colour-black;
+					padding: 0.5em 1em;
+					width: 100%;
+				}
+				&.clientview {
+					box-shadow: 0 0 5px transparent;
+					background: lighten($colour-lightgrey, 10%);
+					&:hover {
+						box-shadow: 0 0 5px $colour-black;
+					};
+				}
+				
+				.textblock {
+					padding: 1em;
+				}
+			}
+		}
+	}
+	
+}
+@media screen and (min-width: 768px) {
+	.job_card {
+
+		padding: 1em;
+		margin: 0.5em;
+		
+		width: 20em;
+		display: inline-block;
+		
+		.card_row {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			font-size: 1em;
+			
+			.card_type {
+				font-size: 0.75em;
+			}
+			
+			.card_jobdetails {
+				margin-top: 1em;
+				
+				p {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+				}
+				
+				i.fas {
+					width: 20px;
+				}
+			}
+			
+			.card_rate {
+				margin: 1em 0;
+				font-size: 1em;
+				position: relative;
+			}
+			
+			.card_jobdescription {
+				font-size: 1em;
+				line-height: 1.25em;
+				margin: 1em 0;
+			}
+
+			.card_jobtype {
+				font-size: 1.25em;
+				font-weight: bold;
+			}
+		}
+		
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.job_card {
+		border: 1px solid $colour-grey;
+		border-radius: 2px;
+		margin-bottom: 15px;
+		padding: 10px;
+		width: 150px;
+	
+		.card_jobdetails {
+			margin-top: 1em;
+			
+			p {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		
+		.card_rate {
+			font-weight: $font-bold;
+			font-size: 13px;
+			margin: 1em 0;
+		}
+		
+		.card_jobdescription {
+			font-size: 9px;
+			margin: 1em 0;
+		}
+		
+		.card_actions {
+			margin-top: 2em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+	
+}

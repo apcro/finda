@@ -1,0 +1,271 @@
+@import "../partials/_colours.scss";
+
+h4 { 
+	margin-left: 1em;
+}
+
+.row {
+	position: relative;
+	&.portfolio {
+		align-items: center;
+		.column {
+			.image_container {
+				width: 100%;
+				position: relative;
+				span {
+					&.leader {
+						border: 2px solid $colour-cyan;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				span.image_fader {
+					background: $colour-white;
+					opacity: 1;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					transition: opacity 1s;
+					img {
+						width: auto;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						-webkit-transform: translate(-50%, -50%);
+						-moz-transform: translate(-50%, -50%);
+						-ms-transform: translate(-50%, -50%);
+						-o-transform: translate(-50%, -50%);
+					}
+				}
+				.image {
+					border-radius: 10px;
+					border: 0.75em solid $colour-white;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					background-position: center;
+					background-size: cover;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				&:after {
+					content: "";
+					display: block;
+					padding-bottom: 100%;
+				}
+			}
+		}
+	}
+	
+}
+
+.measurements {
+	display: flex;
+	align-items: center;
+	
+	ul {
+		list-style-type: none;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		
+		li {
+			list-style-type: none;
+			padding: 0 1em;
+		}
+	}
+	
+}
+
+.croissant-block.croissant-modal {
+	padding: 4px !important;
+}
+
+a.remove {
+	border-radius: 5px 0 0 0;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 40px;
+	i {
+		color: $colour-black;
+	}
+}
+
+a.makeleader {
+	border-radius: 0 5px 0 0;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	text-align: center;
+	line-height: 40px;
+	i {
+		color: $colour-black;
+	}
+	
+	&:hover {
+		i {
+			color: $colour-green;
+		}
+	}
+}
+
+a.editavatar {
+	border-radius: 0 5px 0 0;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+	text-align: center;
+	line-height: 40px;
+	i {
+		color: #000;
+//		margin-top: 8px;
+	}
+}
+
+.button.small {
+	padding: 0.5em;
+	line-height: 0;
+}
+
+.button.small:hover {
+	background: #fff;
+	color: $colour-purple;
+}
+
+.imagecol .croissant-block.croissant-modal {
+	padding: 0.5em;
+	background-color: $colour-grey;
+	border-radius: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+	a.makeleader,
+	a.remove,
+	a.editavatar {
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+	}
+	
+	a.remove {
+		right: 9px;
+		bottom: 9px;
+	}
+	
+	a.makeleader,
+	a.editavatar {
+		left: 9px;
+		bottom: 9px;
+	}
+	
+}
+
+section#projects_header {
+	width: 100%;
+	margin-top: -2em;
+	background: $colour-white;
+	.row {
+		max-width: 80rem;
+	
+		.action_buttons {
+			width: 100%;
+			text-align: right;
+			.button {
+			}
+		}
+		.projects_top {
+			position: relative;
+			overflow: visible;
+			width: 100%;
+			
+			.project_collapsing {
+				width: 50%;
+				height: 96px;
+				font-weight: $font-thin;
+				max-width: 80em;
+				font-size: 48px;
+				display: flex;
+				align-items: flex-end;
+			}
+			
+			.project_filters {
+				width: 100%;
+				position: relative;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: row;
+				
+				.project_filter_tab {
+					max-width: 10em;
+					min-width: 10em;
+					margin-right: 1em;
+					display: inline-block;
+					border-bottom: 6px solid transparent;
+					&.active, &:hover {
+						&.portfolio {
+							border-bottom: 6px solid $colour-black;
+						}
+						&.polaroids {
+							border-bottom: 6px solid $colour-burgundy;
+						}
+					}
+				}
+				
+				.project_filter_tab {
+					height: 90px;
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					flex-wrap: row;
+					padding-bottom: 0.5em;
+					position: relative;
+					font-size: 1.25em;
+					&:hover {
+						cursor: pointer;
+						font-weight: $font-bold;
+					}
+					
+					div {
+						position: relative;
+						
+						span.badge {
+							margin-left: 0.5em;
+							width: 32px;
+							height: 32px;
+							text-align: center;
+							border-radius: 50%;
+							display: inline-block;
+							line-height: 30px;
+							&.portfolio {
+								border: 1px solid $colour-black;
+							}
+							&.polaroids {
+								border: 1px solid $colour-burgundy;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

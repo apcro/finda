@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname}</b> has rejected your counter-offer rate for <em>{$job.name}</em> on {$job.startdate|date_format:"%d %B %Y"}, but has proposed <strong>£{$rate}</strong> instead.

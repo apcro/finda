@@ -1,0 +1,46 @@
+@import "../partials/_colours.scss";
+
+section#requestdemoform {
+	h1, h2, h3 {
+		transform-origin: center center;
+		text-align: center;
+		padding: 1em 2em;
+		max-width: 65%;
+		margin: 0 auto;
+	}
+	.row {
+		max-width: 65%;
+		.input-row {
+			padding: 1em 2em;
+		}
+		input {
+			border: 1px solid $colour-lightgrey;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.top-bar {
+		.mobile {
+			a.topbar-responsive-logo {
+				img {
+					filter: invert(1);
+				}
+			}
+		}
+	}
+	section#requestdemoform {
+		margin-top: 3em;
+		h1, h2, h3 {
+			max-width: 100%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.row {
+			max-width: 100%;
+		}
+	}
+	section#footer h3 {
+		transform-origin: center center;
+	}
+}

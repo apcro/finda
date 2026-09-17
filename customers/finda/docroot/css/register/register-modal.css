@@ -1,0 +1,388 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.register-modal {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  width: 0;
+  text-align: center;
+  font-size: 250%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.register-modal p span {
+  font-size: 30%;
+}
+
+.emailError {
+  font-weight: 700;
+  color: #C93B3B;
+  padding: 0.25em;
+  position: absolute;
+  right: 0;
+  bottom: -5%;
+}
+
+.registererror {
+  background: rgba(184, 20, 43, 0.05) !important;
+  border-bottom: 1px solid #C93B3B !important;
+}
+
+.registerModal {
+  background: none;
+  border: none;
+  width: 1030px;
+}
+
+.inside-label {
+  cursor: pointer;
+  user-select: none;
+  padding: 6px 8px;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.inside-label:not(:last-child) {
+  margin-right: 6px;
+}
+
+.inside-label span {
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.inside-label span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  transform: scale(1);
+  border: 2px solid #FF4040;
+  transition: all 0.2s ease;
+}
+
+.inside-label span:first-child svg {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.inside-label span:last-child {
+  padding-left: 8px;
+  line-height: 18px;
+}
+
+.inside-label:hover span:first-child {
+  border-color: #080808;
+}
+
+.main:checked + .inside-label span:first-child {
+  background: #FF4040;
+  border-color: #FF4040;
+  animation: myAnimation 0.4s ease;
+}
+
+.main:checked + .inside-label span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.tick-icon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 650px) {
+  .inside-label {
+    width: 100%;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+}
+@keyframes myAnimation {
+  50% {
+    transform: scale(0.9);
+  }
+}
+.register-modal {
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.register-modal p.jointext {
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  margin: 0;
+}
+.register-modal p.jointext span {
+  font-weight: 800;
+  font-size: 28px;
+}
+.register-modal p.jointext:hover {
+  cursor: pointer;
+  color: #080808;
+  border-top: 2px solid #080808;
+  border-bottom: 2px solid #080808;
+}
+
+.fakeinput {
+  margin-top: 22px;
+}
+
+.registerModal a:not(.button),
+.registerModal a:hover:not(.button) {
+  color: #000;
+}
+
+.registerModal a:hover {
+  text-decoration: none;
+}
+
+.registerModal.croissant-block {
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.registerModal .row,
+.registerModal .column {
+  padding: 0;
+  border-radius: 2px;
+  margin: 0;
+  flex-flow: nowrap;
+}
+
+#register .column {
+  margin: 0 0.5em;
+  text-align: left;
+}
+
+#register input[type=email],
+#register input[type=password],
+#register input[type=text],
+#register textarea,
+#register select {
+  color: #333;
+  margin-bottom: 1em;
+  font-size: 14px;
+  text-align: left;
+}
+
+#register label {
+  text-align: left;
+}
+
+#register-form-brand.callout.brand input[type=email],
+#register-form-brand.callout.brand input[type=password],
+#register-form-brand.callout.brand input[type=text],
+#register-form-brand.callout.brand textarea,
+#register-form-brand.callout.brand select {
+  border-color: rgba(8, 8, 8, 0.2);
+  border-width: 1px;
+}
+
+#register-form-brand.callout.brand input[type=email]:hover,
+#register-form-brand.callout.brand input[type=password]:hover,
+#register-form-brand.callout.brand input[type=text]:hover,
+#register-form-brand.callout.brand textarea:hover {
+  border-color: #080808;
+}
+
+#register-form-model.callout.model input[type=email],
+#register-form-model.callout.model input[type=password],
+#register-form-model.callout.model input[type=text],
+#register-form-model.callout.model textarea,
+#register-form-model.callout.model select {
+  border-color: rgba(8, 8, 8, 0.2);
+  border-width: 1px;
+}
+
+.select-wrap::after {
+  border-color: #080808;
+}
+
+#register-form-model.callout.model input[type=email]:hover,
+#register-form-model.callout.model input[type=password]:hover,
+#register-form-model.callout.model input[type=text]:hover,
+#register-form-model.callout.model textarea:hover {
+  border-color: #080808;
+}
+
+#register-form-brand .button.success:hover {
+  background-color: #fff;
+  color: #FF4040;
+  text-decoration: none;
+}
+
+#register-form-brand.callout.brand input[type=checkbox] {
+  border-radius: 0;
+  border: 1px solid #080808;
+}
+
+.step2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #register-form-brand a:not(.button),
+#register-form-model a:not(.button) {
+    color: #080808;
+    line-height: 20px;
+  }
+
+  #register-form-brand,
+#register-form-model {
+    padding: 2em;
+    font-size: 0.75em;
+  }
+}
+
+/*# sourceMappingURL=register-modal.css.map */

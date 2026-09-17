@@ -1,0 +1,100 @@
+/* modal backgrounds */
+
+#croissant-overlay .croissant-block.croissant-modal {
+	width: initial;
+	transition: 0.2s ease-in-out;
+}
+
+.croissant-block.croissant-modal {
+	border: none;
+	border-radius: 2px;
+	padding: 20px;
+	min-width: 20em;
+	
+	a.croissant-close {
+		
+		&:before, &:after {
+			position: absolute;
+			left: 13px;
+			content: ' ';
+			height: 25px;
+			width: 2px;
+			background-color: transparentize($colour-white, 0.8);
+		}
+		&:before {
+			transform: rotate(45deg);
+		}
+		&:after {
+			transform: rotate(-45deg);
+		}
+		
+		&:hover:before, &:hover:after {
+			background-color: $colour-white;
+		}
+
+		&.grey {
+			&:before, &:after {
+				background-color: $colour-grey;
+			}
+		}
+		&.white {
+			&:before, &:after {
+				background-color: $colour-grey;
+			}
+		}
+		&.borderwhite {
+			border: 1px solid $colour-white;
+			border-radius: 10px;
+			padding: 5px;
+			&:hover {
+				border-color: $colour-cyan;
+			}
+		}
+		
+		&.outside {
+			position: absolute;
+			right: -40px;
+			top: 40px;
+		}
+	
+	} 
+}
+
+.modalWhite {
+	background-color: $colour-white;
+}
+
+.modalBlue {
+	background-color: $colour-white;
+	border: 1px solid $colour-burgundy;
+	box-shadow: 0px 0px 5px $colour-burgundy;
+}
+
+/*tinygrowl*/
+#overlay .block.growl {
+	position: fixed;
+	bottom: -110px;
+	right: 25px;
+	padding: 10px;
+	box-shadow: 0px 0px 5px $colour-burgundy;
+	margin: 0;
+	width: 290px;
+	text-align: left;
+	background: $colour-white;
+	color: $colour-black;
+}
+
+#overlay .block.growl span.title {
+	font-weight: bold;
+}
+#overlay .block.growl span.title.success {
+	color: $colour-burgundy;
+}
+#overlay .block.growl span.title.error {
+	color: $colour-red;
+}
+#overlay .block.growl span.title.notice {
+	color: $colour-grey;
+}
+
+/*endtinygrowl*/

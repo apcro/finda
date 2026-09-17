@@ -1,0 +1,1 @@
+{$firstname} {$lastname} has declined your option for {$job.name} on {$job.startdate|date_format:"%d %B %Y"}.

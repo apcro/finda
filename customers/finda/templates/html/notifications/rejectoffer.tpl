@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname}</b> has declined your job offer for {$job.name} on {$job.startdate|date_format:"%d %B %Y"}.{if $reasons}<br />The model has given the following reason{if $reasons.count neq 1}s{/if}: "<em>{$reasons.text}</em>."{/if} Please try to request another model.

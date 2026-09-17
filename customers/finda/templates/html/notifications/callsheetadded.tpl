@@ -1,0 +1,1 @@
+<b>{$job.company_name}</b> has added a <a data-callsheet="{$job.id}">callsheet for {$job.name}</a> on {$job.startdate|date_format:"%d %B %Y"}. You can <a data-callsheet="{$job.id}">download it now</a>, or download it later from your job board.

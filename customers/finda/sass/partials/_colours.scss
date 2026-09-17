@@ -1,0 +1,73 @@
+// Colours
+
+$colour-black:			#080808;
+$colour-white:			#FFFFFF; 
+$colour-darkgreen:		#a7bab8;
+$colour-darkpurple:		#6479d5;
+$colour-darkpink:		#d71e82;
+$colour-yellow:			#ffba1c;
+$colour-lightblue:		#59E7F7;
+$colour-pink:			#D300BE;
+$colour-lightgreen:		#d5e1df;
+$colour-purple:			#C353E3;
+$colour-grey:			#99A3A3;
+$colour-darkgrey:		#565c66;
+$colour-cyan:			#13AFC0;
+$colour-red:			#C93B3B; // #F12D2D;
+$colour-darkred:		#AF0404;
+$colour-burgundy:		#FF4040; // #783147; // #7A3147;
+$colour-lightgrey:		#E3E3E3;
+
+// check the use of these
+$colour-iconborder:		#b3b3b3;
+$colour-iconbackground:	#f2f2f2;
+$colour-green:			#00DD00;
+
+$font-thin:				300;
+$font-light:			400;
+$font-normal:			500;
+$font-medium: 			600;
+$font-bold: 			700;
+$font-black:			800;
+$font-ultra:			900;
+
+@mixin scaleme {
+	display: inline-block;
+}
+
+.text-thin			{ font-weight: $font-thin; }
+.text-light 		{ font-weight: $font-light; }
+.text-normal 		{ font-weight: $font-normal; }
+.text-medium 		{ font-weight: $font-medium; }
+.text-bold			{ font-weight: $font-bold; }
+.text-ultra 		{ font-weight: $font-ultra; }
+
+.text-white 		{ color: $colour-white;}
+.text-black 		{ color: $colour-black;}
+.text-blackcolour 	{ color: $colour-black;}
+.text-cyan 			{ color: $colour-cyan;}
+.text-yellow 		{ color: $colour-yellow;}
+.text-purple 		{ color: $colour-purple;}
+.text-findared 		{ color: $colour-red;}
+.text-red 			{ color: $colour-red;}
+.text-grey 			{ color: $colour-grey;}
+.text-lightgreen 	{ color: $colour-lightgreen;}
+.text-darkgreen 	{ color: $colour-darkgreen;}
+.text-pink			{ color: $colour-pink;}
+.text-green			{ color: $colour-green;}
+.text-darkgrey		{ color: $colour-darkgrey;}
+.text-lightgrey		{ color: $colour-lightgrey;}
+.text-burgundy		{ color: $colour-burgundy;}
+
+// background-colours
+.bg-black		{background-color: $colour-black;}
+.bg-grey		{background-color: $colour-grey;}
+.bg-bordergrey	{background-color: $colour-grey;}
+.bg-white		{background-color: $colour-white;}
+.bg-purple		{background-color: $colour-purple;}
+.bg-yellow		{background-color: $colour-yellow;}
+.bg-red			{background-color: $colour-red;}
+.bg-pink		{background-color: $colour-pink;}
+.bg-burgundy	{background-color: $colour-burgundy;}
+
+$base-fontsize:		14px;

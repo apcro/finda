@@ -1,0 +1,56 @@
+@import "../partials/_colours.scss";
+
+#discoverypicture,
+#thepicture {
+	display: none;
+}
+
+.column {
+	p {
+		margin: 1em 0 2em 0;
+	}
+	
+	&.picture {
+		flex-wrap: nowrap;
+		width: 20em;
+		max-width: 20em;
+		align-items: center;
+	}
+}
+#discoveryimage {
+	width: 212px;
+	height: 248px;
+	border-radius: 2px;
+	transform: translate(-50%, 0);
+	.guillotine-window {
+		border-radius: 2px;
+	}}
+
+#theparent {
+	width: 220px;
+	height: 220px;
+	border-radius: 2px;
+	transform: translate(-50%, 14px);
+	.guillotine-window {
+		border-radius: 2px;
+	}
+}
+
+#discoveryimage, 
+#theparent {
+	position: relative;
+ 	left: 50%;
+	border: 5px solid $colour-burgundy;
+}
+
+#controls {
+	margin-top: 4em;
+	width: 100%;
+	font-size: 2em;
+	a {
+		color: $colour-black;
+		&:hover {
+			color: $colour-burgundy;
+		}
+	}
+}

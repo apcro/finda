@@ -1,0 +1,18 @@
+@import "../partials/_colours.scss";
+
+h2 {
+	transform-origin: left top;
+}
+.column.modelcards {
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	
+	a {
+		display: inline-block;
+		margin: 0.625em;
+	}
+	
+}

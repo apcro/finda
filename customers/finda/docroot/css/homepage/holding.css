@@ -1,0 +1,304 @@
+.text-thin {
+  font-weight: 300; }
+
+.text-light {
+  font-weight: 400; }
+
+.text-normal {
+  font-weight: 500; }
+
+.text-medium {
+  font-weight: 600; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-ultra {
+  font-weight: 900; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-black {
+  color: #080808; }
+
+.text-blackcolour {
+  color: #080808; }
+
+.text-cyan {
+  color: #13AFC0; }
+
+.text-yellow {
+  color: #ffba1c; }
+
+.text-purple {
+  color: #C353E3; }
+
+.text-findared {
+  color: #C93B3B; }
+
+.text-red {
+  color: #C93B3B; }
+
+.text-grey {
+  color: #99A3A3; }
+
+.text-lightgreen {
+  color: #d5e1df; }
+
+.text-darkgreen {
+  color: #a7bab8; }
+
+.text-pink {
+  color: #D300BE; }
+
+.text-green {
+  color: #00DD00; }
+
+.text-darkgrey {
+  color: #565c66; }
+
+.text-lightgrey {
+  color: #E3E3E3; }
+
+.text-burgundy {
+  color: #FF4040; }
+
+.bg-black {
+  background-color: #080808; }
+
+.bg-grey {
+  background-color: #99A3A3; }
+
+.bg-bordergrey {
+  background-color: #99A3A3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.bg-purple {
+  background-color: #C353E3; }
+
+.bg-yellow {
+  background-color: #ffba1c; }
+
+.bg-red {
+  background-color: #C93B3B; }
+
+.bg-pink {
+  background-color: #D300BE; }
+
+.bg-burgundy {
+  background-color: #FF4040; }
+
+body {
+  padding-bottom: 0; }
+
+#holding {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/holding_bg2.jpg);
+  background-size: cover;
+  background-position: center 35%;
+  color: #fff; }
+  #holding .photocredit {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #999;
+    z-index: 10002;
+    font-size: 50%; }
+  #holding .switcher {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    color: #999;
+    z-index: 10002; }
+  #holding .wrapper {
+    max-width: 75rem;
+    height: 100vh;
+    margin: 0 auto; }
+  #holding .logo {
+    background-image: url(/images/logo_red_outline.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60em;
+    height: 20em;
+    position: relative;
+    margin: 5em auto 0 auto; }
+    #holding .logo h1 {
+      width: 65%;
+      overflow: auto;
+      margin: 2em auto auto auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      font-size: 3em;
+      font-weight: 500; }
+  #holding .mailchimp {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30em; }
+    #holding .mailchimp input {
+      border-bottom: 1px solid #b8142b;
+      margin-bottom: 3em; }
+    #holding .mailchimp label {
+      font-size: 120%; }
+    #holding .mailchimp .button {
+      padding: 1em 3em;
+      margin: 2em 1em;
+      line-height: 2em;
+      border-radius: 2em;
+      cursor: pointer;
+      background-color: #b8142b;
+      color: #fff;
+      border: 0;
+      display: inline-block;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+      width: 25em; }
+    #holding .mailchimp .button:hover {
+      color: #b8142b;
+      background-color: #fff; }
+    #holding .mailchimp .radio {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      margin-top: 1em; }
+      #holding .mailchimp .radio .control__indicator {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #b8142b;
+        border-radius: 50%;
+        background: transparent; }
+      #holding .mailchimp .radio label {
+        margin-right: 2em;
+        margin-left: 2em;
+        padding: 0 2em 0 0;
+        display: inline-block;
+        position: relative; }
+      #holding .mailchimp .radio label:hover {
+        cursor: pointer; }
+      #holding .mailchimp .radio input[type=radio] {
+        display: none; }
+        #holding .mailchimp .radio input[type=radio] :checked ~ .control__indicator {
+          background: #2aa1c0; }
+      #holding .mailchimp .radio .control input:checked ~ .control__indicator::after {
+        display: block; }
+      #holding .mailchimp .radio .control--radio .control__indicator::after {
+        left: 4px;
+        top: 4px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #fff; }
+      #holding .mailchimp .radio .control__indicator::after {
+        content: '';
+        position: absolute;
+        display: none; }
+    #holding .mailchimp #mce-responses {
+      text-align: center;
+      font-size: 120%;
+      margin-top: 1em; }
+      #holding .mailchimp #mce-responses a {
+        display: none;
+        color: #b8142b;
+        text-decoration: none; }
+      #holding .mailchimp #mce-responses a:hover {
+        text-decoration: underline; }
+  #holding .socialbuttons {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 32px;
+    margin: 0 auto;
+    width: 100%; }
+    #holding .socialbuttons a {
+      padding: 0 0.5em 0 0;
+      display: inline-block; }
+    #holding .socialbuttons span {
+      top: -8px;
+      position: relative; }
+
+#landing-instagram {
+  background-color: #f90857;
+  background-image: url(/images/welcome-instagram-bg.png);
+  background-size: cover;
+  background-position: center; }
+  #landing-instagram .vert-center {
+    position: relative; }
+  #landing-instagram .row {
+    padding: 0; }
+  #landing-instagram .column {
+    margin: 0;
+    padding: 0; }
+  #landing-instagram .images {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  #landing-instagram .instaimage {
+    display: relative; }
+    #landing-instagram .instaimage img {
+      width: 284px;
+      height: 283px; }
+
+@media screen and (max-width: 1024px) {
+  .row {
+    max-width: 100vw !important; }
+
+  .column {
+    max-width: 100vw;
+    padding: 0; }
+
+  #holding .logo {
+    max-width: 100vh;
+    width: 90%;
+    height: 15em; }
+    #holding .logo h1 {
+      margin-top: 4em; }
+  #holding .mailchimp {
+    padding-left: 0.25em;
+    padding-right: 0.25em; } }
+@media screen and (max-width: 480px) {
+  .row {
+    max-width: 100vw !important; }
+
+  .column {
+    max-width: 100vw;
+    padding: 0; }
+
+  #holding {
+    background-position: 70% 35%; }
+    #holding .logo {
+      max-width: 100vh;
+      width: 90%; }
+      #holding .logo h1 {
+        font-size: 100%;
+        margin-top: 6em; }
+    #holding .mailchimp {
+      padding-left: 0.25em;
+      padding-right: 0.25em; } }
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #99A3A3;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #99A3A3; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #99A3A3; }
+
+/*# sourceMappingURL=holding.css.map */

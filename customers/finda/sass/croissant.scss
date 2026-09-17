@@ -1,0 +1,93 @@
+/* Croissant CSS */
+
+@import "partials/_colours.scss";
+
+// Modal styling
+
+.croissant-block {
+	padding:10px 10px 0 10px;
+	margin-bottom:20px;
+	position:relative;
+	background-color: #fff;
+}
+
+#croissant-overlay {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 10001;
+	background: rgba(0,0,0,0.75);
+}
+
+.croissant-block.croissant-modal {
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	padding: 1em;
+}
+
+.croissant-block.croissant-modal h3 {
+	margin: 1em auto;
+	text-align: center;
+	max-width: 80%;
+	transform-origin: center center;
+}
+.croissant-block.croissant-modal p {
+	margin-bottom: 0;
+	padding: 1em;
+}
+
+.croissant-block.croissant-modal .croissant-button {
+	margin-bottom:10px;
+}
+
+.croissant-block.croissant-modal a.croissant-close {
+	top: 10px;
+	right: -50px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid transparentize($colour-white, 0.8);
+	border-radius: 10px;
+	position: absolute;
+	
+	&:before, &:after {
+		background-color: transparentize($colour-white, 0.8);
+		height: 25px;
+		left: 13px;
+		top: 1px;
+	}
+	
+	&:hover {
+		border: 1px solid $colour-white;
+	}
+	
+	&:hover:after, &:hover:before {
+		background-color: $colour-white;
+		
+	}
+	
+}
+
+.croissant-close:hover {
+	cursor: pointer;
+}
+
+#spinner-overlay {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 10001;
+}

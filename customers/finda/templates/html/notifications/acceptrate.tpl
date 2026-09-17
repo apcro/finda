@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname}</b> has accepted your counter-offer for {$job.name} on {$job.startdate|date_format:"%d %B %Y"}.

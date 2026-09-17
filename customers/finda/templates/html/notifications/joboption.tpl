@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname} {if $company_name neq ''}(<a href="{$job.company_website}" target="_blank">{$job.company_name}</a>){/if}</b> has shortlisted you for <a href="/jobs/view/{$job.id}">an upcoming project</a> on {$job.startdate|date_format:"%d %B %Y"}.

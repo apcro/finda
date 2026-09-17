@@ -1,0 +1,134 @@
+.text-thin {
+  font-weight: 300; }
+
+.text-light {
+  font-weight: 400; }
+
+.text-normal {
+  font-weight: 500; }
+
+.text-medium {
+  font-weight: 600; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-ultra {
+  font-weight: 900; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-black {
+  color: #080808; }
+
+.text-blackcolour {
+  color: #080808; }
+
+.text-cyan {
+  color: #13AFC0; }
+
+.text-yellow {
+  color: #ffba1c; }
+
+.text-purple {
+  color: #C353E3; }
+
+.text-findared {
+  color: #C93B3B; }
+
+.text-red {
+  color: #C93B3B; }
+
+.text-grey {
+  color: #99A3A3; }
+
+.text-lightgreen {
+  color: #d5e1df; }
+
+.text-darkgreen {
+  color: #a7bab8; }
+
+.text-pink {
+  color: #D300BE; }
+
+.text-green {
+  color: #00DD00; }
+
+.text-darkgrey {
+  color: #565c66; }
+
+.text-lightgrey {
+  color: #E3E3E3; }
+
+.text-burgundy {
+  color: #FF4040; }
+
+.bg-black {
+  background-color: #080808; }
+
+.bg-grey {
+  background-color: #99A3A3; }
+
+.bg-bordergrey {
+  background-color: #99A3A3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.bg-purple {
+  background-color: #C353E3; }
+
+.bg-yellow {
+  background-color: #ffba1c; }
+
+.bg-red {
+  background-color: #C93B3B; }
+
+.bg-pink {
+  background-color: #D300BE; }
+
+.bg-burgundy {
+  background-color: #FF4040; }
+
+#cookies {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  box-shadow: 2px 2px 25px black;
+  color: #080808;
+  font-size: 14px;
+  height: inherit;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2000;
+  display: none; }
+
+#cookies p {
+  letter-spacing: 0;
+  margin: 10px auto;
+  max-width: 80%; }
+#cookies button {
+  border: 5px #FF4040;
+  border-radius: 2px;
+  font-size: 1.5em;
+  background-color: #FF4040;
+  color: #FFFFFF;
+  cursor: pointer;
+  float: right;
+  overflow: hidden;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  padding: 0.25em; }
+
+.inner {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+/*# sourceMappingURL=cookies.css.map */

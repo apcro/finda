@@ -1,0 +1,81 @@
+@import "partials/_colours.scss";
+
+#main {
+	padding: 0 !important;
+	margin: 0 !important;
+	min-height: inherit !important;
+}
+.panel-toggle-button {
+	z-index: 10;
+	mix-blend-mode: exclusion;
+	
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+		background-color: $colour-white;
+	}
+	.is-active {
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: $colour-black;
+		}
+	}
+}
+
+#mobilemenu {
+	ul {
+		list-style-type: none;
+		margin-left: 10px;
+		li {
+			a {
+				text-decoration: none;
+				border-bottom: none !important;
+				border-radius: 0 !important;
+			}
+		}
+	}
+}
+
+section#landing {
+	color: $colour-black;
+	background-color: $colour-white;
+	
+	.leadimage {
+		min-height: 100vh;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	.leadlogo {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		left: inherit;
+		margin-top: 1em;
+		img {
+			height: 26px;
+		}
+		
+	}
+	.topmenu {
+		position: absolute;
+		right: 3em;
+		top: 2em;
+		ul {
+			list-style-type: none;
+			
+			li {
+				display: inline-block;
+				a {
+					color: $colour-white;
+					font-weight: normal;
+					mix-blend-mode: exclusion;
+					
+					&:hover {
+						position: relative;
+						border-bottom: 1px solid $colour-white;
+						transition: none;
+					}
+				}
+			}
+		}
+	}
+}

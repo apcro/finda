@@ -1,0 +1,361 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.team-body {
+  height: 100vh !important;
+  background-color: #002cd7;
+}
+
+p, h1 {
+  color: #fff;
+}
+
+h2, h3 {
+  color: #ffba1c;
+}
+
+h1 span {
+  font-weight: 700;
+  color: #ffba1c;
+  border: 5px solid #ffba1c;
+  height: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  top: 0.6em;
+  width: 0.85em;
+}
+
+@media only screen and (min-width: 768px) {
+  .team-body {
+    overflow: hidden;
+  }
+
+  section#landing-team {
+    background-color: #002cd7;
+    overflow: none !important;
+    height: 100vh;
+    display: flex;
+  }
+  section#landing-team > div {
+    flex: 1;
+  }
+  section#landing-team .finda-logo {
+    position: relative;
+  }
+  section#landing-team .finda-logo .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    float: left;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-repeat: none;
+    background-color: #002cd7;
+    transition: opacity 1s linear 0.5s;
+  }
+  section#landing-team .finda-logo .bg.active {
+    opacity: 1;
+  }
+  section#landing-team .finda-logo .finda-logo-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+  }
+  section#landing-team .finda-logo .finda-logo-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  section#landing-team .team-details {
+    margin: 0;
+  }
+  section#landing-team .team-details section#mariya,
+section#landing-team .team-details section#tom,
+section#landing-team .team-details section#martine,
+section#landing-team .team-details section#leanne {
+    position: relative;
+  }
+  section#landing-team .team-details section#mariya .fullheight,
+section#landing-team .team-details section#tom .fullheight,
+section#landing-team .team-details section#martine .fullheight,
+section#landing-team .team-details section#leanne .fullheight {
+    display: block;
+    margin-top: 50%;
+    transform: translate(0, -50%);
+  }
+  section#landing-team .team-details h1 {
+    margin: 0;
+    font-weight: 800;
+    position: relative;
+    font-size: 3rem;
+    padding-left: 2rem;
+    z-index: 5;
+    background-color: #002cd7;
+  }
+  section#landing-team .team-details .team-finda-scroll {
+    height: 100%;
+    position: relative;
+    padding-left: 1.5em;
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda {
+    overflow: hidden;
+    padding-left: 1rem;
+    height: 100%;
+    position: relative;
+    padding-right: 10em;
+    /*
+    .full-height {
+    	padding-top: 4em; 
+    	padding-bottom: 8em;
+    }
+    */
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda h2 {
+    font-weight: 700;
+    text-transform: none;
+    position: relative;
+    font-size: 2.6em;
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 0;
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda .staff {
+    position: relative;
+  }
+  section#landing-team .team-details .team-finda-scroll .about-finda .staff .full-height {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+  }
+
+  #scroll-indicator-bullets {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    right: 8em;
+    z-index: 8;
+    font-size: 0.8rem;
+  }
+
+  #scroll-indicator-bullets ul {
+    list-style: none;
+  }
+
+  #scroll-indicator-bullets ul li {
+    position: relative;
+    padding-right: 7px;
+  }
+
+  #scroll-indicator-bullets ul li a {
+    display: block;
+    color: black;
+    padding: 1.75em 0;
+    -webkit-user-select: none !important;
+    -webkit-touch-callout: none;
+  }
+
+  #scroll-indicator-bullets ul li .bullet-nav-title {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    text-align: left;
+    padding: 0 0 0 1em;
+    color: #fff;
+    font-weight: 700;
+    white-space: nowrap;
+    transform: translate(0, -50%);
+  }
+
+  #scroll-indicator-bullets ul li .bullet-item-link .circle {
+    position: relative;
+    top: 2px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid #ffba1c;
+    background: transparent;
+  }
+
+  #scroll-indicator-bullets ul li .bullet-item-link.active .circle:after {
+    border: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    border-radius: 50%;
+    left: -10px;
+    top: -10px;
+    position: relative;
+    background: transparent;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section#landing-team {
+    overflow-y: scroll;
+  }
+  section#landing-team .full-height {
+    padding: 2em;
+  }
+  section#landing-team h1 {
+    font-size: 1.75rem;
+    padding: 1em 1em 0 1em;
+  }
+  section#landing-team h2 {
+    font-size: 1.5em;
+  }
+  section#landing-team h3 {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=team.css.map */

@@ -1,0 +1,357 @@
+.text-thin {
+  font-weight: 300; }
+
+.text-light {
+  font-weight: 400; }
+
+.text-normal {
+  font-weight: 500; }
+
+.text-medium {
+  font-weight: 600; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-ultra {
+  font-weight: 900; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-black {
+  color: #080808; }
+
+.text-blackcolour {
+  color: #080808; }
+
+.text-cyan {
+  color: #13AFC0; }
+
+.text-yellow {
+  color: #ffba1c; }
+
+.text-purple {
+  color: #C353E3; }
+
+.text-findared {
+  color: #C93B3B; }
+
+.text-red {
+  color: #C93B3B; }
+
+.text-grey {
+  color: #99A3A3; }
+
+.text-lightgreen {
+  color: #d5e1df; }
+
+.text-darkgreen {
+  color: #a7bab8; }
+
+.text-pink {
+  color: #D300BE; }
+
+.text-green {
+  color: #00DD00; }
+
+.text-darkgrey {
+  color: #565c66; }
+
+.text-lightgrey {
+  color: #E3E3E3; }
+
+.text-burgundy {
+  color: #FF4040; }
+
+.bg-black {
+  background-color: #080808; }
+
+.bg-grey {
+  background-color: #99A3A3; }
+
+.bg-bordergrey {
+  background-color: #99A3A3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.bg-purple {
+  background-color: #C353E3; }
+
+.bg-yellow {
+  background-color: #ffba1c; }
+
+.bg-red {
+  background-color: #C93B3B; }
+
+.bg-pink {
+  background-color: #D300BE; }
+
+.bg-burgundy {
+  background-color: #FF4040; }
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 1em 0;
+  transform-origin: left top; }
+
+.offerrow {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+  border-bottom: 1px solid #99A3A3; }
+  .offerrow .jobname {
+    color: #C353E3;
+    font-weight: 700; }
+
+.offerrow:hover {
+  background-color: rgba(195, 83, 227, 0.05); }
+
+.offerrow.highlight {
+  background-color: #d5e1df; }
+
+#rejectJob,
+#negotiateJob {
+  padding: 2em 4em;
+  color: #080808;
+  border: none;
+  border-radius: 0;
+  text-align: center; }
+  #rejectJob h2,
+  #negotiateJob h2 {
+    font-weight: 700;
+    font-size: 1.375em;
+    border-bottom: 1px solid #080808;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    margin-bottom: 0; }
+  #rejectJob label,
+  #negotiateJob label {
+    text-align: left;
+    font-weight: 800; }
+    #rejectJob label.tgl-btn,
+    #negotiateJob label.tgl-btn {
+      height: 1em;
+      width: 2em; }
+  #rejectJob .tgl-slider:checked + .tgl-btn,
+  #negotiateJob .tgl-slider:checked + .tgl-btn {
+    background: #080808; }
+  #rejectJob .tgl-slider + .tgl-btn,
+  #negotiateJob .tgl-slider + .tgl-btn {
+    background: rgba(8, 8, 8, 0.2);
+    border: 1px solid #080808; }
+  #rejectJob input,
+  #negotiateJob input {
+    color: #080808;
+    font-size: 32pt;
+    min-width: 4em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em; }
+  #rejectJob .button.success,
+  #negotiateJob .button.success {
+    text-transform: uppercase;
+    font-size: 120%;
+    padding: 0.5em 1em;
+    margin: 1em 0; }
+  #rejectJob input[type="email"],
+  #rejectJob input[type="password"],
+  #rejectJob input[type="text"],
+  #rejectJob textarea,
+  #rejectJob select,
+  #negotiateJob input[type="email"],
+  #negotiateJob input[type="password"],
+  #negotiateJob input[type="text"],
+  #negotiateJob textarea,
+  #negotiateJob select {
+    color: #080808;
+    font-weight: 800;
+    border-bottom: 1px solid #080808; }
+
+#tab-open:checked ~ .tabs #tab-open-label,
+#tab-accepted:checked ~ .tabs #tab-accepted-label,
+#tab-finished:checked ~ .tabs #tab-finished-label,
+#tab-unfinalised:checked ~ .tabs #tab-unfinalised-label,
+#tab-completed:checked ~ .tabs #tab-completed-label,
+#tab-expired:checked ~ .tabs #tab-expired-label {
+  cursor: default;
+  border-bottom: 3px solid #C353E3; }
+
+#tab-open:checked ~ .tabs #tab-open-panel,
+#tab-accepted:checked ~ .tabs #tab-accepted-panel,
+#tab-finished:checked ~ .tabs #tab-finished-panel,
+#tab-unfinalised:checked ~ .tabs #tab-unfinalised-panel,
+#tab-completed:checked ~ .tabs #tab-completed-panel,
+#tab-expired:checked ~ .tabs #tab-expired-panel {
+  display: block; }
+
+.tabs.flex-tabs label.tab {
+  margin: 1em;
+  margin-left: 1.5em; }
+
+.worko-tabs .flex-tabs .tab {
+  flex-grow: 1; }
+
+.tabs.flex-tabs label:hover {
+  cursor: pointer; }
+
+.worko-tabs .tab:hover {
+  border-bottom: 3px solid #C353E3; }
+
+.lastminute {
+  margin: 0;
+  border: 1px solid #FF4040;
+  border-radius: 2px;
+  padding: 1em;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+  .lastminute ul {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 80%; }
+  .lastminute h4 {
+    font-size: 1em;
+    padding: 0 0 0.25em 0;
+    margin: 0; }
+    .lastminute h4:hover {
+      cursor: pointer; }
+  .lastminute .tickbox_holder.today > a.rounded_tickbox {
+    border: 3px solid #FF4040; }
+  .lastminute .tickbox_holder > span {
+    font-size: 80%; }
+  .lastminute .tickbox_holder a.rounded_tickbox {
+    min-width: 32px;
+    min-height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #080808;
+    text-decoration: none;
+    border: 2px solid #080808;
+    background-color: #FFFFFF; }
+    .lastminute .tickbox_holder a.rounded_tickbox.disabled {
+      border: 2px solid #f2f2f2; }
+      .lastminute .tickbox_holder a.rounded_tickbox.disabled:hover {
+        cursor: default; }
+    .lastminute .tickbox_holder a.rounded_tickbox.disabled.selected:after, .lastminute .tickbox_holder a.rounded_tickbox.disabled.deselected:after {
+      color: #f2f2f2 !important; }
+    .lastminute .tickbox_holder a.rounded_tickbox.neutral:after {
+      color: #FFFFFF;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f22d"; }
+    .lastminute .tickbox_holder a.rounded_tickbox.selected:after {
+      color: #00DD00;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f00c"; }
+    .lastminute .tickbox_holder a.rounded_tickbox.deselected:after {
+      color: #C93B3B;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f00d"; }
+    .lastminute .tickbox_holder a.rounded_tickbox:hover:not(.disabled) {
+      border: 2px solid #FF4040; }
+  .lastminute .tickbox_holder span {
+    display: block; }
+    .lastminute .tickbox_holder span.today {
+      font-weight: 700; }
+
+@media screen and (min-width: 768px) {
+  section#projects_header {
+    width: 100%;
+    margin-top: -2em; }
+    section#projects_header .row .projects_top {
+      position: relative;
+      overflow: visible;
+      width: 100%; }
+      section#projects_header .row .projects_top .project_collapsing {
+        margin-bottom: 1em; }
+      section#projects_header .row .projects_top .project_filters {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row; }
+        section#projects_header .row .projects_top .project_filters .project_filter_tab,
+        section#projects_header .row .projects_top .project_filters .project_filter_search {
+          margin-right: 1em;
+          padding-right: 1em;
+          display: inline-block;
+          border-bottom: 2px solid transparent; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.active.upcoming, section#projects_header .row .projects_top .project_filters .project_filter_tab:hover.upcoming,
+          section#projects_header .row .projects_top .project_filters .project_filter_search.active.upcoming,
+          section#projects_header .row .projects_top .project_filters .project_filter_search:hover.upcoming {
+            border-bottom: 2px solid #080808; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.active.past, section#projects_header .row .projects_top .project_filters .project_filter_tab:hover.past,
+          section#projects_header .row .projects_top .project_filters .project_filter_search.active.past,
+          section#projects_header .row .projects_top .project_filters .project_filter_search:hover.past {
+            border-bottom: 2px solid #080808; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.active.history, section#projects_header .row .projects_top .project_filters .project_filter_tab:hover.history,
+          section#projects_header .row .projects_top .project_filters .project_filter_search.active.history,
+          section#projects_header .row .projects_top .project_filters .project_filter_search:hover.history {
+            border-bottom: 2px solid #99A3A3; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.active,
+          section#projects_header .row .projects_top .project_filters .project_filter_search.active {
+            font-weight: 700; }
+        section#projects_header .row .projects_top .project_filters .project_filter_tab {
+          display: flex;
+          justify-content: left;
+          align-items: flex-end;
+          flex-wrap: row;
+          padding-bottom: 0.5em;
+          position: relative;
+          font-size: 1em; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab:hover {
+            cursor: pointer; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.upcoming {
+            max-width: 16em;
+            min-width: 16em; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.past {
+            max-width: 12em;
+            min-width: 12em; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab.history {
+            max-width: 10em;
+            min-width: 10em; }
+          section#projects_header .row .projects_top .project_filters .project_filter_tab div {
+            position: relative; }
+            section#projects_header .row .projects_top .project_filters .project_filter_tab div span.badge {
+              margin-left: 0.5em;
+              width: 32px;
+              height: 32px;
+              text-align: center;
+              border-radius: 50%;
+              display: inline-block;
+              line-height: 30px; }
+              section#projects_header .row .projects_top .project_filters .project_filter_tab div span.badge.upcoming {
+                border: 1px solid #080808; }
+              section#projects_header .row .projects_top .project_filters .project_filter_tab div span.badge.past {
+                border: 1px solid #080808; }
+              section#projects_header .row .projects_top .project_filters .project_filter_tab div span.badge.history {
+                border: 1px solid #99A3A3; }
+      section#projects_header .row .projects_top .new_project {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        position: absolute;
+        bottom: -20px;
+        right: -20px;
+        z-index: 2;
+        text-align: center; }
+        section#projects_header .row .projects_top .new_project:hover {
+          cursor: pointer; }
+        section#projects_header .row .projects_top .new_project a {
+          text-decoration: none; } }
+
+/*# sourceMappingURL=offers.css.map */

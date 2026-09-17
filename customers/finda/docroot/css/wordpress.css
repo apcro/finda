@@ -1,0 +1,197 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.grid.grid-faq {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  background-color: #fff;
+}
+.grid.grid-faq .column > * {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.grid.grid-faq h1 {
+  font-size: 200%;
+  color: #13AFC0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.grid.grid-faq h2 {
+  color: #13AFC0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.grid.grid-faq h3, .grid.grid-faq h4 {
+  border-bottom: 1px dashed #13AFC0;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+}
+.grid.grid-faq p {
+  line-height: 150%;
+}
+.grid.grid-faq p:last-child {
+  padding-bottom: 4em;
+}
+.grid.grid-faq li {
+  margin: 0.5em 0;
+}
+.grid.grid-faq .aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid.grid-faq img {
+  margin: 0.5em;
+}
+.grid.grid-faq img.alignleft {
+  float: left;
+  margin: 0 1.5em 0 0;
+}
+
+.row-heading {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid.grid-faq {
+    width: 55rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row {
+    padding: 0;
+  }
+}
+.missing_width {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=wordpress.css.map */

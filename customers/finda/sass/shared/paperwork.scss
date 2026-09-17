@@ -1,0 +1,16 @@
+@import "../partials/_colours.scss";
+
+h1, h2, h3 {
+	transform-origin: left top;
+	
+}
+
+section#features {
+	.row {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		.column {
+		}
+	}
+	
+}

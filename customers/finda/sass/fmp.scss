@@ -1,0 +1,94 @@
+@import "partials/_colours.scss";
+
+.row.row-heading {
+	margin-top: 4em;
+	margin-bottom: 2em;
+	
+}
+
+.row.faq {
+	background-color: #fff;
+	padding: 0;
+	max-width: 60em;
+	
+	h1 {
+		max-width: 80%;
+	}
+	h2 {
+		color: $colour-black;
+		margin-bottom: 1em;
+		text-align: left;
+	}
+	
+	h3, h4 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding-bottom: 0.5em;
+	}
+	
+	p {
+	font-size: 1.5em;
+		line-height: 150%;
+		
+		
+		&:last-child {
+			padding-bottom: 2em;
+		}
+	}
+	
+	ul {
+		li {
+			font-size: 1.5em;
+		}
+	}
+
+	.fmp-page1 {
+		.column {
+			padding-left: 6em;
+			padding-right: 6em;
+		}
+	}
+	
+	.fmp-page2 {
+		.column {
+			padding-left: 6em;
+			padding-right: 6em;
+		}
+		
+		display: none;
+	}
+}
+
+
+table {
+	width: 100%;
+
+	tr > :first-child {
+		max-width: 45%;
+		min-width: 45%;
+		width: 45%;
+	}
+	td {
+		font-size: 1.5em;
+		padding: 1em;
+		
+		input[type=email]:not(.tui-timepicker-select), 
+		input[type=password]:not(.tui-timepicker-select), 
+		input[type=text]:not(.tui-timepicker-select), 
+		textarea:not(.tui-timepicker-select), 
+		select:not(.tui-timepicker-select) {
+			border-bottom: 1px solid transparentize($colour-black, 0.8);
+			&:hover, &:focus {
+				background: lighten($colour-lightgreen, 10%);
+				cursor: pointer;
+				border-bottom: 1px solid $colour-black;
+			}
+		}
+	}
+	
+	tr:nth-child(7) {
+		position: absolute;
+		left: -10000px;
+	}
+}
+

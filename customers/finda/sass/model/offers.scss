@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@import "../partials/_colours.scss";
+
+// general styling
+
+h4 {
+	font-size: 14px;
+	font-weight: $font-bold;
+	margin: 1em 0;
+	transform-origin: left top;
+}
+
+.offerrow {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 0;
+	border-bottom: 1px solid $colour-grey;
+
+	.jobname {
+		color: $colour-purple;
+		font-weight: $font-bold;
+	}
+}
+
+.offerrow:hover {
+	background-color: transparentize($colour-purple, 0.95);
+}
+
+.offerrow.highlight {
+	background-color: $colour-lightgreen;
+}
+
+// modal styling
+#rejectJob,
+#negotiateJob {
+	padding: 2em 4em;
+	color: $colour-black;
+	border: none;
+	border-radius: 0;
+	text-align: center;
+	h2 {
+		font-weight: $font-bold;
+		font-size: 1.375em;
+		border-bottom: 1px solid $colour-black;
+		padding-bottom: 0.5em;
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	label {
+		text-align: left;
+		font-weight: $font-black;
+		&.tgl-btn {
+			height: 1em;
+			width: 2em;
+		}
+	}
+	.tgl-slider:checked + .tgl-btn {
+		background: $colour-black;
+	}
+	.tgl-slider + .tgl-btn {
+		background: transparentize($colour-black, 0.8);
+		border: 1px solid $colour-black;
+	}
+	input {
+		color: $colour-black;
+		font-size: 32pt;
+		min-width: 4em;
+		text-align: center;
+		margin: 0 auto;
+		padding-bottom: 0.5em;
+		padding-top: 0.5em;
+	}
+	.button.success {
+		text-transform: uppercase;
+		font-size: 120%;
+		padding: 0.5em 1em;
+		margin: 1em 0;
+	}
+	input[type="email"], 
+	input[type="password"], 
+	input[type="text"], 
+	textarea, 
+	select {
+		color: $colour-black;
+		font-weight: $font-black;
+		border-bottom: 1px solid $colour-black;
+	}
+}
+
+
+// tab styling
+
+#tab-open:checked ~ .tabs #tab-open-label, 
+#tab-accepted:checked ~ .tabs #tab-accepted-label,
+#tab-finished:checked ~ .tabs #tab-finished-label,
+#tab-unfinalised:checked ~ .tabs #tab-unfinalised-label,
+#tab-completed:checked ~ .tabs #tab-completed-label,
+#tab-expired:checked ~ .tabs #tab-expired-label {
+	cursor: default;
+	border-bottom: 3px solid $colour-purple;
+}
+
+#tab-open:checked ~ .tabs #tab-open-panel, 
+#tab-accepted:checked ~ .tabs #tab-accepted-panel,
+#tab-finished:checked ~ .tabs #tab-finished-panel,
+#tab-unfinalised:checked ~ .tabs #tab-unfinalised-panel,
+#tab-completed:checked ~ .tabs #tab-completed-panel,
+#tab-expired:checked ~ .tabs #tab-expired-panel {
+	display: block;
+}
+
+.tabs.flex-tabs label.tab {
+	margin: 1em;
+	margin-left: 1.5em;
+}
+
+.worko-tabs .flex-tabs .tab {
+	flex-grow: 1;
+}
+
+.tabs.flex-tabs label:hover {
+	cursor: pointer;
+}
+
+.worko-tabs .tab:hover {
+	border-bottom: 3px solid $colour-purple;
+}
+
+.lastminute {
+	margin: 0;
+	
+	border: 1px solid $colour-burgundy;
+	border-radius: 2px;
+	
+	padding: 1em;
+	
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	ul {
+		text-align: left;
+		list-style-position: inside;
+		font-size: 80%;
+	}
+	
+	h4 {
+		font-size: 1em;
+		padding: 0 0 0.25em 0;
+		margin: 0;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+	.tickbox_holder {
+		
+		&.today > a.rounded_tickbox {
+			border: 3px solid $colour-burgundy;
+		}
+		
+		> span {
+			font-size: 80%;
+		}
+		
+		a.rounded_tickbox {
+			min-width: 32px;
+			min-height: 32px;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			text-align: center;
+			display: inline-block;
+			
+			font-size: 16px;
+			line-height: 30px;
+			color: $colour-black;
+			text-decoration: none;
+			
+			border: 2px solid $colour-black;
+			background-color: $colour-white;
+			
+			&.disabled {
+				border: 2px solid $colour-iconbackground;
+				&:hover {
+					cursor: default;
+				}
+			}
+			&.disabled.selected:after,
+			&.disabled.deselected:after {
+				color: $colour-iconbackground !important;
+			}
+			
+			&.neutral:after {
+				color: $colour-white;
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900; 
+				content: "\f22d";
+			}
+			&.selected:after {
+				color: $colour-green;
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900; 
+				content: "\f00c";
+			}
+			&.deselected:after {
+				color: $colour-red;
+				font-family: "Font Awesome 5 Free"; 
+				font-weight: 900; 
+				content: "\f00d";
+			}
+			
+			&:hover:not(.disabled) {
+				border: 2px solid $colour-burgundy;
+			}
+		}
+		
+		span {
+			display: block;
+			&.today {
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	section#projects_header {
+		width: 100%;
+		margin-top: -2em;
+		.row {
+		
+			.projects_top {
+				position: relative;
+				overflow: visible;
+				width: 100%;
+				
+				.project_collapsing {
+					margin-bottom: 1em;
+				}
+				
+				.project_filters {
+					width: 100%;
+					position: relative;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: row;
+					
+					.project_filter_tab,
+					.project_filter_search {
+						margin-right: 1em;
+						padding-right: 1em;
+						display: inline-block;
+						border-bottom: 2px solid transparent;
+						&.active, &:hover {
+							&.upcoming {
+								border-bottom: 2px solid $colour-black;
+							}
+							&.past {
+								border-bottom: 2px solid $colour-black;
+							}
+							&.history {
+								border-bottom: 2px solid $colour-grey;
+							}
+						}
+						&.active {
+							font-weight: $font-bold;
+						}
+					}
+					
+					.project_filter_tab {
+						display: flex;
+						justify-content: left;
+						align-items: flex-end;
+						flex-wrap: row;
+						padding-bottom: 0.5em;
+						position: relative;
+						font-size: 1em;
+						&:hover {
+							cursor: pointer;
+//							font-weight: $font-bold;
+						}
+						
+						&.upcoming {
+							max-width: 16em;
+							min-width: 16em;
+						}
+						&.past {
+							max-width: 12em;
+							min-width: 12em;
+						}
+						&.history {
+							max-width: 10em;
+							min-width: 10em;
+						}
+						
+						div {
+							position: relative;
+							
+							span.badge {
+								margin-left: 0.5em;
+								width: 32px;
+								height: 32px;
+								text-align: center;
+								border-radius: 50%;
+								display: inline-block;
+								line-height: 30px;
+								&.upcoming {
+									border: 1px solid $colour-black;
+								}
+								&.past {
+									border: 1px solid $colour-black;
+								}
+								&.history {
+									border: 1px solid $colour-grey;
+								}
+							}
+						}
+						
+					}
+				}
+				
+				.new_project {
+					width: 42px;
+					height: 42px;
+					border-radius: 50%;
+					font-weight: $font-bold;
+					font-size: 42px;
+					line-height: 42px;
+					position: absolute;
+					bottom: -20px;
+					right: -20px;
+					z-index: 2;
+					text-align: center;
+					&:hover {
+						cursor: pointer;
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+			
+			}
+		}
+	}
+}

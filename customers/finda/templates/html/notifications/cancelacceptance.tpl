@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname}</b> has cancelled your booking for {$job.name} on {$job.startdate|date_format:"%d %B %Y"}. <a href="/discover">Book another model</a> or get in touch with us at <a href="mailto:support@idal.co">support@idal.co</a>.

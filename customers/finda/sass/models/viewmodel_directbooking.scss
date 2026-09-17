@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@import "../partials/_colours.scss";
+
+$modelImageWidth: 350px;
+
+#main {
+	min-height: calc(100vh - 3em - 40px);
+	margin-top: 0;
+}
+a.bullet-item-link,
+a.compcard {
+	border-bottom: 0;
+	
+}
+.profile-home {
+	display: flex;
+	margin-top: -2em;
+	margin-bottom: 4em;
+	
+	.right-third {
+		width: 50%;
+		max-width: 50%;
+		float: right;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+		position: relative;
+	}
+	
+	.right-fill {
+		width: 60%;
+		padding: 2em 3em 0 6em;
+		
+	}
+	
+	h4 {
+		transform-origin: center center;
+		margin-bottom: 0.5em;
+		font-size: 1em;
+	}
+	
+	
+}
+
+.modelinstagram {
+	.instagramlogo {
+		width: 32px;
+		height: 32px;
+		position: relative;
+		top: 2px;
+	}
+	.followercount {
+		font-size: 38px;
+		font-weight: $font-black;
+		line-height: 56px;
+	}
+	.instagramname {
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: $font-medium;
+		line-height: 36px; 
+		
+		
+		a {
+			color: $colour-black;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			
+			&:hover {
+				text-decoration: none;
+				border-bottom: 1px solid $colour-black;
+			}
+		}
+	}
+}
+
+
+
+.profile-home h1,
+.profile-home h2 {
+	font-size: 50px;
+	padding: 0;
+	margin: 0;
+}
+
+.profile-home h1 {
+	font-weight: $font-black;
+	text-transform: uppercase;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.profile-home h2 {
+	font-weight: $font-normal;
+	margin-bottom: 1em;
+}
+
+.modeldetails {
+	margin-bottom: 3em;
+	margin-top: 2em;
+	
+	.row {
+		margin: 0.25em 0;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.column:first-child {
+		font-weight: $font-bold;
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		max-width: 50%;
+		padding-right: 0.5em;
+	}
+	.column:nth-child(2) {
+		padding-left: 0.5em;
+		width: 50%;
+		max-width: 50%;
+		display: flex;
+		justify-content: flex-start;
+	}
+	
+	hr.yellow-line {
+		height: 1px;
+		background: transparentize($colour-grey, 0.5);
+	}
+}
+
+.loadfader {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+
+
+@media only screen and (orientation: portrait) and (max-width: 768px) {
+	#main {
+		padding: 0;
+	}
+	.profile-home .right-fill {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.profile-home h1,
+	.profile-home h2 {
+		font-size: 2em;
+	}
+}

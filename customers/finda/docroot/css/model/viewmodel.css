@@ -1,0 +1,829 @@
+@charset "UTF-8";
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+#main {
+  min-height: calc(100vh - 3em - 40px);
+  margin-top: 0;
+}
+
+a.bullet-item-link,
+a.compcard {
+  border-bottom: 0;
+}
+
+.profile-home {
+  display: flex;
+  margin-top: -2em;
+  margin-bottom: 4em;
+}
+.profile-home .half {
+  width: 50%;
+  max-width: 50%;
+  float: right;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.profile-home .half .imagebuttons {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
+}
+.profile-home .right-third {
+  width: 50%;
+  max-width: 50%;
+  float: right;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.profile-home .right-fill {
+  width: 60%;
+  padding: 2em 3em 0 6em;
+}
+.profile-home .right-fill .row .column {
+  padding: 0;
+}
+.profile-home .right-fill .measurements {
+  border-radius: 2px;
+  padding: 2em 4em;
+  background: #FFFFFF;
+  max-width: 35em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border: 1px solid #080808;
+}
+.profile-home .model-chat,
+.profile-home .model-favourite,
+.profile-home a.compcard {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+.profile-home .model-chat:hover,
+.profile-home .model-favourite:hover,
+.profile-home a.compcard:hover {
+  border-bottom: 1px solid #080808;
+  cursor: pointer;
+}
+.profile-home h4 {
+  transform-origin: center center;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.row.messagesrow {
+  margin-bottom: 4em;
+  margin-left: 6em;
+  margin-right: 6em;
+  padding: 0;
+}
+.row.messagesrow .messagesbox h4 {
+  margin-top: 0;
+  transform-origin: left top;
+  font-size: 1.25em;
+}
+.row.messagesrow .messagesbox .messageslist {
+  display: block;
+  flex-direction: column;
+  background: rgba(227, 227, 227, 0.5);
+  margin: 0 0 1em 0;
+  max-width: 30em;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder {
+  width: 100%;
+  display: flex;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder.sender {
+  justify-content: flex-start;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder.recipient {
+  justify-content: flex-end;
+  text-align: right;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder .message {
+  border-radius: 2px;
+  margin: 0.35em;
+  padding: 0.25em 0.35em 0.35em 0.35em;
+  min-width: 35%;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder .message .messagetime {
+  font-size: 0.6em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder .message .messagebody {
+  font-size: 1em;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder.sender .message {
+  background: #E3E3E3;
+  align-items: flex-start;
+}
+.row.messagesrow .messagesbox .messageslist .messageholder.recipient .message {
+  background-color: rgba(255, 64, 64, 0.2);
+  color: #080808;
+  align-items: flex-end;
+}
+
+.modelinstagram .instagramlogo {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 2px;
+}
+.modelinstagram .followercount {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 56px;
+}
+.modelinstagram .instagramname {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 36px;
+  margin-left: 0.5em;
+}
+.modelinstagram .instagramname a {
+  color: #080808;
+  text-decoration: none;
+}
+.modelinstagram .instagramname a:hover {
+  text-decoration: none;
+}
+
+.profile-home h1,
+.profile-home h2 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-home h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+.profile-home h2 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.modeldetails {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.modeldetails .row {
+  margin: 0.25em 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.modeldetails .column:first-child {
+  font-weight: 700;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+.modeldetails .column {
+  display: flex;
+  justify-content: flex-start;
+}
+.modeldetails hr.yellow-line {
+  height: 1px;
+  background: rgba(153, 163, 163, 0.5);
+}
+
+.imageslinks {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.imageslinks a.photolink {
+  color: #080808;
+  font-weight: 500;
+  font-size: 1.5em;
+  display: block;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+}
+.imageslinks a.photolink:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #FF4040;
+}
+.imageslinks .findaslash {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modelbooking .button.full-width {
+  width: 100%;
+}
+
+/* image display */
+/* override header, footer and main section */
+.text-background {
+  position: fixed;
+  font-size: 18vw;
+  width: 100vw;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  z-index: -1;
+  top: 1vw;
+}
+
+.text-background.polaroids,
+.text-background.portfolio {
+  color: #fafafa;
+}
+
+.model-image-grid {
+  margin-top: 40px;
+  margin-bottom: 12em;
+}
+.model-image-grid img:hover {
+  cursor: pointer;
+}
+
+.imageselector a {
+  text-decoration: none;
+  color: #080808;
+}
+
+.imageselector a:hover {
+  text-decoration: none;
+  color: #FF4040;
+}
+
+.imageselector {
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: -15px;
+  border-bottom: 4px solid transparent;
+  color: #080808;
+  margin: 0 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.imageselector.selected a {
+  color: #FF4040;
+}
+
+.imageselector .selectedbar {
+  border: 4px solid transparent;
+  position: relative;
+  top: 23px;
+}
+
+.imageselector a:hover .selectedbar,
+.imageselector .selectedbar.active {
+  border: 2px solid #080808;
+  margin-bottom: 4px;
+}
+
+.grid-full {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 0;
+  width: 100%;
+}
+
+.viewmodelimages {
+  margin-top: 0em;
+}
+
+.viewmodelimages .modelname {
+  font-size: 50px;
+  font-weight: 800;
+  color: #080808;
+  text-align: center;
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 10px;
+}
+
+.left-menu {
+  position: fixed;
+  top: 43vh;
+  left: 50%;
+  font-size: 150%;
+  transform: translateX(-40rem);
+  -webkit-transform: translateX(-40rem);
+  -moz-transform: translateX(-40rem);
+  -ms-transform: translateX(-40rem);
+  -o-transform: translateX(-40rem);
+  width: 140px;
+}
+
+.instagramlogo {
+  color: #080808;
+  font-size: 30px;
+  font-weight: 800;
+}
+.instagramlogo a {
+  color: #080808;
+}
+
+.hollow-button {
+  border: 2px solid #080808;
+  color: #080808;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 10px 5px;
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.hollow-button.full-width {
+  width: 100%;
+  min-width: 100%;
+}
+
+a.hollow-button:hover {
+  background-color: #FF4040;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #FF4040;
+}
+
+.back-link a:hover {
+  color: #FF4040;
+}
+
+.back-link a:after:hover {
+  text-decoration: none;
+}
+
+.leader-back-link {
+  margin-top: 1em;
+}
+
+.leader-back-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #080808;
+}
+
+.leader-back-link a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "";
+  margin-right: 1em;
+}
+
+.leader-back-link a:hover {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 0.25em;
+}
+
+.leader-back-link a:after:hover {
+  text-decoration: none;
+}
+
+.model-image-grid .croissant-modal img {
+  border-radius: 1.5em;
+}
+.model-image-grid .croissant-modal img:hover {
+  cursor: pointer;
+}
+
+#joboffers {
+  padding: 2em 4em;
+  text-align: center;
+}
+#joboffers .button.warning {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+#joboffers .button {
+  margin: 1em 0;
+}
+#joboffers .button.warning:hover {
+  text-decoration: none;
+}
+
+.model-favourite i {
+  color: #080808;
+  transition: color 0.2s ease-in;
+}
+.model-favourite i:hover {
+  color: #FF4040;
+  cursor: pointer;
+}
+
+.loadfader {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.model_calendar {
+  min-width: 12em;
+}
+.model_calendar .month_heading {
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+}
+.model_calendar .days_holder {
+  display: grid;
+  grid-template-columns: repeat(7, 2.5em);
+  position: relative;
+  justify-content: center;
+  grid-gap: 5px;
+}
+.model_calendar .days_holder .calendar_day {
+  height: 2.5em;
+  border: 1px solid #080808;
+  margin: 1px;
+  border-radius: 2px;
+}
+.model_calendar .days_holder .calendar_day:hover {
+  cursor: default;
+}
+.model_calendar .days_holder .calendar_day.busy {
+  background-color: #FF4040;
+}
+.model_calendar .days_holder .calendar_day.busy .calendar_date {
+  color: #FFFFFF;
+}
+.model_calendar .days_holder .calendar_day .calendar_date {
+  font-weight: 700;
+  text-align: left;
+  color: #080808;
+  padding: 2px;
+  font-size: 0.5em;
+}
+.model_calendar .days_holder .calendar_day .available_check {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 0.25em;
+}
+.model_calendar .days_holder .calendar_day .available_check i {
+  font-size: 1em;
+  color: #FF4040;
+}
+.model_calendar .days_holder .calendar_day .available_check i.fa-times {
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+  #scroll-indicator-bullets {
+    position: fixed;
+    top: 280px;
+    -webkit-transform: translate(49em, 0%);
+    -ms-transform: translate(49em, 0%);
+    transform: translate(49em, 0%);
+    right: 45%;
+    z-index: 8;
+    font-size: 0.8rem;
+  }
+
+  #scroll-indicator-bullets ul li .bullet-item-link .circle {
+    border: 5px solid rgba(8, 8, 8, 0.2);
+  }
+
+  #scroll-indicator-bullets ul li .bullet-item-link.active .circle {
+    border: 5px solid #080808;
+  }
+
+  #scroll-indicator-bullets ul li .bullet-item-link.active .circle:after {
+    border: none;
+  }
+
+  #galleryButtons {
+    z-index: 10005;
+    width: 100%;
+    position: fixed;
+  }
+  #galleryButtons .galleryNext,
+#galleryButtons .galleryPrev {
+    position: absolute;
+    color: #080808;
+    font-size: 6em;
+  }
+  #galleryButtons .galleryNext i,
+#galleryButtons .galleryPrev i {
+    transition: color 0.5s;
+  }
+  #galleryButtons .galleryNext i:hover,
+#galleryButtons .galleryPrev i:hover {
+    cursor: pointer;
+    color: #FF4040;
+  }
+  #galleryButtons .galleryPrev {
+    left: 10px;
+  }
+  #galleryButtons .galleryNext {
+    right: 10px;
+  }
+
+  .closeWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .closeWrapper a.closeViewProfile {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-bottom: none;
+    z-index: 10002;
+  }
+  .closeWrapper a.closeViewProfile:hover {
+    cursor: pointer;
+  }
+
+  .project_ribbon {
+    position: absolute;
+    width: 400px;
+    transform: rotate(-45deg);
+    padding: 1em 6em;
+    text-align: center;
+    background: #080808;
+    color: #FFFFFF;
+    font-weight: 700;
+    top: 60px;
+    left: -100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grid.profile-home {
+    display: block;
+  }
+  .grid.profile-home .grid-left {
+    margin-right: 0;
+  }
+  .grid.profile-home h1 {
+    margin-top: 0.5em;
+    text-align: center;
+    width: 100%;
+  }
+  .grid.profile-home h2 {
+    text-align: center;
+    width: 100%;
+  }
+}
+.row {
+  position: relative;
+}
+.row.modelImages {
+  align-items: center;
+  justify-content: space-evenly;
+}
+.row.modelImages .column {
+  position: relative;
+  max-width: 33%;
+  flex: 1 1 32%;
+  margin: 0.5em;
+}
+.row.modelImages .column.imagecol {
+  padding: 0;
+  border: 3px solid transparent;
+  overflow: hidden;
+}
+.row.modelImages .column.imagecol:hover {
+  border: 3px solid #080808;
+  border-radius: 2px;
+}
+.row.modelImages .column .image_container {
+  width: 100%;
+  position: relative;
+  border-radius: 2px;
+}
+.row.modelImages .column .image_container span.image_fader {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s;
+  border-radius: 1px;
+}
+.row.modelImages .column .image_container span.image_fader.polaroids, .row.modelImages .column .image_container span.image_fader.portfolio {
+  background: #f3f6f6;
+}
+.row.modelImages .column .image_container span.image_fader img {
+  width: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.row.modelImages .column .image_container .imageload {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1px;
+}
+.row.modelImages .column .image_container .imageload:hover {
+  cursor: pointer;
+}
+.row.modelImages .column .image_container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.topper2_name {
+  color: #080808;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.topper2 .topper2_tab.portfolio,
+.topper2 .topper2_tab.polaroids {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #080808;
+  font-weight: 300;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #080808;
+}
+.topper2 .topper2_tab.portfolio.active,
+.topper2 .topper2_tab.polaroids.active {
+  font-weight: 700;
+  padding-bottom: 2px;
+  border-bottom: 6px solid #080808;
+  border-radius: 0;
+}
+.topper2 .topper2_tab.portfolio.active, .topper2 .topper2_tab.portfolio:hover,
+.topper2 .topper2_tab.polaroids.active,
+.topper2 .topper2_tab.polaroids:hover {
+  border-bottom: 6px solid #080808;
+  cursor: pointer;
+  padding-bottom: 2px;
+}
+.topper2 .topper2_tab.portfolio span.badge,
+.topper2 .topper2_tab.polaroids span.badge {
+  margin-left: 0.5em;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 32px;
+  border: 1px solid #080808;
+}
+
+/*# sourceMappingURL=viewmodel.css.map */

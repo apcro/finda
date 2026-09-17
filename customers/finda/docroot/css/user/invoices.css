@@ -1,0 +1,233 @@
+.text-thin {
+  font-weight: 300; }
+
+.text-light {
+  font-weight: 400; }
+
+.text-normal {
+  font-weight: 500; }
+
+.text-medium {
+  font-weight: 600; }
+
+.text-bold {
+  font-weight: 700; }
+
+.text-ultra {
+  font-weight: 900; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-black {
+  color: #080808; }
+
+.text-blackcolour {
+  color: #080808; }
+
+.text-cyan {
+  color: #13AFC0; }
+
+.text-yellow {
+  color: #ffba1c; }
+
+.text-purple {
+  color: #C353E3; }
+
+.text-findared {
+  color: #C93B3B; }
+
+.text-red {
+  color: #C93B3B; }
+
+.text-grey {
+  color: #99A3A3; }
+
+.text-lightgreen {
+  color: #d5e1df; }
+
+.text-darkgreen {
+  color: #a7bab8; }
+
+.text-pink {
+  color: #D300BE; }
+
+.text-green {
+  color: #00DD00; }
+
+.text-darkgrey {
+  color: #565c66; }
+
+.text-lightgrey {
+  color: #E3E3E3; }
+
+.text-burgundy {
+  color: #FF4040; }
+
+.bg-black {
+  background-color: #080808; }
+
+.bg-grey {
+  background-color: #99A3A3; }
+
+.bg-bordergrey {
+  background-color: #99A3A3; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.bg-purple {
+  background-color: #C353E3; }
+
+.bg-yellow {
+  background-color: #ffba1c; }
+
+.bg-red {
+  background-color: #C93B3B; }
+
+.bg-pink {
+  background-color: #D300BE; }
+
+.bg-burgundy {
+  background-color: #FF4040; }
+
+h2 {
+  transform-origin: left top;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  color: #FF4040; }
+
+h4 {
+  font-size: 18px; }
+
+.jobname {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0; }
+  .jobname p {
+    margin: 0; }
+
+.grid-main .row.sub-heading {
+  padding-left: 1em;
+  padding-right: 1em; }
+.grid-main .row.offerrow {
+  margin: 1em 0;
+  border-radius: 2px;
+  background-color: #E3E3E3;
+  transition: box-shadow 0.2s ease-in-out;
+  border: 1px solid #E3E3E3; }
+  .grid-main .row.offerrow:hover {
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.07);
+    border: 1px solid #080808; }
+
+.offerrow > .column {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+.grid-main .row.offerrow.overdue {
+  background-color: rgba(201, 59, 59, 0.05);
+  border: 1px solid transparent; }
+  .grid-main .row.offerrow.overdue:hover {
+    background-color: rgba(201, 59, 59, 0.05);
+    border: 1px solid #C93B3B; }
+
+.invoicerow {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 0; }
+
+.invoicerow.highlight {
+  background-color: #d5e1df; }
+
+.column.narrow {
+  max-width: 15%;
+  min-width: 15%;
+  padding: 0; }
+
+.rounded-row {
+  margin: 1em 0;
+  padding: 2em 0;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background: rgba(227, 227, 227, 0.2); }
+  .rounded-row:hover {
+    border: 1px solid #080808; }
+  .rounded-row .column {
+    margin: 0;
+    padding: 0; }
+    .rounded-row .column .row {
+      margin: 0;
+      padding: 0; }
+      .rounded-row .column .row .column:first-child {
+        max-width: 15%; }
+      .rounded-row .column .row .column:nth-child(2) {
+        max-width: 50%; }
+
+.avatar a,
+a.stripebutton {
+  border-bottom: none; }
+  .avatar a:hover,
+  a.stripebutton:hover {
+    border-bottom: none; }
+
+.Header-logoImage {
+  background-size: contain !important; }
+
+.Checkout.is-desktop .Button,
+.Button-animationWrapper-child--primary.Button {
+  background-color: #FF4040 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  border-radius: 2px !important; }
+
+.invoicebutton,
+.stripe-button-el {
+  padding: 0.5em 3em;
+  line-height: 2em;
+  min-height: 3em;
+  border-radius: 2px !important;
+  cursor: pointer;
+  border: 1px solid #FF4040 !important;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  min-width: 15em;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  background-color: #FF4040;
+  /* Old browsers */ }
+  .invoicebutton span,
+  .stripe-button-el span {
+    background: #FF4040 !important;
+    background-image: none !important;
+    font-size: inherit !important;
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    font-family: "Montserrat", sans-serif !important;
+    text-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    -o-border-radius: 2px !important;
+    border-radius: 2px !important; }
+
+.stripe-button-el span {
+  background: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important; }
+  .stripe-button-el span:hover {
+    color: #FF4040 !important; }
+
+.stripe-button-el:hover {
+  background: #FFFFFF !important;
+  /* Old browsers */
+  border: 1px solid #FF4040 !important; }
+
+/*# sourceMappingURL=invoices.css.map */

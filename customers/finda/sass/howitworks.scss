@@ -1,0 +1,344 @@
+@import "partials/_colours.scss";
+
+hr {
+	width: 100%;
+	background: transparentize($colour-lightgrey, 0.4);
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+section {
+	color: $colour-black;
+	width: 100%;
+	display: flex;
+	padding-left: 5em;
+	padding-right: 5em;
+	.content {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.half {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		width: 50%;
+		max-width: 50%;
+		min-width: 50%;
+		position: relative;
+		.content {
+			flex-wrap: wrap;
+			height: 100%;
+			align-content: center;
+			padding: 1em 0;
+			text-align: left;
+			&.contentright {
+				text-align: right;
+				justify-content: flex-end;
+				padding-right: 3em;
+				h2 {
+					transform-origin: right top;
+					max-width: 100%; 
+					margin-right: 2em;
+				}
+			}
+			p {
+				width: 100%;
+				padding: 1em 2em 1em 0;
+				i.fa {
+					color: $colour-burgundy;
+				}
+			}
+			
+		}
+		img {
+			padding: 1em;
+			object-fit: contain;
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	
+}
+
+section#howitworks_lead {
+	position: relative;
+	padding: 2em 0 4em 0;
+	.content {
+		position: relative;
+		left: 50%;
+		transform: translate(-50%, 0);
+		text-align: center;
+		width: 50%;
+	}
+	
+}
+
+section#howitworks_section1 {
+	background-color: $colour-white;
+	position: relative;
+	display: flex;
+	.half {
+		z-index: 5;
+	}
+	.half.image {
+		background-image: url('/images/homepage/howto/1.jpg');
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		overflow: visible;
+		z-index: 1;
+	}
+	
+	.content {
+		width: 100%;
+		z-index: 5;
+		min-height: 30em;
+		padding-right: 2em;
+		p {
+			z-index: 10;
+			padding: 2em 0;
+		}
+		
+	}
+	.burgundy_bar {
+		background: $colour-burgundy;
+		opacity: 0.5;
+		width: 25%;
+		height: 100%;
+		bottom: 0;
+		right: 0;
+		margin-left: 2em;
+		z-index: 5;
+		position: absolute;
+	}
+}
+
+section#howitworks_section2 {
+	position: relative;
+	display: flex;
+	.burgundy_bar {
+		height: 10em;
+		width: 100%;
+		background-color: $colour-burgundy;
+		opacity: 0.5;
+		bottom: 0;
+		position: absolute;
+		z-index: 1;
+	}
+	.half.image {
+		background-image: url('/images/homepage/howto/2.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		
+	}
+	h2 {
+		margin-left: 1rem;
+		padding-left: 0;
+	}
+	.content {
+		width: 100%;
+		margin-left: 1em;
+		flex-wrap: wrap;
+		min-height: 30em;
+		p {
+			padding: 1em 0 1em 1em;
+			z-index: 5;
+		}
+	}
+}
+
+section#howitworks_section3 {
+	position: relative;
+	display: flex;
+	.burgundy_bar {
+		height: 100%;
+		width: 25%;
+		background-color: $colour-burgundy;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+	}
+	.half.image {
+		background-image: url('/images/homepage/howto/3.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.content {
+		bottom: 0;
+		width: 100%;
+		padding: 2em 0;
+		min-height: 30em;
+		p {
+			z-index: 10;
+		}
+	}
+	.finda {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		z-index: 100;
+		img {
+			height:5em;
+			filter: invert(1);
+		}
+	}
+}
+
+h1, h2, h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+@media screen and (min-width: 667px) {
+	.row {
+		p {
+			line-height: 1.75em;
+			padding: .5em 0;
+			&:last-child {
+				padding-bottom: 2em;
+			}
+			a.button {
+				margin-top: 1em;
+				margin-right: 0.5em;
+			}
+			b {
+				color: $colour-black;
+			}
+		}
+
+		h2 {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			&.upper {
+				text-transform: uppercase;
+			}
+		}
+		
+	}
+	
+}
+
+@media only screen and (min-device-width : 375px) and (max-width: 667px) {
+	
+	section .half {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	section {
+		display: block;
+		.half {
+			width: 100%;
+			min-width: 100%;
+			p {
+				padding-bottom: 0.5em;
+			}
+		}
+		h2 {
+			text-align: left;
+			margin-bottom: 0.5em;
+			margin-top: 1.5em;
+		}
+	}
+	section#howitworks_lead .content {
+		left: 0;
+		transform: none;
+		width: 100%;
+		padding: 0.5em;
+	}
+	section#howitworks_section1 .content h2 {
+		margin: 0.5em;
+		text-align: left;
+	}
+	section#howitworks_section1 .content {
+		margin-top: 2em;
+		padding: 1em;
+		min-height: 0;
+	}
+	section#howitworks_section1 .content p {
+		padding: 0.5em;
+		max-width: 100%;
+		text-align: left;
+	}
+	section#howitworks_section1 .burgundy_bar {
+		margin: 0;
+		width: 100%;
+	}
+	section#howitworks_section1,
+	section#howitworks_section2,
+	section#howitworks_section3 {
+		display: flex;
+	}
+	section#howitworks_section1 .half.image {
+		height: 20em;
+	}
+	
+	section#howitworks_section1,
+	section#howitworks_section3 {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	section#howitworks_section2 {
+		flex-wrap: wrap;
+	}
+	
+	section#howitworks_section2 .half.image {
+		height: 20em;
+	}
+	section#howitworks_section2 h2 {
+		margin-top: 1em;
+		margin-left: 0em;
+		margin-right: 0.5em;
+		text-align: left;
+	}
+	section#howitworks_section2 .content {
+		margin-left: 0;
+		text-align: left;
+		padding: 1em;
+		min-height: 0;
+		p {
+			width: 100%;
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+	
+	section#howitworks_section3 .finda {
+		display: none;
+	}
+	
+	section#howitworks_section3 .half.image {
+		height: 20em;
+	}
+	
+	section#howitworks_section3 {
+		flex-wrap: wrap;
+	}
+	section#howitworks_section3 .content {
+		margin-left: 0;
+		text-align: left;
+		padding: 1em;
+		min-height: 0;
+		p {
+			padding: 0;
+		}
+	}
+	section#howitworks_section3 .content h2 {
+		margin-top: 1em;
+		margin-left: 0em;
+		margin-right: 0.5em;
+		text-align: left;
+	}
+	
+	section#howitworks_lead p {
+		color: $colour-burgundy;
+		font-weight: $font-bold;
+	}
+	
+}

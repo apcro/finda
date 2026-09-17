@@ -1,0 +1,539 @@
+@import "../../partials/_colours.scss";
+
+// for checkboxes
+@import '../../pretty-checkbox/_variables.scss';
+@import '../../pretty-checkbox/_core.scss';
+// optionals
+@import '../../pretty-checkbox/elements/default/outline.scss';
+@import '../../pretty-checkbox/elements/font-icon/general.scss';
+@import '../../pretty-checkbox/elements/switch/general.scss';
+@import '../../pretty-checkbox/extras/toggle.scss';
+@import '../../pretty-checkbox/extras/plain.scss';
+
+
+.pretty.p-icon input ~ .state .icon {
+	color: $colour-black;
+	
+}	
+.pretty.p-icon input:checked ~ .state .icon {
+	color: $colour-white;
+	background-color: $colour-black;
+	border-radius: 0;
+}
+		
+.Zebra_DatePicker {
+	z-index: 10010;
+}
+.croissant-block.croissant-modal {
+	padding: 0;
+}
+
+h2 {
+	position: relative;
+}
+
+.grid-main {
+	
+	border-left: 1px solid transparentize($colour-lightgrey, 0.8);
+}
+
+.zerorate.hidden {
+	display: none;
+}
+
+#croissant-overlay {
+	.croissant-modal:nth-child(2) {
+		border: 1px solid transparentize($colour-black, 0.8);
+		-webkit-box-shadow: 0 6px 12px transparentize($colour-black, 0.8);
+		box-shadow: 0 6px 12px transparentize($colour-black, 0.8);
+		a.croissant-close {
+			&:before, &:after {
+				background-color: $colour-black;
+			}
+		}
+	}
+}
+
+.container-header {
+	background-color: $colour-black;
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: $font-bold;
+	color: $colour-white;
+	line-height: 3em;
+	height: 3em;
+	border-radius: 2px 2px 0 0;
+	text-transform: uppercase;
+	text-align: center;
+	transform-origin: center;
+}
+
+.tgl-slider + .tgl-btn {
+	border: none;
+}
+
+button.slick-next.slick-disabled {
+	display: none;
+}
+
+.infoballoon {
+	position: absolute;
+	margin-left: 10px;
+	img {
+		width: 16px;
+		height: 16px;
+	}
+	.infoicon {
+		width: 20px;
+		height: 20px;
+		display: block;
+		font-size: 14px;
+		line-height: 18px;
+		border: 1px solid $colour-black;
+		border-radius: 50%;
+		color: $colour-black;
+		position: absolute;
+		top: -8px;
+	}
+}
+
+
+.wizard-container {
+	max-width: 50em;
+	width: 50em;
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-bottom: 10em;
+	
+	.wizard-step {
+		padding-bottom: 2em;
+		padding-top: 2em;
+		border-bottom: 1px solid transparentize($colour-grey, 0.8);
+		overflow-y: auto;
+		overflow-x: hidden;
+		
+		.row {
+			margin: 0.25em 0;
+			padding: 0;
+			
+		}
+
+		input[type="text"], textarea, select {
+			border-bottom: 1px solid $colour-black;
+			&:disabled {
+				border-bottom: 1px solid transparentize($colour-black, 0.8);
+			}
+		}
+		
+		.projectnormal {
+			display: block;
+		}
+		
+		.projectinfluencer {
+			display: none;
+		}
+		
+		h2 {
+			font-weight: $font-bold;
+			font-size: 16px;
+			max-width: 80%;
+			text-align: center;
+			display: inline-block;
+			transform-origin: left top;
+		}
+		
+		h2:nth-child(1n+2) {
+			margin-top: 2em;
+		}
+		
+		p {
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		
+		.chooseprojectmodelcountnotice,
+		.chooseprojectdurationnotice,
+		.chooseprojecttypenotice {
+			display: block;
+			color: $colour-red;
+			margin-top: 0.5em;
+		}
+		
+		
+		.row.rateinfo {
+			display: none;
+			
+			margin-top: 2.5em;
+		}
+
+		.column {
+			flex: 1 1 0px;
+			-ms-flex: 1 1 0px;
+			-webkit-flex: 1 1 0px;
+			position: relative;
+
+			ul li {
+				padding-top: 0.35em;
+				padding-bottom: 0.35em;
+			}
+			
+			.doublet-checkbox {
+				text-align: center;
+				padding: 0.5em 1em;
+				
+				label {
+					font-weight: $font-bold;
+					display: inline-block;
+					color: $colour-grey;
+					margin: 0;
+					
+					&:hover {
+						cursor: pointer;
+					}
+					&.active {
+						color: $colour-black;
+						&:after {
+							font-family: "Font Awesome 5 Free";
+							content: " ";
+							color: $colour-black;
+						}
+					}
+					&:after {
+						font-family: "Font Awesome 5 Free";
+						content: " ";
+						color: transparent;
+					}
+					
+				}
+				input[type=radio] {
+					display: none;
+				}
+			}
+			.triplet-checkbox {
+				text-align: center;
+				padding: 0.5em 1em;
+				
+				label {
+					font-weight: $font-normal;
+					display: inline-block;
+					color: $colour-grey;
+					margin: 0 2em;
+					
+					&:hover {
+						cursor: pointer;
+					}
+					&.active {
+						color: $colour-black;
+						&:after {
+							font-weight: $font-bold;
+							font-family: "Font Awesome 5 Free";
+							content: " ";
+							color: $colour-black;
+						}
+					}
+					&:after {
+						font-family: "Font Awesome 5 Free";
+						content: " ";
+						color: transparent;
+					}
+					
+				}
+				input[type=radio] {
+					display: none;
+				}
+			}
+			
+			.triplet-checkbox {
+				width: 100%;
+				
+				
+			}
+			.minlength_notice {
+				display: none;
+				color: $colour-red;
+				font-size: 90%;
+			}
+			
+			.doublet-checkbox {
+				position: absolute;
+				right: 15px;
+				top: 38px;
+				width: 50%;
+			}
+			
+			.rights-checkboxes {
+				.column:nth-child(1) {
+					text-align: left;
+				}
+				
+				.rights-checkboxes,
+				.base-rights-holder {
+					.column:nth-child(1) {
+						text-align: left;
+					}
+				}
+				label {
+					float: right;
+					width: 2em;
+					height: 1em;
+				}
+			}
+			
+			.advanced-checkboxes {
+				label {
+					float: right;
+					width: 2em;
+					height: 1em;
+				}
+				h3 {
+					margin: 0.5em 0;
+					text-align: left;
+					font-weight: $font-normal;
+					font-size: 14px;
+					transform-origin: left top;
+				}
+				textarea {
+					display: none;
+				}
+			}
+			
+			.triplet-holder {
+				margin-top: 1em;
+			
+				.notmoney {
+					display: none;
+				}
+				
+				
+			}
+			.minrate_notice {
+				display: none;
+				color: $colour-red;
+				font-size: 90%;
+				position: absolute;
+				bottom: -3em;
+				margin: 0em 1em 1em 1em;
+				border: 1px solid $colour-red;
+				padding: 0.5em;
+				border-radius: 10px;
+				
+				&:after, &:before {
+					bottom: 100%;
+					left: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				
+				&:after {
+					border-color: rgba(255, 255, 255, 0);
+					border-bottom-color: $colour-white;
+					border-width: 10px;
+					margin-left: -10px;
+				}
+				&:before {
+					border-color: rgba(234, 84, 106, 0);
+					border-bottom-color: $colour-red;
+					border-width: 11px;
+					margin-left: -11px;
+				}
+				
+			}
+			
+			
+			.rights-holder {
+				display: none;
+			}
+			
+			.disabled > .tgl-btn::after {
+				background: $colour-grey;
+			}
+			.tgl-slider:checked + .tgl-btn {
+				background: $colour-black;
+			}
+		}
+	}
+	
+	.select-wrap::after {
+		border: 1px solid $colour-black;
+	}
+	
+	.step3, .step4, .step5, .step6, .step7, .step8, .step9, .step10, .step11 {
+		display: none;
+	}
+	
+}
+	
+	
+
+input[type=email],
+input[type=password],
+input[type=text],
+textarea,
+select {
+	color: $colour-black;
+}
+
+#modelsubtotal,
+#ratesubtotal {
+	text-align: center;
+	width: 35%;
+	display: inline-block;
+}
+
+#ratesubtotal {
+	font-weight: $font-bold;
+}
+
+.profile .select-wrap::after {
+	border: 1px solid $colour-black;
+	top: 16px;
+}
+
+
+/* for the select2 drop-downs */
+.select2-container {
+	z-index: 10001;
+}
+
+.select2-selection__arrow {
+	display: none;
+}
+
+.select2-container--default .select2-selection--single {
+	background-color: transparent;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-radius: 0;	
+	border-bottom: 1px solid $colour-black;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: $colour-black;
+}
+
+#select2-hairtype-container, #select2-hairlength-container, #select2-eyecolour-container {
+	color: #fff;
+}
+
+.select2-results {}
+
+.select2-container--default .select2-results__option {
+	background-color: #fff;
+	border-bottom: 1px solid $colour-black;
+	color: $colour-black;
+	margin-left: 8px;
+}
+
+.select2-container--default .select2-results__option:hover::after {
+	content: " ";
+	border: 1px solid $colour-black;
+	background-color: $colour-black;
+	top: 2px;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	float: right;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	border: none;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+	background-color: #fff;
+	color: $colour-black;
+}
+
+.select2-dropdown {
+	background-color: #fff;
+	border: none;
+}
+
+.select2-container--default .select2-results__option[aria-selected="true"] {
+	background-color: #fff;
+}
+
+ul.select2-results__options {
+	border-bottom: 1px solid $colour-black;
+	font-weight: $font-normal;
+//	font-size: 12px;
+}
+
+ul.select2-results__options li {
+//	padding: 10px 0;
+}
+
+li.select2-results__option:before {
+	content: " ";
+	color: $colour-black;
+	border: 1px solid $colour-black;
+	top: -3px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	float: right
+}
+
+li.select2-results__option[aria-selected="true"]:after {
+	content: " ";
+	border: 1px solid $colour-black;
+	background-color: $colour-black;
+	top: 2px;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	float: right;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+	max-height: inherit;
+}
+
+// override pickadate here
+
+.picker__nav--prev, .picker__nav--next {
+	
+}
+
+select.picker__select--year, select.picker__select--month {
+	border: none;
+	border-bottom: 1px solid $colour-black;
+	padding-bottom: 2px;
+	outline: none;
+	
+}
+
+.picker__select--year:after {
+	content: "";
+	background-size: 6px;
+	background-image: url(/images/chevron_black.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+	top: 0;
+	width: 25px;
+	height: 25px;
+	pointer-events: none;
+	color: #000;
+	border: 1px solid #ebca01;
+	border-radius: 50%;
+	transform: rotate(90deg);
+	text-align: center;
+}
+
+

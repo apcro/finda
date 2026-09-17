@@ -1,0 +1,1 @@
+<b>{$firstname} {$lastname}</b> proposes <strong>{$newrate}</strong> per {$job.units_type} instead of the offered {$job.offered_rate} per {$job.units_type} for <a href="/projects/view/{$job.id}">{$job.name} on {$job.startdate|date_format:"%d %B %Y"}</a>.{if $reasons}<br />The model has given the following reason{if $reasons.count neq 1}s{/if}: "<em>{$reasons.text}.</em>"{/if}

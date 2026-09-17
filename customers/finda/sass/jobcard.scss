@@ -1,0 +1,467 @@
+@import "partials/_colours.scss";
+
+.grid-main .row {
+	padding: 0;
+	margin: 0.5em 0;
+}
+
+.jobcards {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.jobcards_offered {
+	.job_card {
+		width: 100%;
+	}
+	
+}
+
+.job_card {
+	width: 100%;
+	margin: 1em 0em;
+	border-radius: 2px;
+	font-size: 100%;
+	z-index: 1;
+	position: relative;
+	background-color: transparentize($colour-grey, 0.9);
+	border: 1px solid $colour-lightgrey;
+	transition: box-shadow 0.2s ease-in-out;
+	display: flex;
+	flex-direction: row;
+	align-items: justify;
+	
+	padding: 20px;
+	&.templatecard:hover {
+		border: 1px solid $colour-burgundy;
+	}
+	
+	&:hover {
+		border: 1px solid $colour-black;
+		box-shadow: 0px 12px 24px 0px rgba(46,51,51,0.07);
+	}
+	
+	
+	.job_card_info {
+		border-right: 1px solid $colour-lightgrey;
+		padding: 10px;
+		width: 200px;
+		height: 100%;
+		display: inline-block;
+		
+		.pending {
+			color: $colour-purple;
+			color: $colour-burgundy;
+		}
+		
+		.confirmable {
+			color: $colour-green;
+			color: $colour-burgundy;
+		}
+		.confirmed,
+		.closed {
+			color: $colour-cyan;
+			color: $colour-burgundy;
+		}
+		.offered,
+		.new {
+			color: $colour-yellow;
+			color: $colour-burgundy;
+		}
+		.optioned {
+		}
+		.waiting {
+		}
+		.complete {
+		}
+		.completed {
+			color: $colour-black;
+		}
+		.past {
+			color: $colour-black;
+		}
+		.expired {
+			color: $colour-black;
+		}
+		.finished {
+			color: $colour-black;
+		}
+		.unfinalised {
+			color: $colour-red;
+		}
+		.accepted {
+			color: $colour-black;
+		}
+		.overdue {
+			color: $colour-red;
+		}
+		.due {
+			color: $colour-red;
+		}
+		.deleted {
+			color: $colour-black;
+		}
+		.rejected {
+			color: $colour-black;
+		}
+	}
+	
+	.job_card_actions {
+		display: inline-block;
+		width: 330px;
+		padding: 20px;
+		font-size: 75%;
+		
+		border-left: 1px solid $colour-lightgrey;
+		
+		table {
+			width: 100%;
+			td {
+				width: 50%;
+			}
+		}
+		
+		.pad-top {
+			margin-top: 0.5em;
+		}
+		
+		.button {
+			width: 100%;
+			margin-top: 0.5em;
+		}
+		
+	}
+	
+	.card_row {
+		width: 100%;
+		padding: 0 1em;
+		font-size: 1em;
+		
+		.card_type {
+			font-size: 1em;
+			display: inline-block;
+			padding: 5px 10px 10px 10px;
+			font-weight: $font-bold;
+			width: 100%;
+			left: 0;
+			margin-top: 5px;
+			margin-bottom: 0.5em;
+			color: $colour-black;
+			
+		}
+		
+		.card_jobname {
+			margin: 0 10px;
+			font-size: 1.25em;
+			color: $colour-black;
+			font-weight: $font-medium;
+			
+			a {
+				color: $colour-black;
+				text-decoration: none;
+				border-bottom: 1px solid $colour-grey;
+				font-weight: $font-normal;
+				padding-bottom: 5px;
+				&:hover {
+					text-decoration: none;
+					color: $colour-black;
+					border-bottom: 1px solid $colour-black;
+				}
+			}
+		}
+		
+		.card_clientname {
+			margin: 5px 10px 0 10px;
+			a {
+				text-transform: uppercase;
+				color: $colour-grey;
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+				
+				&:hover {
+					text-decoration: none;
+					border-bottom: 2px solid $colour-grey;
+				}
+			}
+		}
+					
+		.card_actions {
+			margin: 0 10px;
+			margin-top: 0.25em;
+			text-align: center;
+			
+			.card_button {
+				text-transform: uppercase;
+			}
+		}
+		
+		.job_callsheet {
+			margin: 0 10px;		
+			position: relative;
+			display: block;
+			.action_holder {
+				position: relative;
+				display: inline-block;
+				width: 100%;
+				
+				a.card_button.card_buttonsmall {
+					width: auto;
+					margin-right: 0.25em;
+					margin-left: 0.25em;
+				}
+			}
+		}
+		
+		.card_location {
+			margin-bottom: 0.5em;
+			}
+		
+		.usage_rights,
+		.additional_information,
+		.card_rate,
+		.card_card_modelthumbs,
+		.card_manage,
+		.card_jobdescription,
+		.card_jobdetails {
+			margin-top: 1em;
+			
+			i.fas {
+				width: 25px;
+			}
+			
+			summary {
+				font-weight: $font-bold;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			> div {
+				margin-top: 0.5em;
+				margin-bottom: 0.5em;
+			}
+		}
+		
+		.additional_information {
+			.extra_info {
+				p {
+					display: inline-block;
+					span {
+						min-width: 100px;
+						margin-right: 20px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+		.working_with {
+			margin-left: 10px;
+			margin-right: 10px;
+			.row {
+				padding-left: 0;
+				padding-right: 0;
+				flex-wrap: wrap;
+				.column {
+					padding: 0.5rem;
+					max-width: 25%;
+					min-width: 25%;
+				}
+			}
+			.card_models {
+				width: 100%;
+				font-size: 1.25em;
+				text-transform: uppercase;
+				margin-top: 1.5em;
+				border-bottom: 1px dashed $colour-grey;
+			}
+			.modelView {
+				
+				img {
+					border-radius: 20px;
+				}
+				.image {
+					position: relative;
+				}
+				.model_name {
+					position: absolute;
+					bottom: 0;
+					text-align: center;
+					background-color: transparentize($colour-white, 0.5);
+					color: $colour-black;
+					padding: 0.5em 1em;
+					width: 100%;
+				}
+				&.clientview {
+					border: 1px dotted $colour-lightgreen;
+					div.text-center {
+						padding: 0.5em;
+					}
+				}
+			}
+			.card_modelsneeded {
+				.job_additional_information {
+					margin-left: 25px;
+					display: none;
+					border: 1px dashed $colour-grey;
+					padding: 0.25em;
+				}
+			}
+		}
+		
+	}
+	
+	
+	.card_button {
+		padding: 1em 1.5em;
+		border-radius: 2em;
+		font-size: 0.75em;
+		font-weight: $font-bold;
+		margin: 0.25em 0.5em;
+		display: inline-block;
+		text-align: center;
+		min-width: 40%;
+		text-transform: uppercase;
+		
+		
+		&.card_buttonsmall {
+			padding: 0.5em;
+			font-size: 11px;
+			width: 25%;
+			margin: 0;
+			color: $colour-white;
+		}
+		
+		&.job_negotiate {
+			font-size: 0.75em;
+			padding: 1em;
+		}
+		&.card_nobuttonsmall {
+			padding: 0.5em;
+			font-size: 11px;
+			width: 25%;
+			margin: 0;
+			text-align: right;
+		}
+		
+		&.card_right {
+			right: 0;
+		}
+		span {
+			display: inline-block;
+		}
+
+	}
+	.card_right {
+		float: right;
+		display: inline-block;
+	}
+	.card_button:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
+	
+	&.faded {
+		opacity: 0.35;
+	}
+	
+	.card_type_topper {
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 1em;
+		font-weight: $font-bold;
+		color: $colour-black;
+		position: absolute;
+		border-radius: 20px 20px 0 0;
+		z-index: 2;
+		
+		&.pending{
+			background-color: $colour-yellow;
+		}
+		
+		&.confirmable {
+			background-color: $colour-green;
+		}
+		&.confirmed,
+		&.closed {
+			background-color: $colour-green;
+		}
+		&.offered,
+		&.new {
+			background-color: $colour-yellow;
+		}
+		&.optioned {
+			background-color: $colour-yellow;
+		}
+		&.waiting {
+			background-color: $colour-purple;
+		}
+		&.complete {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.completed {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.past {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.expired {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.finished {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.unfinalised {
+			background-color: $colour-red;
+			color: $colour-white;
+		}
+		&.accepted {
+			background-color: $colour-cyan;
+			color: $colour-white;
+		}
+		&.overdue {
+			background-color: $colour-red;
+			color: $colour-white;
+		}
+		&.due {
+			background-color: $colour-red;
+			color: $colour-white;
+		}
+		&.deleted {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+		&.rejected {
+			background-color: $colour-black;
+			color: $colour-white;
+		}
+	}
+	
+	
+	
+	.card_readmore {
+		float: right;
+		background: $colour-white;
+		padding: 1em;
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 0 20px 0 0;
+		
+		a {
+			font-weight: $font-bold;
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	
+	.croissant-modal .job_card {
+		text-align: left;
+	}
+	
+
+}

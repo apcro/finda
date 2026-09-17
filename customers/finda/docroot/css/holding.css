@@ -1,0 +1,320 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+body {
+  padding: 0;
+  background-color: #FFFFFF !important;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #99A3A3));
+  height: 1px;
+  width: 35%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.vcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section#holding {
+  position: relative;
+  color: #080808;
+  background-color: #080808;
+}
+section#holding .holding h1 {
+  color: #FFFFFF;
+}
+section#holding .background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s linear 1s;
+  background-color: #080808;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+}
+section#holding .background.active {
+  opacity: 1;
+}
+section#holding .leadimage {
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+section#holding .leadlogo {
+  position: absolute;
+  left: 3em;
+  top: 2em;
+}
+section#holding .leadlogo img {
+  height: 26px;
+}
+section#holding .holdingnotice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  max-width: 55%;
+}
+section#holding .holdingnotice h2 {
+  font-size: 3em;
+  color: #FFFFFF;
+  margin: 0 0 1em 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+}
+section#holding .holdingnotice p {
+  text-align: center;
+  color: #FFFFFF;
+}
+section#holding .tagline {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -40%);
+  max-width: 55%;
+}
+section#holding .tagline h1.leadertagline {
+  font-size: 2em;
+  color: #FFFFFF;
+  margin: 0 0 1em 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+}
+section#holding .tagline p {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+section#holding .tagline p.leadersubline {
+  font-size: 1em;
+  font-weight: 400;
+  max-width: 65%;
+  margin: auto;
+}
+section#holding .tagline .hashtag {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 2em;
+}
+section#holding .leader-welcome {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  font-size: 1.5em;
+  padding: 1em 2em;
+}
+section#holding .modelnotice {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  color: rgba(227, 227, 227, 0.5);
+  font-size: 0.75em;
+}
+
+.appdownload a {
+  border-bottom: none;
+}
+.appdownload a:hover {
+  border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  section#clientsmodels .topper {
+    width: 55em;
+    max-width: 55em;
+    height: calc(55em / 1.77);
+  }
+  section#clientsmodels .topper .videoposter-model,
+section#clientsmodels .topper .videoposter-client {
+    height: calc(55em / 1.77);
+    position: relative;
+  }
+  section#clientsmodels .topper .videoposter-model img,
+section#clientsmodels .topper .videoposter-client img {
+    height: calc(55em / 1.77);
+  }
+  section#clientsmodels .topper video {
+    width: 55em;
+    height: calc(55em / 1.77);
+  }
+
+  section#landing h1.leadertagline {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  section#holding {
+    margin: 0;
+    position: relative;
+  }
+  section#holding .holdingnotice h2 {
+    display: inline-block;
+    max-width: 80%;
+    font-size: 2em;
+  }
+
+  section#holding .leadlogo {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    left: inherit;
+  }
+
+  section#holding .holdingnotice {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    bottom: 10%;
+    position: absolute;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 824px) and (orientation: landscape) {
+  section#holding h1 {
+    max-width: 75%;
+    font-size: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=holding.css.map */

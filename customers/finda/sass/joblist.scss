@@ -1,0 +1,196 @@
+@import "partials/_colours.scss";
+
+#finaliseassignment label.control--radio {
+	line-height: 2em;
+}
+
+#main {
+	min-height: -webkit-calc(100% - 255px - 208px);
+	min-height: -moz-calc(100% - 255px - 208px);
+	min-height: calc(100vh - 255px - 208px);
+	
+}
+
+.rating { 
+	border: none;
+	float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+	margin: 1px;
+	font-size: 1.25em;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	content: "\f005";
+	font-weight: 900;
+}
+
+.rating > .half:before { 
+	font-family: "Font Awesome 5 Free";
+	content: "\f089";
+	position: absolute;
+	font-weight: 900;
+}
+
+.rating > label { 
+	color: #ddd; 
+	float: right; 
+}
+
+.client_affiliate_welcome {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Zebra_DatePicker {
+	z-index: 10002 !Important;
+}
+
+@media screen and (min-width: 768px) {
+	section#projects_header {
+		width: 100%;
+//		margin-top: -2em;
+		.row {
+		
+			.projects_top {
+				position: relative;
+				overflow: visible;
+				width: 100%;
+				
+				.project_filters {
+					width: 100%;
+					position: relative;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					margin-top: 2em;
+					margin-bottom: 3em;
+					
+					.project_filter_tab,
+					.project_filter_search {
+						max-width: 10em;
+						min-width: 10em;
+						margin-right: 1em;
+						display: inline-block;
+						border-bottom: 2px solid transparent;
+						&.active, &:hover {
+							&.upcoming {
+								border-bottom: 2px solid $colour-black;
+							}
+							&.past {
+								border-bottom: 2px solid $colour-black;
+							}
+							&.history {
+								border-bottom: 2px solid $colour-grey;
+							}
+						}
+						&.active {
+							font-weight: $font-bold;
+						}
+					}
+					
+					.project_filter_tab {
+						display: flex;
+						justify-content: left;
+						align-items: flex-end;
+						flex-wrap: row;
+						padding-bottom: 0.25em;
+						position: relative;
+						font-size: 1em;
+						margin-top: 2em;
+						&:hover {
+							cursor: pointer;
+						}
+						
+						div {
+							position: relative;
+							
+							span.badge {
+								margin-left: 0.5em;
+								width: 20px;
+								height: 20px;
+								text-align: center;
+								border-radius: 50%;
+								display: inline-block;
+								line-height: 18px;
+								font-size: 12px;
+								&.upcoming {
+									border: 1px solid $colour-black;
+								}
+								&.past {
+									border: 1px solid $colour-black;
+								}
+								&.history {
+									border: 1px solid $colour-grey;
+								}
+							}
+						}
+						
+					}
+				}
+				
+				.new_project {
+					position: absolute;
+					top: 3em;
+					right: 0;
+					z-index: 2;
+					text-align: center;
+					&:hover {
+						cursor: pointer;
+					}
+					a {
+						text-decoration: none;
+						margin-bottom: 0.5em;
+					}
+				}
+			
+			}
+		}
+	}
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+	color: $colour-yellow;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+	color: $colour-yellow;
+} 
+
+.jobtabs {
+	font-size: 14px;
+	font-weight: font-normal;
+	
+	.job_tab {
+		display: inline;
+		width: 12em;
+		border-bottom: 2px solid $colour-cyan;
+		font-weight: $font-normal;
+		margin-bottom: 2px;
+		color: $colour-cyan;
+		&.active {
+			border-bottom: 4px solid $colour-cyan;
+			margin-bottom: 0px;
+			font-weight: $font-bold;
+		}
+		&:hover {
+			cursor: pointer;
+			border-bottom: 2px solid $colour-cyan;
+			font-weight: $font-bold;
+		}
+		&.active:hover {
+			border-bottom: 4px solid $colour-cyan;
+			margin-bottom: 0px;
+		}
+	}
+	
+}

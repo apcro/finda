@@ -1,0 +1,33 @@
+@import "../partials/_colours.scss";
+
+span.mytemplates, 
+span.myprojects, 
+span.companyprojects {
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	&.active {
+		border-bottom: 3px solid $colour-burgundy;
+	}
+	&:hover {
+		border-bottom: 3px solid $colour-burgundy;
+		cursor: pointer;
+	}
+}
+.companyprojects,
+.myprojects {
+	margin-right: 1em;
+}
+.mytemplates, 
+.companyprojects {
+	margin-left: 1em;
+}
+
+.blocktemplates,
+.blockmyprojects,
+.blockcompanyprojects {
+	display: none;
+	&.active {
+		display: block;
+		width: 100%;
+	}
+}

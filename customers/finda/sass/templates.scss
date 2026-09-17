@@ -1,0 +1,68 @@
+@import "partials/_colours.scss";
+
+h2 {
+	margin-bottom: 0.5em;
+}
+
+#projects_header {
+	margin-bottom: 2em;
+}
+
+h2, h3 {
+	transform-origin: left top;
+	max-width: 80%;
+}
+.templatelist {
+	
+	max-height: 80vh;
+	overflow-y: auto;
+	overflow-x: none;
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li {
+			border-bottom: 1px solid transparent;
+			&.templatename {
+				border-bottom: 1px solid $colour-lightgrey;
+				&:hover {
+					border-bottom: 1px solid $colour-burgundy;
+					cursor: pointer;
+				}
+			}
+			&.addnew:hover {
+				border-bottom: 1px solid $colour-burgundy;
+				cursor: pointer;
+			}
+			&.active {
+				font-weight: $font-bold;
+				border-bottom: 1px solid $colour-burgundy;
+			}
+		}
+	}
+	
+}
+
+#templateform {
+	padding: 1em 2em;
+	background-color: lighten($colour-lightgreen, 10%);
+	border-radius: 2px;
+	min-height: 40vh;
+}
+
+.templatedetails {
+	display: none;
+	label {
+		font-weight: $font-medium;
+	}
+}
+
+.templateinfo {
+	min-width: 100%;
+	p {
+		font-weight: $font-normal;
+		display: block;
+		width: 100%;
+	}
+}

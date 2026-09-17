@@ -1,0 +1,189 @@
+		@import "partials/_colours.scss";
+
+body {
+	background-color: $colour-white;
+}
+
+.googlemap {
+	width: 300px;
+	height: 300px;
+	background-image: url('/images/about/map.png');
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.about-leader-row {
+	margin: 1em 0 3em 0;
+	max-width: 100%;
+}
+.about-leader {
+	
+//	height: 400px;
+	height: 600px;
+	width: 100%;
+//	background-image: url(/images/about/finda_cover3.jpg);
+//	background-image: url(/images/about/finda_montage_MG_0881.jpg);
+//	background-image: url(/images/about/lalala.jpg);
+	background-image: url(/images/about/lalala2.jpg);
+	background-position: left center;
+	background-size: cover;
+	position: relative;
+	
+	h1 {
+		padding: 0.5em 4em;
+		background-color: $colour-white;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate( -50%, 45%);
+	}
+}
+
+.ourmission {
+	margin-left: 8em;
+	margin-right: 8em;
+	p {
+		font-size: 1.5em;
+	}
+}
+
+footer {
+	position: relative;
+}
+
+
+.about-header {
+	margin: 0;
+	padding: 0;
+	height: 90vh;
+	background-image: url(/images/about/about20181221.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	
+	.about-textblock {
+		width: 50%;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(0, -50%);
+		
+		p {
+			font-size: 1.5em;
+			&.leader {
+				font-weight: $font-bold;
+				font-size: 2.5em;
+				text-transform: uppercase;
+			}
+		}
+		
+		hr.about-divider {
+			margin-left: 1%;
+			border: none;
+			height: 1px;
+			background: $colour-grey;
+		}
+	}
+}
+
+p.text-secondary {
+	width: 100%;
+	font-size: 1.5em;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	text-align: right;
+	line-height: 1.75em;
+	font-weight: $font-light;
+}
+
+.outer {
+	width: 1px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+.inner {
+	position: absolute;
+	width:100%;
+	height: 40%;
+	background: $colour-grey;
+	top: 15%;
+	box-shadow: 0px 0px 30px 20px $colour-grey;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+	.about-header {
+//		min-height: 450px;
+	}
+	.about-textblock {
+		font-size: 65%;
+		margin-right: 1em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-leader {
+		background-position: 20% center;
+	}
+
+	.ourmission {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.about-header {
+		background: none;
+		
+		.about-textblock {
+			position: relative;
+			width: 100%;
+			padding: 1em;
+			
+			hr {
+				display: none;
+			}
+			
+			p {
+				&.leader {
+					margin-top: 4em;
+				}
+			}
+		}
+	}
+	
+	.about-textblock {
+		text-align: center;
+	}
+	
+	.inner,
+	.outer {
+		display: none;
+	}
+	
+	p.text-secondary { 
+		position: relative;	
+		width: 100%;
+		text-align: center;
+		top: 0;
+		left: 0;
+		transform: none;
+	}
+	.column.half {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+	.mobile {
+		width: unset;
+	}
+}

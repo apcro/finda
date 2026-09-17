@@ -1,0 +1,258 @@
+@import "partials/_colours.scss";
+
+.tutorial-body {
+	height: 100vh !important;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+	section#landing-tutorial {
+	
+		background-color: #002cd7;
+		overflow: none !important;
+		height: 100vh;
+		display: flex;
+		position: relative;
+		
+		&> div {
+			flex: 1;
+		}
+		
+		.finda-logo {
+			position: relative;
+		
+			background-image: url(/images/team/alice2.jpg);
+			background-size: cover;
+			background-position: center;
+				
+			.tutorial_images {
+			
+				width: 100%;
+				height: 100%;
+
+				.tutorial_image {
+					
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+
+					opacity: 0;
+					
+					transition: opacity 1s linear 0.5s;
+					
+					&.active {
+						opacity: 1;
+					}
+					
+					img {
+						max-height: 100%;
+						max-width: 100%;
+					}
+				}
+			}
+			
+		}
+		
+		.tutorial-details {
+			margin: 4rem 0 2rem 0;
+			overflow: hidden;
+			
+			h1 {
+				margin: 0;
+				font-weight: $font-black;
+				position: relative;
+				color: #fff;
+				font-size: 3em;
+				background-color: #002cd7;
+				z-index: 5;
+				
+				span {
+					font-weight: $font-bold;
+					color: $colour-yellow;
+					border: 5px solid $colour-yellow;
+					height: 10px;
+					display: inline-block;
+					border-radius: 5px;
+					position: relative;
+					top: 0.6em;
+					width: 0.85em;
+				}
+
+			}
+			
+			.tutorial-finda-scroll {
+				height: 100%;
+				position: relative;
+				padding-left: 1.5em;
+				
+				.about-finda {
+					padding-left: 2rem;
+					height: 100%;
+					overflow-y: hidden;
+					overflow-x: visible;
+					position: relative;
+					padding-right: 10em;
+					
+					p {
+						color: #fff;
+						font-size: 1em;
+						font-weight: $font-normal;
+					}
+					
+		
+					
+					h2 {
+						color: $colour-yellow;
+						font-weight: $font-bold;
+						text-transform: none;
+						position: relative;
+						font-size: 2.6em;
+						
+					}
+					
+					h3 {
+						color: #fff;
+						font-size: 1.5em;
+						font-weight: $font-black;
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+					
+					.staff {
+						position: relative;
+						.full-height {
+							position: absolute;
+							top: 50%;
+							transform: translate(0, -50%);
+							
+							transform: translate(0%, -50%);
+							-webkit-transform: translate(0%, -50%);
+							-moz-transform: translate(0%, -50%);
+							-ms-transform: translate(0%, -50%);
+							-o-transform: translate(0%, -50%);
+						}
+					}
+					
+				}
+				
+			}
+		}
+		
+	}
+	
+	#scroll-indicator-bullets {
+		position: absolute;
+		top: 50%;
+		transform: translate(0%, -50%);
+		-webkit-transform: translate(0%, -50%);
+		-moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		-o-transform: translate(0%, -50%);
+		right: 8em;
+		z-index: 8;
+		font-size: .8rem;
+	}
+	#scroll-indicator-bullets ul {
+		list-style: none;
+	}
+	#scroll-indicator-bullets ul li {
+		position: relative;
+		padding-right: 7px;
+	}
+	#scroll-indicator-bullets ul li a {
+		display: block;
+		color: black;
+		padding: 1.5em 0;
+		-webkit-user-select: none !important;
+		-webkit-touch-callout: none;
+	}
+	#scroll-indicator-bullets ul li .bullet-nav-title {
+		position: absolute;
+		top: 50%;
+		left: 10px;
+		display: block;
+		text-align: left;
+		padding: 0 0 0 1em;
+		color: #fff;
+		font-weight: $font-bold;
+		white-space: nowrap;
+		transform: translate(0, -50%);
+	}
+	#scroll-indicator-bullets ul li .bullet-item-link .circle {
+		position: relative;
+		top: 2px;
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 5px solid $colour-yellow;
+		background: transparent;
+	}
+	#scroll-indicator-bullets ul li .bullet-item-link.active .circle:after {
+		border: 2px solid #fff;
+		width: 20px;
+		height: 20px;
+		content: "";
+		display: block;
+		border-radius: 50%;
+		left: -10px;
+		top: -10px;
+		position: relative;
+		background: transparent;
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	#scroll-indicator-bullets {
+		display: none;
+	}
+	
+	section#landing-tutorial .tutorial-details .tutorial-finda-scroll .about-finda {
+		padding-right: 4em;
+	}
+}
+@media only screen and (max-width: 768px) {
+	section#landing-tutorial {
+		overflow-y: scroll;
+		background-color: #002cd7;
+		color: #fff;
+		
+		.full-height {
+			padding: 2em;
+		
+		}
+		.shorttitle {
+			display: none;
+		}
+		h1 {
+			color: $colour-yellow;
+			span {
+				display: none;
+			}
+			font-size: 1.75rem;
+			font-weight: $font-black;
+			padding: 1em;
+		}
+		
+		h2 {
+			color: $colour-yellow;
+			font-size: 1.5em;
+			
+			span {
+				display: none;
+			}
+		}
+		
+		h3 {
+			font-size: 1em;
+			color: $colour-yellow;
+		}
+		
+	}
+	
+}

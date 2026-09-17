@@ -1,0 +1,237 @@
+@import "partials/_colours.scss";
+// @import "partials/_longshadow.scss";
+
+body {
+	padding: 0;
+	background-color: $colour-white !important;
+	font-size: 16px;
+}
+
+hr {
+	border: none;
+	background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, $colour-grey));
+	height: 1px;
+	width: 35%;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+
+.vcenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+}
+
+
+
+section#holding {
+	position: relative;
+	color: $colour-black;
+	background-color: $colour-black;
+	
+	.holding {
+		h1 {
+			color: $colour-white;
+		}
+	}
+	
+	.background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 1s linear 1s;
+		background-color: $colour-black;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		&.active {
+			opacity: 1;
+		}
+	}
+	
+	
+	.leadimage {
+		min-height: 100vh;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+	.leadlogo {
+		position: absolute;
+		left: 3em;
+		top: 2em;
+		img {
+			height: 26px;
+		}
+		
+	}
+
+	.holdingnotice {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -40%);
+		max-width: 55%;
+		
+		h2 {
+			font-size: 3em;
+			color: $colour-white;
+			margin: 0 0 1em 0;
+			padding: 0;
+			text-align: center;
+			font-weight: $font-bold;
+		}
+		
+		p {
+			text-align: center;
+			color: $colour-white;
+		}
+	
+	}
+	.tagline {
+		position: absolute;
+		left: 50%;
+		top: 25%;
+		transform: translate(-50%, -40%);
+		max-width: 55%;
+
+		h1.leadertagline {
+			font-size: 2em;
+			color: $colour-white;
+			margin: 0 0 1em 0;
+			padding: 0;
+			text-align: center;
+			font-weight: $font-medium;
+		}
+
+		p {
+			color: $colour-white;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			&.leadersubline {
+				font-size: 1em;
+				font-weight: $font-light;
+				max-width: 65%;
+				margin: auto;
+			}
+		}
+		
+		
+		.hashtag {
+			color: $colour-white;
+			font-weight: $font-thin;
+			font-size: 2em;
+		}
+	}
+
+	.leader-welcome {
+		position: absolute;
+		right: 0;
+		bottom: 16px;
+		font-size: 1.5em;
+		padding: 1em 2em;
+	}
+	.modelnotice {
+		position: absolute;
+		right: 1em;
+		bottom: 1em;
+		color: transparentize($colour-lightgrey, 0.5);
+		font-size: 0.75em;
+	}
+}
+
+.appdownload a {
+	border-bottom: none;
+	&:hover {
+		border-bottom: none;
+	}
+	
+}
+
+// mobile only
+
+@media screen and (min-width: 768px) {
+	section#clientsmodels {
+		.topper {
+			width: 55em;
+			max-width: 55em;
+			height: calc(55em / 1.77);
+			.videoposter-model,
+			.videoposter-client {
+				height: calc(55em / 1.77);
+				position: relative;
+				img {
+					height: calc(55em / 1.77);
+				}
+			}
+			video {
+				width: 55em;
+				height: calc(55em / 1.77);
+			}
+		}
+	
+	}
+	section#landing {
+		h1.leadertagline {
+			font-size: 3em;
+		}
+	}
+}
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+	
+}
+
+// portait handsets	
+@media screen and (max-width: 768px) and (orientation : portrait) {
+
+	section#holding {
+		margin: 0;
+		position: relative;
+		.holdingnotice h2 {
+			display: inline-block;
+			max-width: 80%;
+			font-size: 2em;
+		}
+	}
+	section#holding .leadlogo {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		left: inherit;
+	}
+	
+	section#holding .holdingnotice {
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+		bottom: 10%;
+		position: absolute;
+	}
+	
+}	
+
+// landscape handsets
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 824px) 
+// and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) { 
+	
+	section#holding h1 {
+		max-width: 75%;
+		font-size: 1.5em;
+	}
+	
+
+}

@@ -1,0 +1,286 @@
+@import "partials/_colours.scss";
+
+hr {
+	width: 100%;
+	background: transparentize($colour-lightgrey, 0.4);
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+section {
+	color: $colour-black;
+	width: 100%;
+	display: block;
+	.half {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		width: 50%;
+		max-width: 50%;
+		min-width: 50%;
+		position: relative;
+	}
+}
+
+section#howitworks_lead {
+	position: relative;
+	padding: 2em 0 4em 0;
+}
+
+section#unbiased_section1 {
+	background-color: $colour-white;
+	position: relative;
+	display: flex;
+	.half {
+		z-index: 5;
+		&.pad {
+			padding: 3em;
+		}
+		.image {
+			height: 100%;
+			background-image: url('/images/homepage/unbiased/1.jpg');
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			overflow: visible;
+			z-index: 1;
+			position: relative;
+			.burgundy_bar {
+				background: $colour-burgundy;
+				opacity: 0.5;
+				width: 20%;
+				height: 100%;
+				z-index: 5;
+			}
+			.finda {
+				position: absolute;
+				bottom: -1em;
+				img {
+					height: 3em;
+					object-fit: contain;
+					filter: invert(1);
+					object-position: right;
+				}
+			}
+		}
+	}
+	
+	.content {
+		z-index: 5;
+		
+		p {
+			color: $colour-black;
+			z-index: 10;
+			padding: 1em 2em 1em 5em;
+		}
+		
+	}
+}
+
+section#unbiased_section2 {
+	position: relative;
+	display: flex;
+	.half {
+		z-index: 5;
+		&.pad {
+			padding: 3em;
+		}
+		.image {
+			height: 100%;
+			background-image: url('/images/homepage/unbiased/2.jpg');
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			overflow: visible;
+			z-index: 1;
+			position: relative;
+			.burgundy_bar {
+				background: $colour-burgundy;
+				opacity: 0.5;
+				width: 100%;
+				height: 40%;
+				z-index: 5;
+				bottom: 0;
+				position: absolute;
+			}
+			.finda {
+				position: absolute;
+				bottom: 0;
+				z-index: 10;
+				img {
+					height: 3em;
+					object-fit: contain;
+					object-position: left;
+				}
+			}
+		}
+	}
+	
+
+	h2 {
+		margin-left: 2em;
+		margin-top: 10em;
+	}
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		p {
+			z-index: 10;
+			padding: 1em 5em 1em 2em;
+		}
+	}
+}
+
+section#howitworks_section3 {
+	position: relative;
+	display: flex;
+	.burgundy_bar {
+		height: 100%;
+		width: 25%;
+		background-color: $colour-burgundy;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+	}
+	.half.image {
+		background-image: url('/images/homepage/howto/3.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.content {
+		bottom: 0;
+		width: 100%;
+		margin-left: 2em;
+		padding: 1em;
+		margin-top: 20em;
+	}
+	.finda {
+		position: absolute;
+		top: 8em;
+		left: 50%;
+		transform: translate(-50%, 0);
+		z-index: 100;
+		img {
+			height:5em;
+			filter: invert(1);
+		}
+	}
+}
+
+h1, h2, h3 {
+	transform-origin: left top;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+
+@media screen and (min-width: 667px) {
+	.row {
+		p {
+			padding: .5em 0;
+			&:last-child {
+				padding-bottom: 2em;
+			}
+			a.button {
+				margin-top: 1em;
+				margin-right: 0.5em;
+			}
+			b {
+				color: $colour-black;
+			}
+		}
+
+		h2 {
+			margin-top: 1em;
+			margin-bottom: 1em;
+			font-weight: $font-normal;
+			&.upper {
+				text-transform: uppercase;
+			}
+		}
+		
+		h3 {
+			transform-origin: left top;
+		}
+	}
+	
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width: 768px) {
+	.topbar-responsive-logo img {
+		filter: invert(1);
+	}
+	section {
+		.half {
+			width: 100%;
+			min-width: 100%;
+			p {
+				padding-bottom: 0.5em;
+				max-width: 100%;
+			}
+		}
+		h2 {
+			text-align: center;
+			margin-bottom: 0.5em;
+			margin-top: 1.5em;
+		}
+	}
+	section#howitworks_lead .content {
+		left: 0;
+		transform: none;
+		width: 100%;
+		padding: 0.5em;
+	}
+	section#unbiased_section1 .content h2 {
+		margin: 0.5em;
+		text-align: center;
+	}
+	section#unbiased_section1 .content {
+		margin-top: 2em;
+	}
+	section#unbiased_section1 .content p {
+		padding: 0.5em;
+		max-width: 100%;
+		text-align: center;
+	}
+	section#unbiased_section1 .burgundy_bar {
+		margin: 0;
+		width: 100%;
+	}
+	section#unbiased_section1 {
+		display: inline-block;
+	}
+	section#unbiased_section1 .half .image,
+	section#unbiased_section2 .half .image {
+		height: 20em;
+	}
+	
+	section#unbiased_section2 {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	section#unbiased_section2 .half.pad {
+		display: none;
+	}
+	section#unbiased_section2 h2 {
+		margin-top: 1em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		text-align: center;
+	}
+	section#unbiased_section2 .content {
+		margin-left: 0;
+		text-align: center;
+		p {
+			width: 100%;
+			max-width: 100%;
+		}
+		.row {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	
+
+}

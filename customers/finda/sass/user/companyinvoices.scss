@@ -1,0 +1,32 @@
+@import "../partials/_colours.scss";
+
+
+span.myinvoices, span.companyinvoices {
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+	&.active {
+		border-bottom: 3px solid $colour-burgundy;
+	}
+	&:hover {
+		border-bottom: 3px solid $colour-burgundy;
+		cursor: pointer;
+	}
+}
+
+.myinvoices {
+	margin-right: 1em;
+}
+.companyinvoices {
+	margin-left: 1em;
+}
+
+.blockmyinvoices, .blockcompanyinvoices {
+	display: none;
+	&.active {
+		display: block;
+	}
+}
+
+.projects_top {
+	padding-bottom: 2em;
+}

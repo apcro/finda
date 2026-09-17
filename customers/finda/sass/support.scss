@@ -1,0 +1,74 @@
+@import "partials/_colours.scss";
+
+.grid.grid-faq {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+}
+
+.row.row-heading {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+.row {
+	
+	h1 {
+		color: $colour-black;
+	}
+	h2 {
+		color: $colour-black;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	
+	h3, h4 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding-bottom: 0.5em;
+	}
+	
+	p {
+		line-height: 150%;
+		&:last-child {
+			padding-bottom: 4em;
+		}
+	}
+	
+	textarea {
+		border-bottom: 1px solid transparent;
+		border-radius: 2px 2px 0 0;
+		background-color: lighten($colour-lightgrey, 5%);
+		padding-left: 1em;
+		padding-right: 1em;
+		&:hover, &:focus {
+			border-bottom: 1px solid $colour-black;
+			background-color: $colour-white;
+		}
+	}
+
+	
+
+}
+
+@media screen and (min-width: 768px) {
+	.grid.grid-faq {
+		width: 55rem;
+		background: $colour-lightgrey;
+		border-radius: 2px;
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.row {
+		padding: 0;
+	}
+	
+	.top-bar {
+		display: none;
+	}
+}

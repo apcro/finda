@@ -1,0 +1,389 @@
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+header {
+  margin-bottom: 0;
+  background-color: #080808;
+  color: #FFFFFF;
+}
+
+hr {
+  width: 100%;
+  background: rgba(227, 227, 227, 0.6);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+p {
+  line-height: 1.375em;
+}
+
+.top-bar-title.desktop {
+  z-index: 1;
+}
+
+#main {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: inherit !important;
+}
+
+.panel-toggle-button {
+  z-index: 10;
+}
+.panel-toggle-button .hamburger-inner, .panel-toggle-button .hamburger-inner::before, .panel-toggle-button .hamburger-inner::after {
+  background-color: #FFFFFF;
+}
+.panel-toggle-button .is-active .hamburger-inner, .panel-toggle-button .is-active .hamburger-inner::before, .panel-toggle-button .is-active .hamburger-inner::after {
+  background-color: #080808;
+}
+
+#mobilemenu ul {
+  list-style-type: none;
+  margin-left: 10px;
+}
+#mobilemenu ul li a {
+  text-decoration: none;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+}
+
+.top-bar {
+  background-color: #080808;
+}
+
+section#section1 {
+  background-color: #080808;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  color: #FFFFFF;
+  min-height: 100vh;
+}
+section#section1 .row {
+  max-width: 70rem;
+  justify-content: center;
+}
+section#section1 .row.bottom {
+  padding-bottom: 4em;
+}
+section#section1 .row .column {
+  min-width: 85%;
+  max-width: 85%;
+}
+section#section1 .row .column h2 {
+  font-size: 44px;
+  font-weight: bold;
+}
+section#section1 .row .column h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+section#theteam .row.images {
+  justify-content: center;
+  min-height: 220px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+section#theteam .column {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  max-width: 300px;
+}
+section#theteam .column.bar {
+  width: 82px;
+  max-width: 82px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 1px;
+  background-color: #080808;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+section#theteam .column .rounded.profile {
+  display: flex;
+  width: 280px;
+  height: 201px;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 5px solid #FF4040;
+}
+section#theteam .column .rounded.profile a {
+  filter: grayscale(1);
+  width: 100%;
+  height: 12em;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1em;
+}
+section#theteam .column .rounded.profile a:hover {
+  transform: scale(1.1);
+}
+section#theteam .column .rounded.profile h3,
+section#theteam .column .rounded.profile h4,
+section#theteam .column .rounded.profile p {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%;
+  transform-origin: center;
+}
+section#theteam .column p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+section#theteam .column span.introduction {
+  font-size: 14px;
+}
+
+section#theteam {
+  margin-bottom: 4em;
+}
+
+section#instagram {
+  margin-bottom: 4em;
+}
+section#instagram h1 {
+  text-align: center;
+  transform-origin: center;
+  max-width: 100%;
+}
+section#instagram .instacolumn {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#instagram .instacolumn .ig_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section#instagram .instacolumn .ig_images .ig_image {
+  position: relative;
+  display: inline-block;
+  float: right;
+  padding: 0.5em;
+}
+section#instagram .instacolumn .ig_images .ig_image img {
+  width: 18em;
+  height: 18em;
+  display: block;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 667px) {
+  .row p a.button {
+    margin-top: 1em;
+    margin-right: 0.5em;
+  }
+  .row p b {
+    color: #080808;
+  }
+  .row h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .row h2.upper {
+    text-transform: uppercase;
+  }
+}
+@media only screen and (orientation: portrait) and (max-width: 768px) {
+  .column.half {
+    width: 100%;
+    min-width: 100%;
+  }
+  .column.half p {
+    line-height: 1.5em;
+    padding-bottom: 0.5em;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+  }
+
+  .finda_team .column .rounded.profile img {
+    margin: 0;
+  }
+  .finda_team .column .rounded.profile h4 {
+    margin-bottom: 2em;
+  }
+
+  section#section1 {
+    height: inherit !important;
+    padding-bottom: 4em;
+  }
+  section#section1 .verticalbar {
+    display: none;
+  }
+  section#section1 .row.dots {
+    height: inherit !important;
+  }
+  section#section1 .row .column {
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+  section#section1 .row .column.empty, section#section1 .row .column.redball {
+    display: none;
+  }
+
+  section#theteam .row .column {
+    text-align: left !important;
+    width: 85% !important;
+    max-width: 85% !important;
+    margin: 10px auto;
+  }
+  section#theteam .row .column .rounded.profile {
+    margin: 0 auto !important;
+  }
+  section#theteam .row .column.bar {
+    width: 30% !important;
+  }
+  section#theteam .row.lr {
+    flex-flow: column;
+  }
+  section#theteam .row.rl {
+    flex-flow: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=mission.css.map */

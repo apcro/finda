@@ -1,0 +1,31 @@
+		@import "partials/_colours.scss";
+
+body {
+	background-color: $colour-white;
+}
+.column.register {
+	max-width: 60em;
+	h1, 
+	h2 {
+		transform-origin: left top;
+	}
+	
+	h1 {
+		margin-bottom: 1em;
+		margin-top: 2em;
+	}
+	
+	.row {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	
+	form {
+		width: 100%;
+	}
+	
+	.registererror {
+		border: 1px solid $colour-red;
+	}
+	
+}

@@ -1,0 +1,210 @@
+/* Croissant CSS */
+.text-thin {
+  font-weight: 300;
+}
+
+.text-light {
+  font-weight: 400;
+}
+
+.text-normal {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-ultra {
+  font-weight: 900;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #080808;
+}
+
+.text-blackcolour {
+  color: #080808;
+}
+
+.text-cyan {
+  color: #13AFC0;
+}
+
+.text-yellow {
+  color: #ffba1c;
+}
+
+.text-purple {
+  color: #C353E3;
+}
+
+.text-findared {
+  color: #C93B3B;
+}
+
+.text-red {
+  color: #C93B3B;
+}
+
+.text-grey {
+  color: #99A3A3;
+}
+
+.text-lightgreen {
+  color: #d5e1df;
+}
+
+.text-darkgreen {
+  color: #a7bab8;
+}
+
+.text-pink {
+  color: #D300BE;
+}
+
+.text-green {
+  color: #00DD00;
+}
+
+.text-darkgrey {
+  color: #565c66;
+}
+
+.text-lightgrey {
+  color: #E3E3E3;
+}
+
+.text-burgundy {
+  color: #FF4040;
+}
+
+.bg-black {
+  background-color: #080808;
+}
+
+.bg-grey {
+  background-color: #99A3A3;
+}
+
+.bg-bordergrey {
+  background-color: #99A3A3;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-purple {
+  background-color: #C353E3;
+}
+
+.bg-yellow {
+  background-color: #ffba1c;
+}
+
+.bg-red {
+  background-color: #C93B3B;
+}
+
+.bg-pink {
+  background-color: #D300BE;
+}
+
+.bg-burgundy {
+  background-color: #FF4040;
+}
+
+.croissant-block {
+  padding: 10px 10px 0 10px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #fff;
+}
+
+#croissant-overlay {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.croissant-block.croissant-modal {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 1em;
+}
+
+.croissant-block.croissant-modal h3 {
+  margin: 1em auto;
+  text-align: center;
+  max-width: 80%;
+  transform-origin: center center;
+}
+
+.croissant-block.croissant-modal p {
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+.croissant-block.croissant-modal .croissant-button {
+  margin-bottom: 10px;
+}
+
+.croissant-block.croissant-modal a.croissant-close {
+  top: 10px;
+  right: -50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  position: absolute;
+}
+.croissant-block.croissant-modal a.croissant-close:before, .croissant-block.croissant-modal a.croissant-close:after {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 25px;
+  left: 13px;
+  top: 1px;
+}
+.croissant-block.croissant-modal a.croissant-close:hover {
+  border: 1px solid #FFFFFF;
+}
+.croissant-block.croissant-modal a.croissant-close:hover:after, .croissant-block.croissant-modal a.croissant-close:hover:before {
+  background-color: #FFFFFF;
+}
+
+.croissant-close:hover {
+  cursor: pointer;
+}
+
+#spinner-overlay {
+  display: none;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10001;
+}
+
+/*# sourceMappingURL=croissant.css.map */

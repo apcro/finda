@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@import "../partials/_colours.scss";
+
+.profile .row:not(#tab-preferences-panel .row) {
+	padding: 1em 0; 
+}
+
+label[class^=required] > span {
+	color: $colour-black;
+}
+
+h2,
+h3 {
+	transform-origin: left top;
+	
+}
+.infoballoon {
+	position: absolute;
+	right: -25px;
+	top: 0px;
+	
+}
+.infoballoon img {
+	width: 16px;
+	height: 16px;
+}
+
+#register_referrer_code {
+	&:hover {
+		cursor: alias;
+	}
+}
+
+input:disabled {
+	color: $colour-grey !important;
+}
+
+.is-selected .pika-button,
+.has-event .pika-button {
+	color: #fff !important;
+	font-weight: $font-bold !important;
+	background: $colour-purple !important;
+	box-shadow: inset 0 1px 3px $colour-purple !important;
+	border-radius: 3px !important;
+}
+
+.pika-button:hover, .pika-row.pick-whole-week:hover .pika-button {
+	color: #000 !important;
+	background: $colour-yellow !important;
+	box-shadow: none !important;
+	border-radius: 3px !important;
+}
+
+.worko-tabs {
+	.flex-tabs {
+		border-radius: 2px 0 2px 2px;
+		background-color: $colour-white;
+		
+		.panel.profile {
+			padding: 1em;
+			border-radius: 0 2px 2px 2px;
+		}
+		.myprofiletabs,
+		.companyprofiletabs {
+			display: inline-block;
+		}
+	}
+	
+}
+
+.worko-tabs.profile .tab {
+	padding: 1em 2em;
+}
+.panel.profile {
+	h2 {
+		color: $colour-black;
+		font-weight: $font-bold;
+		margin: 0;
+	}
+}
+
+.notice {
+	border-radius: 2px;
+	
+}
+
+.avatar a {
+	border-bottom: none;
+}
+
+.tab-scroll {
+	margin-left: 2em;
+	.tab {
+		text-align: center;
+		border-bottom: 1px solid $colour-black;
+		&:hover {
+			border-bottom: 2px solid $colour-black;
+			color: $colour-black;
+		}
+	}
+}
+
+
+#tab-companymembers:checked ~ .tabs #tab-companymembers-label,
+#tab-companyinformation:checked ~ .tabs #tab-companyinformation-label,
+#tab-companyjobs:checked ~ .tabs #tab-companyjobs-label,
+#tab-profile:checked ~ .tabs #tab-profile-label, 
+#tab-imagesportfolio:checked ~ .tabs #tab-imagesportfolio-label, 
+#tab-imagespolaroids:checked ~ .tabs #tab-imagespolaroids-label,
+#tab-measurements:checked ~ .tabs #tab-measurements-label, 
+#tab-experience:checked ~ .tabs #tab-experience-label, 
+#tab-preferences:checked ~ .tabs #tab-preferences-label,
+#tab-deleteaccount:checked ~ .tabs #tab-deleteaccount-label,
+#tab-affiliates:checked ~ .tabs #tab-affiliates-label,
+#tab-password:checked ~ .tabs #tab-password-label {
+	cursor: default;
+	color: $colour-black; 
+	border-bottom: 2px solid $colour-black;
+}
+
+#tab-companymembers:checked ~ .tabs #tab-companymembers-panel,
+#tab-companyinformation:checked ~ .tabs #tab-companyinformation-panel,
+#tab-companyjobs:checked ~ .tabs #tab-companyjobs-panel,
+#tab-profile:checked ~ .tabs #tab-profile-panel,
+#tab-imagesportfolio:checked ~ .tabs #tab-imagesportfolio-panel, 
+#tab-imagespolaroids:checked ~ .tabs #tab-imagespolaroids-panel, 
+#tab-measurements:checked ~ .tabs #tab-measurements-panel, 
+#tab-experience:checked ~ .tabs #tab-experience-panel, 
+#tab-preferences:checked ~ .tabs #tab-preferences-panel,
+#tab-deleteaccount:checked ~ .tabs #tab-deleteaccount-panel,
+#tab-affiliates:checked ~ .tabs #tab-affiliates-panel,
+#tab-password:checked ~ .tabs #tab-password-panel {
+	display: block;
+}
+
+.profile input[type=email],
+.profile input[type=password],
+.profile input[type=text],
+textarea {
+	&:hover, &:focus {
+		border-bottom: 1px solid $colour-black;
+		background-color: lighten($colour-lightgrey, 5%);
+	}
+}
+
+select:invalid { 
+	color: $colour-grey; 
+}
+
+// toggle overrides from _buttons.scss
+.tgl-slider + .tgl-btn::after {
+	background: $colour-lightgrey;
+}
+
+.tgl-slider:checked + .tgl-btn {
+	background: $colour-black;
+}
+
+.tgl-slider + .tgl-btn {
+	background: transparentize($colour-black, 0.8);
+	border: none;
+}
+
+// pickadate overrides 
+
+.picker__day--highlighted:hover, .picker--focused .picker__day--highlighted {
+	background: transparentize($colour-black, 0.8);
+}
+
+.picker__day--highlighted {
+	border: $colour-yellow;
+}
+
+.picker__day--infocus:hover, .picker__day--outfocus:hover {
+	background: transparentize($colour-black, 0.8);
+}
+
+.picker__nav--prev:hover, .picker__nav--next:hover {
+	background: transparentize($colour-black, 0.8);
+}
+
+// the converter
+.converter {
+	label {
+		font-size: 75% !important;
+		margin-right: 1em;
+	}
+	input[type=text] {
+		font-size: 75% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		width: inherit !important;
+		display: inline-block !important;
+		margin-right: 1em;
+	}
+	
+}
+
+.profileditor {
+	.measurements-input {
+		position: relative;
+		
+		input {
+		}
+		.cm-or-feet,
+		.cm-or-inches {
+			position: absolute;
+			left: 3.25em;
+			top: 1.25em;
+			padding: 0.5em;
+			
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	
+}
+section#projects_header .row .projects_top {
+	.project_collapsing {
+		
+		margin-bottom: 0.5em;
+		&.mydetailsheader {
+			margin-top: 0;
+		}
+	}
+}
+span.mydetails, span.companydetails {
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	color: $colour-black;
+	&.active {
+		border-bottom: 1px solid $colour-burgundy;
+		color: $colour-burgundy;
+	}
+	&:hover {
+		border-bottom: 1px solid $colour-black;
+		cursor: pointer;
+	}
+}
+
+.mydetails {
+	margin-right: 1em;
+}
+.companydetails {
+	margin-left: 1em;
+}
+
+.blockmydetails, .blockcompanydetails {
+	display: none;
+	width: 100%;
+	
+	&.active {
+		display: block;
+	}
+}
+.profileditor {
+	.row {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	
+}

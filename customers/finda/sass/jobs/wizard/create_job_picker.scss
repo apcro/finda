@@ -1,0 +1,46 @@
+@import "../../partials/_colours.scss";
+
+.job_circle {
+	width: 155px;
+	height: 155px;
+	border-radius: 2px;
+	background-color: $colour-white;
+	text-align: center;
+	display: inline-grid;
+	padding: 20px;
+	margin: 20px;
+	
+	&:hover, &.selected {
+		background-color: $colour-black;
+		> p, > .icon {
+			color: $colour-white;
+		}
+		cursor: pointer;
+	}
+	
+	p,
+	.icon {
+		color: $colour-black;
+		height: 50%;
+	}
+	
+	.icon {
+		font-size: 50px;
+	}
+	
+	p {
+		font-size: 14px;
+	}
+	
+}
+
+.createbutton {
+//	display: none;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.avatar a {
+	
+	border-bottom: none;
+}

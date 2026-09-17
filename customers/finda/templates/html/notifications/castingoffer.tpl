@@ -1,0 +1,1 @@
+<b>{$job.company_name}</b> would like to invite you to a <a href="/jobs/view/{$job.id}">{$job.jobtype_name}</a> on {$job.startdate|date_format:"%d %B %Y"}.

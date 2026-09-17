@@ -1,0 +1,85 @@
+@import "partials/_colours.scss";
+
+.grid.grid-faq {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+}
+
+.row.row-heading {
+	margin-top: 4em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+.row.faq {
+	background-color: #fff;
+	padding: 0;
+	
+	h1 {
+		text-align: left;
+	}
+	
+	h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+	
+	h3, h4 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+		padding-bottom: 0.5em;
+	}
+	
+	p {
+		line-height: 150%;
+		font-size: 1.25em;
+		
+		&:last-child {
+			padding-bottom: 4em;
+		}
+	}
+
+
+	ol {
+		list-style-type: none;
+		counter-reset: item;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ol > li {
+		display: table;
+		counter-increment: item;
+		margin-bottom: 0.6em;
+	}
+	
+	ol > li:before {
+		content: counters(item, ".") ". ";
+		display: table-cell;
+		padding-right: 0.6em;
+	}
+	
+	li ol > li {
+		margin: 0;
+	}
+	
+	li ol > li:before {
+		content: counters(item, ".") " ";
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+	.grid.grid-faq {
+		width: 55rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.row {
+		padding: 0;
+	}
+}
